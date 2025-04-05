@@ -1,4 +1,4 @@
 extends Resource
-class_name Dialogue
+class_name DialogueScene
 
 @export var lines: Array[DialogueLine]

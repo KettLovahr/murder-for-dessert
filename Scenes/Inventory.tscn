@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp8vtq718f8ls"]
+
+[ext_resource type="Texture2D" uid="uid://bhly0hb4647l7" path="res://Assets/Textures/Conversation/inventory.png" id="1_ersrd"]
+[ext_resource type="Script" uid="uid://0i8ox7tx3785" path="res://Scenes/inventory.gd" id="2_jbd0o"]
+
+[node name="Inventory" type="Sprite2D"]
+texture = ExtResource("1_ersrd")
+centered = false
+script = ExtResource("2_jbd0o")
+
+[node name="InventoryContainer" type="HBoxContainer" parent="."]
+offset_left = 46.0
+offset_top = 17.0
+offset_right = 922.0
+offset_bottom = 79.0

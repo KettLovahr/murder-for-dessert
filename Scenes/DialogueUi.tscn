@@ -1,28 +1,38 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdqsnds01xtpa"]
+[gd_scene load_steps=18 format=3 uid="uid://bdqsnds01xtpa"]
 
 [ext_resource type="Script" uid="uid://d0krvq2qslisc" path="res://Scenes/DialogueUi.gd" id="1_qtu1s"]
-[ext_resource type="Resource" uid="uid://cvcrfmhw23h4k" path="res://Assets/test_dialogue.tres" id="2_625bd"]
+[ext_resource type="Resource" uid="uid://48h8dbm4wdo" path="res://Assets/DialogueScenes/new_test_dialogue.tres" id="2_vxeye"]
+[ext_resource type="Texture2D" uid="uid://dve8gvkiw7bp5" path="res://Assets/Textures/Conversation/conversation_bg_fade.png" id="3_5f4ax"]
+[ext_resource type="Texture2D" uid="uid://cua7qrb5lu03b" path="res://Assets/Textures/Conversation/dialogue_box.png" id="4_vmg8r"]
+[ext_resource type="FontFile" uid="uid://bpoqa1mw116n5" path="res://Assets/Fonts/AtkinsonHyperlegible-Regular.ttf" id="5_wscab"]
+[ext_resource type="Texture2D" uid="uid://bd2d6lqlafk4x" path="res://Assets/Textures/Conversation/dialogue_previous.png" id="6_ayvv4"]
+[ext_resource type="Texture2D" uid="uid://ck80vttbchqwf" path="res://Assets/Textures/Conversation/dialogue_next.png" id="7_fsg10"]
+[ext_resource type="FontVariation" uid="uid://bpdyc6nc57vc0" path="res://Assets/Fonts/StretchGentium.tres" id="8_3kq8a"]
+[ext_resource type="Texture2D" uid="uid://bycu6eaymf2ca" path="res://Assets/Textures/Conversation/dialogue_pin_normal.png" id="9_bpahb"]
+[ext_resource type="Texture2D" uid="uid://ceg1n8pyw12pd" path="res://Assets/Textures/Conversation/conversation_progress_frame.png" id="9_fsg10"]
+[ext_resource type="Texture2D" uid="uid://b0faqo7gcukq5" path="res://Assets/Textures/Conversation/dialogue_pin_click.png" id="10_vxeye"]
+[ext_resource type="Texture2D" uid="uid://fijwdm7ayte8" path="res://Assets/Textures/Conversation/conversation_dialogue_normal.png" id="11_3kq8a"]
+[ext_resource type="Texture2D" uid="uid://deu8fhng5ldy" path="res://Assets/Textures/Conversation/dialogue_pin_hover.png" id="11_vxeye"]
+[ext_resource type="Texture2D" uid="uid://cawtmchaywsyx" path="res://Assets/Textures/Conversation/conversation_dialogue_click.png" id="12_rxobw"]
+[ext_resource type="Texture2D" uid="uid://dywuqu3ryieg4" path="res://Assets/Textures/Conversation/conversation_dialogue_hover.png" id="13_ia0ow"]
+[ext_resource type="PackedScene" uid="uid://bp8vtq718f8ls" path="res://Scenes/Inventory.tscn" id="13_vxeye"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q04xg"]
+texture = ExtResource("4_vmg8r")
 
 [node name="DialogueUi" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 8.0
-offset_top = 8.0
-offset_right = -8.0
-offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qtu1s")
-dialogue = ExtResource("2_625bd")
+dialogue = ExtResource("2_vxeye")
 
-[node name="TopBar" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 96.0
-grow_horizontal = 2
+[node name="ConversationBgFade" type="Sprite2D" parent="."]
+texture = ExtResource("3_5f4ax")
+centered = false
 
 [node name="DialogueBox" type="Panel" parent="."]
 layout_mode = 1
@@ -30,22 +40,25 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -128.0
-offset_right = -320.0
+offset_top = -253.0
+offset_right = -300.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_q04xg")
 
 [node name="DialogueLabel" type="RichTextLabel" parent="DialogueBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 16.0
-offset_top = 16.0
-offset_right = -16.0
-offset_bottom = -16.0
+offset_left = 40.0
+offset_top = 93.0
+offset_right = -47.0
+offset_bottom = -48.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("5_wscab")
 theme_override_font_sizes/bold_italics_font_size = 28
 theme_override_font_sizes/italics_font_size = 28
 theme_override_font_sizes/mono_font_size = 28
@@ -61,43 +74,146 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -77.0
-offset_top = -48.0
-offset_right = -8.0
-offset_bottom = -8.0
+offset_left = -109.0
+offset_top = -64.0
+offset_right = -37.0
+offset_bottom = -30.0
 grow_horizontal = 0
 grow_vertical = 0
 
-[node name="Previous" type="Button" parent="DialogueBox/NavButtonContainer"]
+[node name="Previous" type="TextureButton" parent="DialogueBox/NavButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "<-"
+texture_normal = ExtResource("6_ayvv4")
 
-[node name="Next" type="Button" parent="DialogueBox/NavButtonContainer"]
+[node name="Next" type="TextureButton" parent="DialogueBox/NavButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "->"
+texture_normal = ExtResource("7_fsg10")
 
-[node name="SpeakerColor" type="ColorRect" parent="DialogueBox"]
-layout_mode = 1
-offset_left = 16.0
-offset_top = -32.0
-offset_right = 216.0
-offset_bottom = 8.0
-color = Color(0, 0, 0, 1)
-
-[node name="SpeakerLabel" type="Label" parent="DialogueBox/SpeakerColor"]
+[node name="SpeakerLabel" type="Label" parent="DialogueBox"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 8.0
-offset_top = 8.0
-offset_right = -8.0
-offset_bottom = -8.0
+offset_left = 42.0
+offset_top = 23.0
+offset_right = -747.0
+offset_bottom = -178.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_3kq8a")
+theme_override_font_sizes/font_size = 32
 text = "Who said it"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PinActionButton" type="TextureButton" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -95.0
+offset_top = 26.0
+offset_right = -15.0
+offset_bottom = 106.0
+grow_horizontal = 0
+texture_normal = ExtResource("9_bpahb")
+texture_pressed = ExtResource("10_vxeye")
+texture_hover = ExtResource("11_vxeye")
+
+[node name="ConversationProgressFrame" type="Sprite2D" parent="."]
+position = Vector2(947, 60)
+texture = ExtResource("9_fsg10")
+centered = false
+
+[node name="Inventory" parent="." instance=ExtResource("13_vxeye")]
+
+[node name="CulpritLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1004.0
+offset_top = 92.0
+offset_right = -1.0
+offset_bottom = -543.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("8_3kq8a")
+theme_override_font_sizes/font_size = 48
+text = "Culprit"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LivesLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1153.0
+offset_top = 5.0
+offset_right = -54.0
+offset_bottom = -638.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_wscab")
+theme_override_font_sizes/font_size = 48
+text = "15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ConversationButton1" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 1047.0
+offset_top = 180.0
+offset_right = 1229.0
+offset_bottom = 270.0
+texture_normal = ExtResource("11_3kq8a")
+texture_pressed = ExtResource("12_rxobw")
+texture_hover = ExtResource("13_ia0ow")
+
+[node name="ConversationButton2" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 1047.0
+offset_top = 266.0
+offset_right = 1229.0
+offset_bottom = 356.0
+texture_normal = ExtResource("11_3kq8a")
+texture_pressed = ExtResource("12_rxobw")
+texture_hover = ExtResource("13_ia0ow")
+
+[node name="ConversationButton3" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 1047.0
+offset_top = 352.0
+offset_right = 1229.0
+offset_bottom = 442.0
+texture_normal = ExtResource("11_3kq8a")
+texture_pressed = ExtResource("12_rxobw")
+texture_hover = ExtResource("13_ia0ow")
+
+[node name="ConversationButton4" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 1047.0
+offset_top = 438.0
+offset_right = 1229.0
+offset_bottom = 528.0
+texture_normal = ExtResource("11_3kq8a")
+texture_pressed = ExtResource("12_rxobw")
+texture_hover = ExtResource("13_ia0ow")
+
+[node name="ConversationButton5" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 1047.0
+offset_top = 524.0
+offset_right = 1229.0
+offset_bottom = 614.0
+texture_normal = ExtResource("11_3kq8a")
+texture_pressed = ExtResource("12_rxobw")
+texture_hover = ExtResource("13_ia0ow")
 
 [connection signal="pressed" from="DialogueBox/NavButtonContainer/Previous" to="." method="_on_previous_pressed"]
 [connection signal="pressed" from="DialogueBox/NavButtonContainer/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="DialogueBox/PinActionButton" to="." method="_on_pin_action_button_pressed"]

@@ -1,0 +1,7 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://bpdyc6nc57vc0"]
+
+[ext_resource type="FontFile" uid="uid://dpv0o70ac2bf3" path="res://Assets/Fonts/GentiumPlus-Regular.ttf" id="1_8ua4d"]
+
+[resource]
+base_font = ExtResource("1_8ua4d")
+variation_transform = Transform2D(1, 0, 0, 1.25, 0, 0)
