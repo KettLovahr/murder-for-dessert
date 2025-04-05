@@ -1,0 +1,103 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdqsnds01xtpa"]
+
+[ext_resource type="Script" uid="uid://d0krvq2qslisc" path="res://Scenes/DialogueUi.gd" id="1_qtu1s"]
+[ext_resource type="Resource" uid="uid://cvcrfmhw23h4k" path="res://Assets/test_dialogue.tres" id="2_625bd"]
+
+[node name="DialogueUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qtu1s")
+dialogue = ExtResource("2_625bd")
+
+[node name="TopBar" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 96.0
+grow_horizontal = 2
+
+[node name="DialogueBox" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -128.0
+offset_right = -320.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DialogueLabel" type="RichTextLabel" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/bold_italics_font_size = 28
+theme_override_font_sizes/italics_font_size = 28
+theme_override_font_sizes/mono_font_size = 28
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "The silly dialogue from our characters will go [color=yellow]here[/color]!"
+
+[node name="NavButtonContainer" type="HBoxContainer" parent="DialogueBox"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -77.0
+offset_top = -48.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Previous" type="Button" parent="DialogueBox/NavButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "<-"
+
+[node name="Next" type="Button" parent="DialogueBox/NavButtonContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "->"
+
+[node name="SpeakerColor" type="ColorRect" parent="DialogueBox"]
+layout_mode = 1
+offset_left = 16.0
+offset_top = -32.0
+offset_right = 216.0
+offset_bottom = 8.0
+color = Color(0, 0, 0, 1)
+
+[node name="SpeakerLabel" type="Label" parent="DialogueBox/SpeakerColor"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Who said it"
+
+[connection signal="pressed" from="DialogueBox/NavButtonContainer/Previous" to="." method="_on_previous_pressed"]
+[connection signal="pressed" from="DialogueBox/NavButtonContainer/Next" to="." method="_on_next_pressed"]
