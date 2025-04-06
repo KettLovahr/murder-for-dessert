@@ -20,10 +20,10 @@ func _on_hub_scene_requested(which: String) -> void:
 
 func _on_inventory_pin_used(pin: DialogueLine) -> void:
 	var shown_line: DialogueLine = $UILayer/DialogueUi.get_current_displayed_line()
+	var tree: DialogueTree = $UILayer/DialogueUi.tree
 	if shown_line.refutation == pin:
-		pass # Unlock next scene
+		$UILayer/DialogueUi._handle_change_scene(GameManager.unlock_next(tree.culprit.to_upper()))
 	else:
-		var tree: DialogueTree = $UILayer/DialogueUi.tree
 		var new_scene = GameManager.fail_scenes[tree.culprit.to_upper()]
 		$UILayer/DialogueUi._handle_change_scene(new_scene)
 		GameManager.lives -= 1

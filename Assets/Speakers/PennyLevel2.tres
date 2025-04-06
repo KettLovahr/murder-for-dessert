@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://sddac5fisc7x"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_7d6gp"]
+[ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="2_11mwk"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="3_a3u0k"]
+
+[sub_resource type="Resource" id="Resource_uob52"]
+script = ExtResource("1_7d6gp")
+speaker = ExtResource("2_11mwk")
+line = "Okay? So the kid said the same thing as me. So what?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("3_a3u0k")
+lines = Array[ExtResource("1_7d6gp")]([SubResource("Resource_uob52")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

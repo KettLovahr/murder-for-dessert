@@ -25,7 +25,13 @@ signal life_count_changed(amount: int)
 	"ZAMORA": preload("res://Assets/DialogueScenes/FailDialogue/ZamoraFail.tres"),
 }
 
+@onready var default_trees: Dictionary[String, DialogueTree]
+
+
 func _ready() -> void:
+	for item in trees:
+		default_trees[item] = trees[item].duplicate()
+	print(default_trees)
 	pass
 
 func add_pin(line: DialogueLine) -> void:
@@ -38,3 +44,17 @@ func delete_pin(line: DialogueLine) -> void:
 		if pins[i] == line:
 			pins.remove_at(i)
 			break
+
+func reset():
+	trees.clear()
+	for key in default_trees:
+		trees[key] = default_trees[key].duplicate()
+	lives = 15
+
+func unlock_next(tree: String) -> DialogueScene:
+	if tree in trees:
+		for i in range(2, 6):
+			if not trees[tree].get("level_%d_unlocked" % [i]):
+				trees[tree].set("level_%d_unlocked" % [i], true)
+				return trees[tree].get("level_%d_scene" % [i])
+	return null # This should be unreachable.
