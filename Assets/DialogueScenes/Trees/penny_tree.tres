@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=2 format=3 uid="uid://baoybn5l606vx"]
+
+[ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_1n83j"]
+
+[resource]
+script = ExtResource("1_1n83j")
+culprit = "Penny"
+level_1_unlocked = true
+level_2_unlocked = false
+level_3_unlocked = false
+level_4_unlocked = false
+level_5_unlocked = false
+metadata/_custom_type_script = "uid://c11gn3w1niotu"

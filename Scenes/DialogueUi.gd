@@ -37,12 +37,16 @@ func reset():
 			_show_tree_ui(false)
 		char_sprite.switch_to_any_sprite(null)
 		
+func init_scene(scene: DialogueScene, tree: DialogueTree):
+	dialogue = scene
+	tree = tree
+	reset()
+	$DialogueUiAnim.play("fade_in")
+		
 func _show_tree_ui(opt: bool):
-	$ConversationProgressFrame.visible = opt
-	$CulpritLabel.visible = opt
-	for i in range(1, 6):
-		var button: ConversationButton = get_node("ConversationButton%d" % [i])
-		button.visible = opt
+	for child in get_children():
+		if child.is_in_group("InvestigationOnly"):
+			child.visible = opt
 	
 func _process(_delta):
 	var vis_char = dialogue_label.visible_characters
@@ -132,3 +136,7 @@ func _on_pin_action_button_pressed() -> void:
 func _handle_change_scene(scene: DialogueScene) -> void:
 	dialogue = scene
 	reset()
+
+
+func _on_texture_button_pressed() -> void:
+	scene_completed.emit()

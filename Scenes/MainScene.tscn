@@ -1,111 +1,22 @@
-[gd_scene load_steps=9 format=3 uid="uid://c6lmcdqjg8w4j"]
+[gd_scene load_steps=6 format=3 uid="uid://c6lmcdqjg8w4j"]
 
 [ext_resource type="PackedScene" uid="uid://bdqsnds01xtpa" path="res://Scenes/DialogueUi.tscn" id="1_hpc76"]
 [ext_resource type="Script" uid="uid://dlajrxxnh1p0b" path="res://Scenes/main_scene.gd" id="1_tr2i4"]
+[ext_resource type="PackedScene" uid="uid://cb47hiwc5ubtn" path="res://Scenes/Hub.tscn" id="2_qxria"]
 [ext_resource type="PackedScene" uid="uid://bp8vtq718f8ls" path="res://Scenes/Inventory.tscn" id="3_nhkr4"]
 [ext_resource type="AudioStream" uid="uid://dcghi7j2h2x8w" path="res://Assets/Audio/bg_music.mp3" id="4_7rqgy"]
-
-[sub_resource type="Animation" id="Animation_7rqgy"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DialogueUi:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("DialogueUi:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_tr2i4"]
-resource_name = "fade_in"
-length = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DialogueUi:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("DialogueUi:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
-[sub_resource type="Animation" id="Animation_nhkr4"]
-resource_name = "fade_out"
-length = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DialogueUi:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("DialogueUi:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_qxria"]
-_data = {
-&"RESET": SubResource("Animation_7rqgy"),
-&"fade_in": SubResource("Animation_tr2i4"),
-&"fade_out": SubResource("Animation_nhkr4")
-}
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_tr2i4")
 
+[node name="GameLayer" type="CanvasLayer" parent="."]
+
+[node name="Hub" parent="GameLayer" instance=ExtResource("2_qxria")]
+
 [node name="UILayer" type="CanvasLayer" parent="."]
+layer = 2
 
 [node name="DialogueUi" parent="UILayer" instance=ExtResource("1_hpc76")]
-
-[node name="DialogueUiAnim" type="AnimationPlayer" parent="UILayer"]
-libraries = {
-&"": SubResource("AnimationLibrary_qxria")
-}
 
 [node name="Inventory" parent="UILayer" instance=ExtResource("3_nhkr4")]
 
@@ -142,4 +53,5 @@ stream = ExtResource("4_7rqgy")
 autoplay = true
 parameters/looping = true
 
+[connection signal="scene_requested" from="GameLayer/Hub" to="." method="_on_hub_scene_requested"]
 [connection signal="scene_completed" from="UILayer/DialogueUi" to="." method="_on_dialogue_ui_scene_completed"]

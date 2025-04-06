@@ -5,6 +5,10 @@ var lives: int = 15
 
 signal line_added(line: DialogueLine)
 
+@onready var trees: Dictionary[String, DialogueTree] = {
+	"ZAMORA": preload("res://Assets/DialogueScenes/Trees/zamora_tree.tres")
+}
+
 func _ready() -> void:
 	pass
 
