@@ -1,7 +1,6 @@
 extends Node
 
 var pins: Array[DialogueLine]
-var current_culprit: String = "Zamora"
 var lives: int = 15
 
 signal line_added(line: DialogueLine)

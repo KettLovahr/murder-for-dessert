@@ -20,10 +20,11 @@ func _ready():
 	
 func reset():
 	if dialogue:
-		$CulpritLabel.text = dialogue.culprit
+		$CulpritLabel.text = tree.culprit
 		current_line = 0
 		_update_line()
 		_update_tree_buttons()
+		_update_speaker_sprite(null)
 	
 func _process(_delta):
 	var vis_char = dialogue_label.visible_characters
@@ -58,16 +59,19 @@ func _update_tree_buttons():
 		var brick_wall = false
 		var previous_unlocked = true
 		for i in range(1, 6):
-			var button: TextureButton = get_node("ConversationButton%d" % [i])
+			var button: ConversationButton = get_node("ConversationButton%d" % [i])
 			button.disabled = true
 			if brick_wall:
 				button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_brick_wall.png")
 
 			var scene: DialogueScene = tree.get("level_%s_scene" % [i])
 			var unlocked: bool = tree.get("level_%s_unlocked" % [i])
+			
+
 
 			if unlocked:
 				if scene:
+					button.associated_scene = scene
 					button.disabled = false
 					previous_unlocked = true
 				else:
@@ -101,8 +105,12 @@ func _on_next_pressed() -> void:
 		_update_line()
 	else:
 		scene_completed.emit()
-	
 
 func _on_pin_action_button_pressed() -> void:
 	var line = dialogue.lines[current_line]
 	GameManager.add_pin(line)
+
+
+func _handle_change_scene(scene: DialogueScene) -> void:
+	dialogue = scene
+	reset()

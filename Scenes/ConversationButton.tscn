@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2bfgm1hawyxs"]
+
+[ext_resource type="Texture2D" uid="uid://fijwdm7ayte8" path="res://Assets/Textures/Conversation/conversation_dialogue_normal.png" id="1_5k06j"]
+[ext_resource type="Texture2D" uid="uid://cawtmchaywsyx" path="res://Assets/Textures/Conversation/conversation_dialogue_click.png" id="2_usmhn"]
+[ext_resource type="Texture2D" uid="uid://dywuqu3ryieg4" path="res://Assets/Textures/Conversation/conversation_dialogue_hover.png" id="3_dnqvg"]
+[ext_resource type="Texture2D" uid="uid://x7jeja7txl5b" path="res://Assets/Textures/Conversation/conversation_unknown.png" id="4_kx2je"]
+[ext_resource type="Script" uid="uid://b5upc5uc3sael" path="res://Scenes/ConversationButton.gd" id="5_usmhn"]
+
+[node name="ConversationButton1" type="TextureButton"]
+offset_right = 182.0
+offset_bottom = 90.0
+texture_normal = ExtResource("1_5k06j")
+texture_pressed = ExtResource("2_usmhn")
+texture_hover = ExtResource("3_dnqvg")
+texture_disabled = ExtResource("4_kx2je")
+script = ExtResource("5_usmhn")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
