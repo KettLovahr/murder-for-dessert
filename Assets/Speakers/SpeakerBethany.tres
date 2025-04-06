@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueSpeaker" load_steps=5 format=3 uid="uid://6o8k7msmm58o"]
+
+[ext_resource type="Script" uid="uid://c5xtwxj0ugiki" path="res://Util/DialogueSpeaker.gd" id="1_a7vc1"]
+[ext_resource type="Texture2D" uid="uid://cxrops8t28n4t" path="res://Assets/Textures/Characters/pin_bethany.png" id="1_ing7q"]
+[ext_resource type="Texture2D" uid="uid://c2p4eiccbu6cc" path="res://Assets/Textures/Characters/bethany_base1.png" id="3_ljxhr"]
+[ext_resource type="Texture2D" uid="uid://4lyv2weysivm" path="res://Assets/Textures/Characters/bethany_base.png" id="4_2xngq"]
+
+[resource]
+script = ExtResource("1_a7vc1")
+name = "Bethany"
+color = Color(0, 0, 0, 1)
+pinnable = true
+sprite = ExtResource("4_2xngq")
+speaking_sprite = ExtResource("3_ljxhr")
+pin_sprite = ExtResource("1_ing7q")
+metadata/_custom_type_script = "uid://c5xtwxj0ugiki"

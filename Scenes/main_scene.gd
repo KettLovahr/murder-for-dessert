@@ -2,7 +2,7 @@ extends Node2D
 
 func _ready() -> void:
 	init_scene(
-		load("res://Assets/DialogueScenes/new_test_dialogue.tres"),
+		load("res://Assets/DialogueScenes/many_characters_test.tres"),
 		null
 	)
 

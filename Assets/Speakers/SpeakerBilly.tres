@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueSpeaker" load_steps=5 format=3 uid="uid://ce8jddxao0kbu"]
+
+[ext_resource type="Script" uid="uid://c5xtwxj0ugiki" path="res://Util/DialogueSpeaker.gd" id="1_0r8o1"]
+[ext_resource type="Texture2D" uid="uid://dtqkbofthn1ua" path="res://Assets/Textures/Characters/pin_billy.png" id="1_vlytp"]
+[ext_resource type="Texture2D" uid="uid://k4ewp3diswhg" path="res://Assets/Textures/Characters/billy_base1.png" id="3_1ii1e"]
+[ext_resource type="Texture2D" uid="uid://b4qp40c4mnku6" path="res://Assets/Textures/Characters/billy_base.png" id="4_c5ny4"]
+
+[resource]
+script = ExtResource("1_0r8o1")
+name = "Billy"
+color = Color(0, 0, 0, 1)
+pinnable = true
+sprite = ExtResource("4_c5ny4")
+speaking_sprite = ExtResource("3_1ii1e")
+pin_sprite = ExtResource("1_vlytp")
+metadata/_custom_type_script = "uid://c5xtwxj0ugiki"

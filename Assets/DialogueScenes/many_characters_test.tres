@@ -1,0 +1,69 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=18 format=3 uid="uid://duf52wfct3ypa"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_id1ly"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_1m3hs"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="3_ttyxo"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="3_u7w74"]
+[ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="4_1jaug"]
+[ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="4_mt70m"]
+[ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="5_soel1"]
+[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="6_murah"]
+
+[sub_resource type="Resource" id="Resource_u7w74"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("2_1m3hs")
+line = "Let's go over what happened, yeah?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_mt70m"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("4_mt70m")
+line = "I... I came in with my poor, dear Phillip... we had this date scheduled for months!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1jaug"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("4_1jaug")
+line = "The beautiful lady need to tend to her needs, in the bathroom. To keep up her beauty of course."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_soel1"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("5_soel1")
+line = "And [i]someone[/i] came in and cut up the pineapple. And somehow nobody saw or heard anything."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_murah"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("6_murah")
+line = "I saw it! I saw it!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_7x1gx"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("3_u7w74")
+line = "Aww... isn't the little one so cute?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_4ledf"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("2_1m3hs")
+line = "Pipe down, everyone, this investigation is pretty high stakes."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_4g0gb"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("3_u7w74")
+line = "Yes, they're beautiful rollerskates!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0trbm"]
+script = ExtResource("1_id1ly")
+speaker = ExtResource("4_mt70m")
+line = "Oh nooo... will we ever find our culprit at this rate?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("3_ttyxo")
+lines = Array[ExtResource("1_id1ly")]([SubResource("Resource_u7w74"), SubResource("Resource_mt70m"), SubResource("Resource_1jaug"), SubResource("Resource_soel1"), SubResource("Resource_murah"), SubResource("Resource_7x1gx"), SubResource("Resource_4ledf"), SubResource("Resource_4g0gb"), SubResource("Resource_0trbm")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

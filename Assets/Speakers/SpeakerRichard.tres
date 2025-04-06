@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueSpeaker" load_steps=5 format=3 uid="uid://1mkrxxaulhtu"]
+
+[ext_resource type="Texture2D" uid="uid://so077nrku8dn" path="res://Assets/Textures/Characters/pin_richard.png" id="1_kskbk"]
+[ext_resource type="Script" uid="uid://c5xtwxj0ugiki" path="res://Util/DialogueSpeaker.gd" id="1_t15fo"]
+[ext_resource type="Texture2D" uid="uid://icoo72un3v47" path="res://Assets/Textures/Characters/richard_base1.png" id="3_3s6jl"]
+[ext_resource type="Texture2D" uid="uid://dgfnlomelyns1" path="res://Assets/Textures/Characters/richard_base.png" id="4_hesav"]
+
+[resource]
+script = ExtResource("1_t15fo")
+name = "Richard"
+color = Color(0, 0, 0, 1)
+pinnable = true
+sprite = ExtResource("4_hesav")
+speaking_sprite = ExtResource("3_3s6jl")
+pin_sprite = ExtResource("1_kskbk")
+metadata/_custom_type_script = "uid://c5xtwxj0ugiki"
