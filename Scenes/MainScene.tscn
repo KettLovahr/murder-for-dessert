@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://c6lmcdqjg8w4j"]
+[gd_scene load_steps=9 format=3 uid="uid://c6lmcdqjg8w4j"]
 
 [ext_resource type="PackedScene" uid="uid://bdqsnds01xtpa" path="res://Scenes/DialogueUi.tscn" id="1_hpc76"]
 [ext_resource type="Script" uid="uid://dlajrxxnh1p0b" path="res://Scenes/main_scene.gd" id="1_tr2i4"]
 [ext_resource type="PackedScene" uid="uid://bp8vtq718f8ls" path="res://Scenes/Inventory.tscn" id="3_nhkr4"]
+[ext_resource type="AudioStream" uid="uid://dcghi7j2h2x8w" path="res://Assets/Audio/bg_music.mp3" id="4_7rqgy"]
 
 [sub_resource type="Animation" id="Animation_7rqgy"]
 length = 0.001
@@ -135,5 +136,10 @@ offset_top = 356.0
 offset_right = 564.0
 offset_bottom = 440.0
 text = "Penny"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_7rqgy")
+autoplay = true
+parameters/looping = true
 
 [connection signal="scene_completed" from="UILayer/DialogueUi" to="." method="_on_dialogue_ui_scene_completed"]

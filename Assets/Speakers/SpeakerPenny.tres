@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueSpeaker" load_steps=5 format=3 uid="uid://dsofx6suvp8el"]
+
+[ext_resource type="Script" uid="uid://c5xtwxj0ugiki" path="res://Util/DialogueSpeaker.gd" id="1_aryvf"]
+[ext_resource type="Texture2D" uid="uid://yemk7k6p03so" path="res://Assets/Textures/Characters/pin_penny.png" id="1_xcuua"]
+[ext_resource type="Texture2D" uid="uid://bm6cxhqk1ohjl" path="res://Assets/Textures/Characters/penny_base1.png" id="3_a3pds"]
+[ext_resource type="Texture2D" uid="uid://bppnu3541tnlj" path="res://Assets/Textures/Characters/penny_base.png" id="4_52htc"]
+
+[resource]
+script = ExtResource("1_aryvf")
+name = "Penny"
+color = Color(0, 0, 0, 1)
+pinnable = true
+sprite = ExtResource("4_52htc")
+speaking_sprite = ExtResource("3_a3pds")
+pin_sprite = ExtResource("1_xcuua")
+metadata/_custom_type_script = "uid://c5xtwxj0ugiki"

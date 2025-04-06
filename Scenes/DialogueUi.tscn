@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d0krvq2qslisc" path="res://Scenes/DialogueUi.gd" id="1_qtu1s"]
 [ext_resource type="Shader" uid="uid://dl3psdk7hgtqd" path="res://Scenes/blur_background.gdshader" id="2_bpahb"]
 [ext_resource type="Texture2D" uid="uid://dve8gvkiw7bp5" path="res://Assets/Textures/Conversation/conversation_bg_fade.png" id="3_5f4ax"]
+[ext_resource type="Script" uid="uid://dw81rpjj2x4x8" path="res://Scenes/CharacterSprite.gd" id="3_ia0ow"]
 [ext_resource type="Texture2D" uid="uid://cua7qrb5lu03b" path="res://Assets/Textures/Conversation/dialogue_box.png" id="4_vmg8r"]
 [ext_resource type="FontFile" uid="uid://bpoqa1mw116n5" path="res://Assets/Fonts/AtkinsonHyperlegible-Regular.ttf" id="5_wscab"]
 [ext_resource type="Texture2D" uid="uid://bd2d6lqlafk4x" path="res://Assets/Textures/Conversation/dialogue_previous.png" id="6_ayvv4"]
@@ -78,9 +79,6 @@ _data = {
 &"switch_anim": SubResource("Animation_vxeye")
 }
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q04xg"]
-texture = ExtResource("4_vmg8r")
-
 [node name="DialogueUi" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -101,6 +99,7 @@ grow_vertical = 2
 
 [node name="CharacterSprite" type="Sprite2D" parent="."]
 centered = false
+script = ExtResource("3_ia0ow")
 
 [node name="SpriteAnimPlayer" type="AnimationPlayer" parent="CharacterSprite"]
 libraries = {
@@ -111,21 +110,12 @@ libraries = {
 texture = ExtResource("3_5f4ax")
 centered = false
 
-[node name="DialogueBox" type="Panel" parent="."]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -253.0
-offset_right = -300.0
-offset_bottom = -3.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxTexture_q04xg")
+[node name="DialogueBox" type="Sprite2D" parent="."]
+position = Vector2(0, 470)
+texture = ExtResource("4_vmg8r")
+centered = false
 
 [node name="DialogueLabel" type="RichTextLabel" parent="DialogueBox"]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -146,7 +136,6 @@ text = "The silly dialogue from our characters will go [color=yellow]here[/color
 scroll_active = false
 
 [node name="NavButtonContainer" type="HBoxContainer" parent="DialogueBox"]
-layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
@@ -170,7 +159,6 @@ size_flags_horizontal = 3
 texture_normal = ExtResource("7_fsg10")
 
 [node name="SpeakerLabel" type="Label" parent="DialogueBox"]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -187,7 +175,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="PinActionButton" type="TextureButton" parent="DialogueBox"]
-layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0

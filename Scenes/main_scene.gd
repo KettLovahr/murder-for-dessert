@@ -3,7 +3,7 @@ extends Node2D
 func _ready() -> void:
 	init_scene(
 		load("res://Assets/DialogueScenes/new_test_dialogue.tres"),
-		load("res://Assets/DialogueScenes/Trees/zamora_tree.tres")
+		null
 	)
 
 func _on_dialogue_ui_scene_completed() -> void:
