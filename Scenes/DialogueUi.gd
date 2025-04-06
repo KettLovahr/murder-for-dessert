@@ -24,7 +24,7 @@ var current_line: int = 0
 
 func _ready():
 	reset()
-	
+
 func reset():
 	if dialogue:
 		current_line = 0
@@ -36,21 +36,21 @@ func reset():
 		else:
 			_show_tree_ui(false)
 		char_sprite.switch_to_any_sprite(null)
-		
+
 func init_scene(scene: DialogueScene, new_tree: DialogueTree):
 	dialogue = scene
 	tree = new_tree
 	reset()
 	$DialogueUiAnim.play("fade_in")
-	
+
 func fade_out():
 	$DialogueUiAnim.play("fade_out")
-		
+
 func _show_tree_ui(opt: bool):
 	for child in get_children():
 		if child.is_in_group("InvestigationOnly"):
 			child.visible = opt
-	
+
 func _process(_delta):
 	var vis_char = dialogue_label.visible_characters
 	if vis_char < len(dialogue_label.text) and vis_char != -1:
@@ -83,7 +83,7 @@ func _update_line():
 		$DialogueBox.texture = dialogue_box_noname
 
 	_update_buttons()
-	
+
 func _update_buttons():
 	$DialogueBox/NavButtonContainer/Previous.disabled = current_line == 0
 	# $DialogueBox/NavButtonContainer/Next.disabled = current_line == len(dialogue.lines) - 1
@@ -139,7 +139,7 @@ func _on_pin_action_button_pressed() -> void:
 func _handle_change_scene(scene: DialogueScene) -> void:
 	dialogue = scene
 	reset()
-	
+
 func get_current_displayed_line() -> DialogueLine:
 	return dialogue.lines[current_line]
 

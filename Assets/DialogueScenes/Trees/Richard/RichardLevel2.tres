@@ -67,7 +67,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_50je1"]
 script = ExtResource("1_gljiv")
 speaker = ExtResource("2_x4gn7")
-line = "My dad called me, he said [b]I was removed from the will unless I go out there and get a real job.[/b]"
+line = "My dad called me, he said [color=yellow]I was removed from the will unless I go out there and get a real job.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ee40v"]
@@ -113,13 +113,11 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_vbvlf"]
 script = ExtResource("1_gljiv")
-speaker = ExtResource("3_co82a")
 line = "[i]I proceed to mimic the act of shutting my lips with a zipper, locking it and throwing the key away.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_madyg"]
 script = ExtResource("1_gljiv")
-speaker = ExtResource("2_x4gn7")
 line = "[i]Richard rolls his eyes.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 

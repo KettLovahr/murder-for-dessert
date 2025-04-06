@@ -17,7 +17,6 @@ script = ExtResource("1_tr2i4")
 layer = 2
 
 [node name="DialogueUi" parent="UILayer" instance=ExtResource("1_hpc76")]
-visible = false
 
 [node name="Inventory" parent="UILayer" instance=ExtResource("3_nhkr4")]
 
