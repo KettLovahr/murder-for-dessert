@@ -1,6 +1,8 @@
 extends Control
 
 @export var dialogue: DialogueScene
+@export var tree: DialogueTree
+
 @export var culprit: String
 
 @onready var dialogue_label: RichTextLabel = $DialogueBox/DialogueLabel
@@ -21,7 +23,7 @@ func reset():
 		$CulpritLabel.text = dialogue.culprit
 		current_line = 0
 		_update_line()
-		
+		_update_tree_buttons()
 	
 func _process(_delta):
 	var vis_char = dialogue_label.visible_characters
@@ -50,6 +52,35 @@ func _update_line():
 func _update_buttons():
 	$DialogueBox/NavButtonContainer/Previous.disabled = current_line == 0
 	# $DialogueBox/NavButtonContainer/Next.disabled = current_line == len(dialogue.lines) - 1
+
+func _update_tree_buttons():
+	if tree:
+		var brick_wall = false
+		var previous_unlocked = true
+		for i in range(1, 6):
+			var button: TextureButton = get_node("ConversationButton%d" % [i])
+			button.disabled = true
+			if brick_wall:
+				button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_brick_wall.png")
+
+			var scene: DialogueScene = tree.get("level_%s_scene" % [i])
+			var unlocked: bool = tree.get("level_%s_unlocked" % [i])
+
+			if unlocked:
+				if scene:
+					button.disabled = false
+					previous_unlocked = true
+				else:
+					brick_wall = true
+			else:
+				if previous_unlocked:
+					button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_next.png")
+					previous_unlocked = false
+				else:
+					button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_unknown.png")
+			if brick_wall:
+				button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_brick_wall.png")
+
 
 func _update_speaker_sprite(to: Texture2D):
 	if $CharacterSprite.texture != to:

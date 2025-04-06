@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bdqsnds01xtpa"]
+[gd_scene load_steps=22 format=3 uid="uid://bdqsnds01xtpa"]
 
 [ext_resource type="Script" uid="uid://d0krvq2qslisc" path="res://Scenes/DialogueUi.gd" id="1_qtu1s"]
 [ext_resource type="Shader" uid="uid://dl3psdk7hgtqd" path="res://Scenes/blur_background.gdshader" id="2_bpahb"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://deu8fhng5ldy" path="res://Assets/Textures/Conversation/dialogue_pin_hover.png" id="11_vxeye"]
 [ext_resource type="Texture2D" uid="uid://cawtmchaywsyx" path="res://Assets/Textures/Conversation/conversation_dialogue_click.png" id="12_rxobw"]
 [ext_resource type="Texture2D" uid="uid://dywuqu3ryieg4" path="res://Assets/Textures/Conversation/conversation_dialogue_hover.png" id="13_ia0ow"]
+[ext_resource type="Texture2D" uid="uid://x7jeja7txl5b" path="res://Assets/Textures/Conversation/conversation_unknown.png" id="16_vxeye"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vxeye"]
 shader = ExtResource("2_bpahb")
@@ -233,6 +234,7 @@ offset_bottom = 270.0
 texture_normal = ExtResource("11_3kq8a")
 texture_pressed = ExtResource("12_rxobw")
 texture_hover = ExtResource("13_ia0ow")
+texture_disabled = ExtResource("16_vxeye")
 
 [node name="ConversationButton2" type="TextureButton" parent="."]
 layout_mode = 2
