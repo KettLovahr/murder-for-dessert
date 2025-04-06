@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bfu0y5pq06x7k" path="res://Assets/Textures/Hub/hub_richard_hover.png" id="9_hrdjd"]
 [ext_resource type="Texture2D" uid="uid://vovge0el0g6q" path="res://Assets/Textures/Hub/hub_zamora.png" id="10_yam5d"]
 [ext_resource type="Texture2D" uid="uid://dcu2h1i0as8i5" path="res://Assets/Textures/Hub/hub_zamora_hover.png" id="11_patib"]
-[ext_resource type="Texture2D" uid="uid://ywqtvl0srjt4" path="res://Assets/Textures/Hub/film_grain.png" id="13_5byxb"]
+[ext_resource type="PackedScene" uid="uid://1qjypdjpnauw" path="res://Scenes/FilmGrain.tscn" id="13_5byxb"]
 
 [node name="Hub" type="Node2D"]
 script = ExtResource("1_cjtts")
@@ -61,12 +61,7 @@ offset_bottom = 688.0
 texture_normal = ExtResource("2_cjtts")
 texture_hover = ExtResource("3_5byxb")
 
-[node name="FilmGrain" type="Sprite2D" parent="."]
-texture_repeat = 2
-texture = ExtResource("13_5byxb")
-centered = false
-region_enabled = true
-region_rect = Rect2(0, 0, 1280, 720)
+[node name="FilmGrain" parent="." instance=ExtResource("13_5byxb")]
 
 [connection signal="pressed" from="BillyButton" to="." method="_on_billy_button_pressed"]
 [connection signal="pressed" from="PennyButton" to="." method="_on_penny_button_pressed"]

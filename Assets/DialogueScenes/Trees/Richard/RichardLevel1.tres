@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://qv5eqohsc56t"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_yijuq"]
+[ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="2_8veiu"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_up21c"]
+
+[sub_resource type="Resource" id="Resource_e1sno"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("2_8veiu")
+line = "Good evening."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_up21c")
+lines = Array[ExtResource("1_yijuq")]([SubResource("Resource_e1sno")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://ccaji5lqges54"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_krfbu"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_p63ox"]
+[ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="2_y86m3"]
+
+[sub_resource type="Resource" id="Resource_g5xus"]
+script = ExtResource("1_krfbu")
+speaker = ExtResource("2_y86m3")
+line = "Hey."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_p63ox")
+lines = Array[ExtResource("1_krfbu")]([SubResource("Resource_g5xus")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://1qjypdjpnauw"]
+
+[ext_resource type="Texture2D" uid="uid://ywqtvl0srjt4" path="res://Assets/Textures/Hub/film_grain.png" id="1_bvgpa"]
+[ext_resource type="Script" uid="uid://de64pego847pr" path="res://Scenes/FilmGrain.gd" id="2_1de1e"]
+
+[node name="FilmGrain" type="Sprite2D"]
+texture_repeat = 2
+texture = ExtResource("1_bvgpa")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 1280, 720)
+script = ExtResource("2_1de1e")

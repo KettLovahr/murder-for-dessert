@@ -8,7 +8,7 @@ func _ready() -> void:
 	pass
 
 func _on_dialogue_ui_scene_completed() -> void:
-	$UILayer/DialogueUiAnim.play("fade_out")
+	$UILayer/DialogueUi.fade_out()
 
 func _on_hub_scene_requested(which: String) -> void:
 	if which in GameManager.trees:

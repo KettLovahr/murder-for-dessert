@@ -37,11 +37,14 @@ func reset():
 			_show_tree_ui(false)
 		char_sprite.switch_to_any_sprite(null)
 		
-func init_scene(scene: DialogueScene, tree: DialogueTree):
+func init_scene(scene: DialogueScene, new_tree: DialogueTree):
 	dialogue = scene
-	tree = tree
+	tree = new_tree
 	reset()
 	$DialogueUiAnim.play("fade_in")
+	
+func fade_out():
+	$DialogueUiAnim.play("fade_out")
 		
 func _show_tree_ui(opt: bool):
 	for child in get_children():

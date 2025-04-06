@@ -2,10 +2,6 @@ extends Node2D
 
 signal scene_requested(which: String)
 
-func _process(delta: float) -> void:
-	$FilmGrain.region_rect.position.x = randf() * 1280
-	$FilmGrain.region_rect.position.y = randf() * 720
-
 func _on_bethany_button_pressed() -> void:
 	scene_requested.emit("BETHANY")
 

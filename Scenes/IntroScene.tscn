@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://62t5uh3akt5w"]
+[gd_scene load_steps=5 format=3 uid="uid://62t5uh3akt5w"]
+
+[ext_resource type="Script" uid="uid://dhy7fqluoxv4p" path="res://Scenes/IntroScene.gd" id="1_qef2n"]
+[ext_resource type="Texture2D" uid="uid://8tp12cyobp17" path="res://Assets/Textures/office.png" id="2_d4qc4"]
+[ext_resource type="PackedScene" uid="uid://bdqsnds01xtpa" path="res://Scenes/DialogueUi.tscn" id="3_d4qc4"]
+[ext_resource type="PackedScene" uid="uid://1qjypdjpnauw" path="res://Scenes/FilmGrain.tscn" id="4_pseuf"]
 
 [node name="IntroScene" type="Node2D"]
+script = ExtResource("1_qef2n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_d4qc4")
+centered = false
+
+[node name="FilmGrain" parent="." instance=ExtResource("4_pseuf")]
+
+[node name="DialogueUi" parent="." instance=ExtResource("3_d4qc4")]
+
+[connection signal="scene_completed" from="DialogueUi" to="." method="_on_dialogue_ui_scene_completed"]
