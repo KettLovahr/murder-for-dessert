@@ -11,6 +11,7 @@ signal requested_visibility(who: PinButton)
 func _ready() -> void:
 	$Tooltip/LineLabel.bbcode_enabled = true
 	$Tooltip/LineLabel.text = associated_line.line
+	texture_normal = associated_line.speaker.pin_sprite
 
 func _on_use_button_pressed() -> void:
 	use_line.emit(associated_line)

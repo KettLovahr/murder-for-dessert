@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dyak78v8h5ysj"]
 
-[ext_resource type="Texture2D" uid="uid://khehg367w0xh" path="res://Assets/Textures/Conversation/pin_button_placeholder.png" id="1_drgyv"]
+[ext_resource type="Texture2D" uid="uid://danxf1spi7y0c" path="res://Assets/Textures/Characters/pin_zamora.png" id="1_kelam"]
 [ext_resource type="Script" uid="uid://bxiyenjtdltqw" path="res://Scenes/PinButton.gd" id="2_s6jnu"]
 [ext_resource type="Texture2D" uid="uid://ydi8oqeeme1b" path="res://Assets/Textures/Conversation/pin_tooltip.png" id="3_p3vwy"]
 [ext_resource type="Texture2D" uid="uid://bvrg4coh8tj0e" path="res://Assets/Textures/Conversation/pin_delete_normal.png" id="4_kelam"]
@@ -12,12 +12,12 @@
 [ext_resource type="FontFile" uid="uid://bpoqa1mw116n5" path="res://Assets/Fonts/AtkinsonHyperlegible-Regular.ttf" id="10_kelam"]
 
 [node name="PinButton" type="TextureButton"]
-texture_normal = ExtResource("1_drgyv")
+texture_normal = ExtResource("1_kelam")
 script = ExtResource("2_s6jnu")
 
 [node name="Tooltip" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(183, 142)
+position = Vector2(198, 170)
 texture = ExtResource("3_p3vwy")
 
 [node name="DeleteButton" type="TextureButton" parent="Tooltip"]

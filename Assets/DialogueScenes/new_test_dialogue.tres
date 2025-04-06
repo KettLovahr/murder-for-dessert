@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=10 format=3 uid="uid://48h8dbm4wdo"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=26 format=3 uid="uid://48h8dbm4wdo"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_ge1ou"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_vxphf"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="3_b8fj3"]
+[ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="3_vxphf"]
 
 [sub_resource type="Resource" id="Resource_lxhoy"]
 script = ExtResource("1_ge1ou")
@@ -40,7 +41,93 @@ speaker = ExtResource("2_vxphf")
 line = "[i]When a particularly [color=yellow]fly[/color] woman would step into my office...[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
+[sub_resource type="Resource" id="Resource_b8fj3"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("3_vxphf")
+line = "Bzzzz...."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_vxphf"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("2_vxphf")
+line = "\"Bzzzz\" to you too, my good lady. What is it I could help you with?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_g6mlg"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("3_vxphf")
+line = "Mr. Detective, you MUST help me! My.... my husband..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_vxdyp"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("3_vxphf")
+line = "Phillip, my husband, they've KILLED HIM!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_jmblw"]
+script = ExtResource("1_ge1ou")
+line = "[i]Teary-eyed, she pulls from her purse a picture of a pineapple, a wistful smile beneath her sorrows as she remembers her loved one.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ykxs5"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("2_vxphf")
+line = "My God... He was truly a handsome young man."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_opsrx"]
+script = ExtResource("1_ge1ou")
+line = "[i]The widowed fly reaches for her purse once more, turning away in fear and disgust, sliding a picture of the crime scene onto my desk.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_623pc"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("3_vxphf")
+line = "We were having a romantic dinner night in this one fancy restaurant... I had gone away just for a few minutes, and when I got back, he... [i]sniffle[/i] he..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_grr2m"]
+script = ExtResource("1_ge1ou")
+line = "[i]It was a shocking sight. Cut into pieces as his juices spilt out.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_4vsym"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("2_vxphf")
+line = "Dear God. Such a cruel and unusual act."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_q3a0c"]
+script = ExtResource("1_ge1ou")
+line = "[i]You struggled to maintain your composure looking at the picture she's shown you. It's clear...[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1vgrw"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("2_vxphf")
+line = "[i]We have to get to the bottom of this.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_l8nt2"]
+script = ExtResource("1_ge1ou")
+line = "[i]The fly looks at you with her hopeful compound eyes.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_tki3s"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("3_vxphf")
+line = "So, will you help me, Mr. Detective? Will you put the culprit behind bars?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_um3f6"]
+script = ExtResource("1_ge1ou")
+speaker = ExtResource("2_vxphf")
+line = "My good lady, this is exactly what I'm here for. I'll bring justice back to this rotten city."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
 [resource]
 script = ExtResource("3_b8fj3")
-lines = Array[ExtResource("1_ge1ou")]([SubResource("Resource_lxhoy"), SubResource("Resource_lqeuv"), SubResource("Resource_8j1cd"), SubResource("Resource_rymnp"), SubResource("Resource_mcq43"), SubResource("Resource_5hwao")])
+lines = Array[ExtResource("1_ge1ou")]([SubResource("Resource_lxhoy"), SubResource("Resource_lqeuv"), SubResource("Resource_8j1cd"), SubResource("Resource_rymnp"), SubResource("Resource_mcq43"), SubResource("Resource_5hwao"), SubResource("Resource_b8fj3"), SubResource("Resource_vxphf"), SubResource("Resource_g6mlg"), SubResource("Resource_vxdyp"), SubResource("Resource_jmblw"), SubResource("Resource_ykxs5"), SubResource("Resource_opsrx"), SubResource("Resource_623pc"), SubResource("Resource_grr2m"), SubResource("Resource_4vsym"), SubResource("Resource_q3a0c"), SubResource("Resource_1vgrw"), SubResource("Resource_l8nt2"), SubResource("Resource_tki3s"), SubResource("Resource_um3f6")])
+culprit = "Zamora"
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueSpeaker" load_steps=4 format=3 uid="uid://dmkdowsawsdk3"]
+
+[ext_resource type="Texture2D" uid="uid://danxf1spi7y0c" path="res://Assets/Textures/Characters/pin_zamora.png" id="1_ruu24"]
+[ext_resource type="Script" uid="uid://c5xtwxj0ugiki" path="res://Util/DialogueSpeaker.gd" id="1_y3q68"]
+[ext_resource type="Texture2D" uid="uid://cabyu0a6clata" path="res://Assets/Textures/Characters/zamora_base.png" id="2_t02hg"]
+
+[resource]
+script = ExtResource("1_y3q68")
+name = "Zamora"
+color = Color(0, 0, 0, 1)
+pinnable = true
+speaker_sprite = ExtResource("2_t02hg")
+pin_sprite = ExtResource("1_ruu24")
+metadata/_custom_type_script = "uid://c5xtwxj0ugiki"

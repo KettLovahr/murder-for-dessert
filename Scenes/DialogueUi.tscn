@@ -1,7 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://bdqsnds01xtpa"]
+[gd_scene load_steps=21 format=3 uid="uid://bdqsnds01xtpa"]
 
 [ext_resource type="Script" uid="uid://d0krvq2qslisc" path="res://Scenes/DialogueUi.gd" id="1_qtu1s"]
-[ext_resource type="Resource" uid="uid://48h8dbm4wdo" path="res://Assets/DialogueScenes/new_test_dialogue.tres" id="2_vxeye"]
+[ext_resource type="Shader" uid="uid://dl3psdk7hgtqd" path="res://Scenes/blur_background.gdshader" id="2_bpahb"]
 [ext_resource type="Texture2D" uid="uid://dve8gvkiw7bp5" path="res://Assets/Textures/Conversation/conversation_bg_fade.png" id="3_5f4ax"]
 [ext_resource type="Texture2D" uid="uid://cua7qrb5lu03b" path="res://Assets/Textures/Conversation/dialogue_box.png" id="4_vmg8r"]
 [ext_resource type="FontFile" uid="uid://bpoqa1mw116n5" path="res://Assets/Fonts/AtkinsonHyperlegible-Regular.ttf" id="5_wscab"]
@@ -15,7 +15,70 @@
 [ext_resource type="Texture2D" uid="uid://deu8fhng5ldy" path="res://Assets/Textures/Conversation/dialogue_pin_hover.png" id="11_vxeye"]
 [ext_resource type="Texture2D" uid="uid://cawtmchaywsyx" path="res://Assets/Textures/Conversation/conversation_dialogue_click.png" id="12_rxobw"]
 [ext_resource type="Texture2D" uid="uid://dywuqu3ryieg4" path="res://Assets/Textures/Conversation/conversation_dialogue_hover.png" id="13_ia0ow"]
-[ext_resource type="PackedScene" uid="uid://bp8vtq718f8ls" path="res://Scenes/Inventory.tscn" id="13_vxeye"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vxeye"]
+shader = ExtResource("2_bpahb")
+
+[sub_resource type="Animation" id="Animation_g62iv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vxeye"]
+resource_name = "switch_anim"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 32), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nxj7p"]
+_data = {
+&"RESET": SubResource("Animation_g62iv"),
+&"switch_anim": SubResource("Animation_vxeye")
+}
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q04xg"]
 texture = ExtResource("4_vmg8r")
@@ -28,7 +91,23 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qtu1s")
-dialogue = ExtResource("2_vxeye")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_vxeye")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterSprite" type="Sprite2D" parent="."]
+centered = false
+
+[node name="SpriteAnimPlayer" type="AnimationPlayer" parent="CharacterSprite"]
+libraries = {
+&"": SubResource("AnimationLibrary_nxj7p")
+}
 
 [node name="ConversationBgFade" type="Sprite2D" parent="."]
 texture = ExtResource("3_5f4ax")
@@ -55,17 +134,18 @@ anchor_bottom = 1.0
 offset_left = 40.0
 offset_top = 93.0
 offset_right = -47.0
-offset_bottom = -48.0
+offset_bottom = -24.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("5_wscab")
-theme_override_font_sizes/bold_italics_font_size = 28
-theme_override_font_sizes/italics_font_size = 28
-theme_override_font_sizes/mono_font_size = 28
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/mono_font_size = 24
 theme_override_font_sizes/normal_font_size = 28
 theme_override_font_sizes/bold_font_size = 28
 bbcode_enabled = true
 text = "The silly dialogue from our characters will go [color=yellow]here[/color]!"
+scroll_active = false
 
 [node name="NavButtonContainer" type="HBoxContainer" parent="DialogueBox"]
 layout_mode = 1
@@ -127,8 +207,6 @@ position = Vector2(947, 60)
 texture = ExtResource("9_fsg10")
 centered = false
 
-[node name="Inventory" parent="." instance=ExtResource("13_vxeye")]
-
 [node name="CulpritLabel" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -143,24 +221,6 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("8_3kq8a")
 theme_override_font_sizes/font_size = 48
 text = "Culprit"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="LivesLabel" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1153.0
-offset_top = 5.0
-offset_right = -54.0
-offset_bottom = -638.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_wscab")
-theme_override_font_sizes/font_size = 48
-text = "15"
 horizontal_alignment = 1
 vertical_alignment = 1
 
