@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://buw0hodpoqj30"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_q1sv5"]
+[ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="2_2t0hy"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_jei88"]
+
+[sub_resource type="Resource" id="Resource_b4hue"]
+script = ExtResource("1_q1sv5")
+speaker = ExtResource("2_2t0hy")
+line = "Huh? What are you on about?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_jei88")
+lines = Array[ExtResource("1_q1sv5")]([SubResource("Resource_b4hue")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

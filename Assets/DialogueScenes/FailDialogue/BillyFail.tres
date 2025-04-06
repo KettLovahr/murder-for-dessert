@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://0aj1f7xu0j0"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_4ori3"]
+[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="2_1i01n"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_eosnt"]
+
+[sub_resource type="Resource" id="Resource_wpxm0"]
+script = ExtResource("1_4ori3")
+speaker = ExtResource("2_1i01n")
+line = "No way, man!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_eosnt")
+lines = Array[ExtResource("1_4ori3")]([SubResource("Resource_wpxm0")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

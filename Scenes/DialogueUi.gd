@@ -139,7 +139,9 @@ func _on_pin_action_button_pressed() -> void:
 func _handle_change_scene(scene: DialogueScene) -> void:
 	dialogue = scene
 	reset()
-
+	
+func get_current_displayed_line() -> DialogueLine:
+	return dialogue.lines[current_line]
 
 func _on_texture_button_pressed() -> void:
 	scene_completed.emit()

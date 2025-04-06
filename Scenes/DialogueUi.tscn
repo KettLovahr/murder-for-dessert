@@ -1,7 +1,7 @@
-[gd_scene load_steps=26 format=3 uid="uid://bdqsnds01xtpa"]
+[gd_scene load_steps=25 format=3 uid="uid://bdqsnds01xtpa"]
 
 [ext_resource type="Script" uid="uid://d0krvq2qslisc" path="res://Scenes/DialogueUi.gd" id="1_qtu1s"]
-[ext_resource type="Shader" uid="uid://dl3psdk7hgtqd" path="res://Scenes/blur_background.gdshader" id="2_bpahb"]
+[ext_resource type="Texture2D" uid="uid://bo27j8t0po0d7" path="res://Assets/Textures/bg_interrog.png" id="2_g62iv"]
 [ext_resource type="Texture2D" uid="uid://dve8gvkiw7bp5" path="res://Assets/Textures/Conversation/conversation_bg_fade.png" id="3_5f4ax"]
 [ext_resource type="Script" uid="uid://dw81rpjj2x4x8" path="res://Scenes/CharacterSprite.gd" id="3_ia0ow"]
 [ext_resource type="Texture2D" uid="uid://cua7qrb5lu03b" path="res://Assets/Textures/Conversation/dialogue_box.png" id="4_vmg8r"]
@@ -17,9 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://ctwvkd201bchc" path="res://Assets/Textures/Conversation/back_normal.png" id="15_g62iv"]
 [ext_resource type="Texture2D" uid="uid://bushwh74msypa" path="res://Assets/Textures/Conversation/back_click.png" id="16_nxj7p"]
 [ext_resource type="Texture2D" uid="uid://d028am615nwx6" path="res://Assets/Textures/Conversation/back_hover.png" id="17_gnsvr"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_vxeye"]
-shader = ExtResource("2_bpahb")
 
 [sub_resource type="Animation" id="Animation_g62iv"]
 length = 0.001
@@ -173,7 +170,6 @@ _data = {
 }
 
 [node name="DialogueUi" type="Control"]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -182,14 +178,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qtu1s")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-material = SubResource("ShaderMaterial_vxeye")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="ColorRect" type="Sprite2D" parent="."]
+texture = ExtResource("2_g62iv")
+centered = false
 
 [node name="CharacterSprite" type="Sprite2D" parent="."]
 centered = false

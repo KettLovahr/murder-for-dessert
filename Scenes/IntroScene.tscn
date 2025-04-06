@@ -15,5 +15,11 @@ centered = false
 [node name="FilmGrain" parent="." instance=ExtResource("4_pseuf")]
 
 [node name="DialogueUi" parent="." instance=ExtResource("3_d4qc4")]
+visible = false
+
+[node name="ColorRect" parent="DialogueUi" index="0"]
+visible = false
 
 [connection signal="scene_completed" from="DialogueUi" to="." method="_on_dialogue_ui_scene_completed"]
+
+[editable path="DialogueUi"]

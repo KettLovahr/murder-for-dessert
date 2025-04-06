@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://gnalftvvg32d"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_gd6wg"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="2_1t1e4"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_e7g1b"]
+
+[sub_resource type="Resource" id="Resource_ith3u"]
+script = ExtResource("1_gd6wg")
+speaker = ExtResource("2_1t1e4")
+line = "Hmm? Can you speak up, dear? I can't hear you all that well."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_e7g1b")
+lines = Array[ExtResource("1_gd6wg")]([SubResource("Resource_ith3u")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

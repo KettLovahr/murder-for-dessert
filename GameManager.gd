@@ -1,9 +1,13 @@
 extends Node
 
 var pins: Array[DialogueLine]
-var lives: int = 15
+var lives: int = 15:
+	set(v):
+		life_count_changed.emit(v)
+		lives = v
 
 signal line_added(line: DialogueLine)
+signal life_count_changed(amount: int)
 
 @onready var trees: Dictionary[String, DialogueTree] = {
 	"BETHANY": preload("res://Assets/DialogueScenes/Trees/bethany_tree.tres"),
@@ -11,6 +15,14 @@ signal line_added(line: DialogueLine)
 	"PENNY": preload("res://Assets/DialogueScenes/Trees/penny_tree.tres"),
 	"RICHARD": preload("res://Assets/DialogueScenes/Trees/richard_tree.tres"),
 	"ZAMORA": preload("res://Assets/DialogueScenes/Trees/zamora_tree.tres"),
+}
+
+@onready var fail_scenes: Dictionary[String, DialogueScene] = {
+	"BETHANY": preload("res://Assets/DialogueScenes/FailDialogue/BethanyFail.tres"),
+	"BILLY": preload("res://Assets/DialogueScenes/FailDialogue/BillyFail.tres"),
+	"PENNY": preload("res://Assets/DialogueScenes/FailDialogue/PennyFail.tres"),
+	"RICHARD": preload("res://Assets/DialogueScenes/FailDialogue/RichardFail.tres"),
+	"ZAMORA": preload("res://Assets/DialogueScenes/FailDialogue/ZamoraFail.tres"),
 }
 
 func _ready() -> void:

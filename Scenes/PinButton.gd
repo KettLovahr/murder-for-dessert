@@ -15,6 +15,7 @@ func _ready() -> void:
 
 func _on_use_button_pressed() -> void:
 	use_line.emit(associated_line)
+	$Tooltip.visible = false
 
 func _on_delete_button_pressed() -> void:
 	delete_line.emit(associated_line)
