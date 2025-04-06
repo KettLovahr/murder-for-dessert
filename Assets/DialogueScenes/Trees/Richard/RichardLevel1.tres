@@ -26,7 +26,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_eif25"]
 script = ExtResource("1_yijuq")
 speaker = ExtResource("3_8veiu")
-line = "Right, as you may know, I was called in to investigate the murder of Phillip Bezerra, husband of Zamora Bezerra, the fly lady over there."
+line = "Right, as you may know, I was called in to investigate the murder of Phillip Bezerra, husband of Zamora Bezerra, the fruit-fly lady over there."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ulb67"]
@@ -44,7 +44,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_2xqkk"]
 script = ExtResource("1_yijuq")
 speaker = ExtResource("2_8veiu")
-line = "In fact, I was sitting right beside Ms. Bezerra and had to regrettably watch her scream and sob for her beloved."
+line = "In fact, [color=yellow]I was sitting right beside Ms. Bezerra[/color] and had to regrettably watch her scream and sob for her beloved."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ya2kq"]

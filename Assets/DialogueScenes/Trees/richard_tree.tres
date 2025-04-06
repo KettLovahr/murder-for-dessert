@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="DialogueTree" load_steps=4 format=3 uid="uid://207owsn3nayc"]
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=6 format=3 uid="uid://207owsn3nayc"]
 
 [ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_sql8x"]
 [ext_resource type="Resource" uid="uid://qv5eqohsc56t" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel1.tres" id="1_uncmw"]
 [ext_resource type="Resource" uid="uid://dplc4oqy1jg4k" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel2.tres" id="2_w568w"]
+[ext_resource type="Resource" uid="uid://b3h46pf6a80uw" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel3.tres" id="3_6ya2m"]
+[ext_resource type="Resource" uid="uid://b6t84scijebbb" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel4.tres" id="4_yyvqf"]
 
 [resource]
 script = ExtResource("1_sql8x")
@@ -11,7 +13,9 @@ level_1_scene = ExtResource("1_uncmw")
 level_1_unlocked = true
 level_2_scene = ExtResource("2_w568w")
 level_2_unlocked = false
+level_3_scene = ExtResource("3_6ya2m")
 level_3_unlocked = false
+level_4_scene = ExtResource("4_yyvqf")
 level_4_unlocked = false
 level_5_unlocked = false
 metadata/_custom_type_script = "uid://c11gn3w1niotu"
