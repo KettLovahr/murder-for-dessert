@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://qv5eqohsc56t"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=17 format=3 uid="uid://qv5eqohsc56t"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_yijuq"]
 [ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="2_8veiu"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_up21c"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="3_8veiu"]
 
 [sub_resource type="Resource" id="Resource_e1sno"]
 script = ExtResource("1_yijuq")
@@ -10,7 +11,73 @@ speaker = ExtResource("2_8veiu")
 line = "Good evening."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
+[sub_resource type="Resource" id="Resource_3srqw"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("3_8veiu")
+line = "Good evening mister, I am detective Brennan, P.I. Pleased to meet you."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_8veiu"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("2_8veiu")
+line = "Of course. My name is Richard Richardson Jr. III, heir of the Richardson family."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_eif25"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("3_8veiu")
+line = "Right, as you may know, I was called in to investigate the murder of Phillip Bezerra, husband of Zamora Bezerra, the fly lady over there."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ulb67"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("2_8veiu")
+line = "Don't even mention it, what a retched scene, I can barely get myself to look at it."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_fvibw"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("2_8veiu")
+line = "Of course, Pineapples may be a little too... exotic, and acid, but in no way does it justify a murder so horrific."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_2xqkk"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("2_8veiu")
+line = "In fact, I was sitting right beside Ms. Bezerra and had to regrettably watch her scream and sob for her beloved."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ya2kq"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("2_8veiu")
+line = "What a shame it is to see such a delicate ray of sunshine cry... It really breaks my heart."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_yrdeb"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("3_8veiu")
+line = "So you said you were there at the time of the murder, right? Did you happen to catch a glimpse of whoever did it?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_jdejy"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("2_8veiu")
+line = "I'm afraid not, as I was dealing with some personal business at the time. Answering an important phonecall."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1253d"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("2_8veiu")
+line = "When I came back, the murderer must have already fled."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_akts4"]
+script = ExtResource("1_yijuq")
+speaker = ExtResource("3_8veiu")
+line = "[i]Something about this guy just doesn't seem right...[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
 [resource]
 script = ExtResource("2_up21c")
-lines = Array[ExtResource("1_yijuq")]([SubResource("Resource_e1sno")])
+lines = Array[ExtResource("1_yijuq")]([SubResource("Resource_e1sno"), SubResource("Resource_3srqw"), SubResource("Resource_8veiu"), SubResource("Resource_eif25"), SubResource("Resource_ulb67"), SubResource("Resource_fvibw"), SubResource("Resource_2xqkk"), SubResource("Resource_ya2kq"), SubResource("Resource_yrdeb"), SubResource("Resource_jdejy"), SubResource("Resource_1253d"), SubResource("Resource_akts4")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"
