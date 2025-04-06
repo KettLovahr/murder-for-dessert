@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=25 format=3 uid="uid://dplc4oqy1jg4k"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_gljiv"]
+[ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="2_x4gn7"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="3_co82a"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_depju"]
+
+[sub_resource type="Resource" id="Resource_5csfp"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("3_co82a")
+line = "Excuse me Mr. Richardson, but are you feeling alright?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_gljiv"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "What do you mean by that, son?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_x4gn7"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("3_co82a")
+line = "Well, I asked around, and that kid over there said he saw you crying at your table a while before the murder."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_co82a"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "Is that so?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_depju"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "Perhaps, yes, I did show a smidgen of emotion earlier in the night. Why? How is that relevant, pray tell?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_i30ks"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "Is a man guilty for crying now? Can I not even have a single candid moment without being judged?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_djwyr"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("3_co82a")
+line = "Not at all, sir! Please, take a deep breath, I just want to know what caused your turmoil."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_oqx6c"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("3_co82a")
+line = "Any out of the ordinary occurrence is relevant if we want to catch the criminal on the loose."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_x82xw"]
+script = ExtResource("1_gljiv")
+line = "[i]Richard lets out a heavy, stretched-out grunt.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_41scb"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "Fine, then. If it is so important to you. I'll say it."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_50je1"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "My dad called me, he said [b]I was removed from the will unless I go out there and get a real job.[/b]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ee40v"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "Apparently he doesn't appreciate my exquisite networking skills."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_6dgep"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "They're not just fancy parties, dad! We'll get our own business going any day now I swear!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_7pq8o"]
+script = ExtResource("1_gljiv")
+line = "..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_iufd5"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "Oh, I am so sorry my good sir. I got a little carried away."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_uts05"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("3_co82a")
+line = "...it's okay. Thank you for being honest."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_uufqe"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "I need to you promise me you'll never tell this to anyone. My reputation as heir of the world renowned Richardson family is key to my success."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_5majl"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("3_co82a")
+line = "Worry not, my friend! No one's getting a thing out of me."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_vbvlf"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("3_co82a")
+line = "[i]I proceed to mimic the act of shutting my lips with a zipper, locking it and throwing the key away.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_madyg"]
+script = ExtResource("1_gljiv")
+speaker = ExtResource("2_x4gn7")
+line = "[i]Richard rolls his eyes.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_depju")
+lines = Array[ExtResource("1_gljiv")]([SubResource("Resource_5csfp"), SubResource("Resource_gljiv"), SubResource("Resource_x4gn7"), SubResource("Resource_co82a"), SubResource("Resource_depju"), SubResource("Resource_i30ks"), SubResource("Resource_djwyr"), SubResource("Resource_oqx6c"), SubResource("Resource_x82xw"), SubResource("Resource_41scb"), SubResource("Resource_50je1"), SubResource("Resource_ee40v"), SubResource("Resource_6dgep"), SubResource("Resource_7pq8o"), SubResource("Resource_iufd5"), SubResource("Resource_uts05"), SubResource("Resource_uufqe"), SubResource("Resource_5majl"), SubResource("Resource_vbvlf"), SubResource("Resource_madyg")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"
