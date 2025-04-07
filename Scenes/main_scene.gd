@@ -8,7 +8,13 @@ func _ready() -> void:
 	pass
 
 func _on_dialogue_ui_scene_completed() -> void:
-	$UILayer/DialogueUi.fade_out()
+	# $UILayer/DialogueUi.fade_out()
+	var tree: DialogueTree = $UILayer/DialogueUi.tree
+	if $UILayer/DialogueUi.dialogue != GameManager.default_scenes[tree.culprit.to_upper()]:
+		$UILayer/DialogueUi._handle_change_scene(
+			GameManager.default_scenes[tree.culprit.to_upper()],
+		)
+	pass
 
 func _on_hub_scene_requested(which: String) -> void:
 	if which in GameManager.trees:
@@ -27,3 +33,7 @@ func _on_inventory_pin_used(pin: DialogueLine) -> void:
 		var new_scene = GameManager.fail_scenes[tree.culprit.to_upper()]
 		$UILayer/DialogueUi._handle_change_scene(new_scene)
 		GameManager.lives -= 1
+
+
+func _on_dialogue_ui_exit_request() -> void:
+	$UILayer/DialogueUi.fade_out()

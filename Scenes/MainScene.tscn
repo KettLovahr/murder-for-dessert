@@ -26,5 +26,6 @@ autoplay = true
 parameters/looping = true
 
 [connection signal="scene_requested" from="GameLayer/Hub" to="." method="_on_hub_scene_requested"]
+[connection signal="exit_request" from="UILayer/DialogueUi" to="." method="_on_dialogue_ui_exit_request"]
 [connection signal="scene_completed" from="UILayer/DialogueUi" to="." method="_on_dialogue_ui_scene_completed"]
 [connection signal="pin_used" from="UILayer/Inventory" to="." method="_on_inventory_pin_used"]
