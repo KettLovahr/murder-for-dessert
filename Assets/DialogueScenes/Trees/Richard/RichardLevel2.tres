@@ -113,12 +113,12 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_vbvlf"]
 script = ExtResource("1_gljiv")
-line = "[i]I proceed to mimic the act of shutting my lips with a zipper, locking it and throwing the key away.[/i]"
+line = "[i]In a display of loyalty, I proceeded to mimic the act of shutting my lips with a zipper, locking it and throwing the key away.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_madyg"]
 script = ExtResource("1_gljiv")
-line = "[i]Richard rolls his eyes.[/i]"
+line = "[i]Richard rolled his eyes.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]

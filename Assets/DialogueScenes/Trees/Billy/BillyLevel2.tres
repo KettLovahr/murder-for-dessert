@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=20 format=3 uid="uid://dmhudlw1btp6h"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_f8buk"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_oywe6"]
+[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="3_1jyln"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_xs3ar"]
+
+[sub_resource type="Resource" id="Resource_f8buk"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("2_oywe6")
+line = "Hey little Billy! I talked to the big nose man, and he told me he did cry! He cried all night, just like you said!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_oywe6"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("3_1jyln")
+line = "Why, did you doubt me? You think I'd lie to a cop? Also don't call me Billy!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1jyln"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("2_oywe6")
+line = "I'm sorry! Mr. Madison..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_xs3ar"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("3_1jyln")
+line = "What? Mr. Madison is my dad! He's not here."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_elxun"]
+script = ExtResource("1_f8buk")
+line = "[i]...[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_f7rx8"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("2_oywe6")
+line = "Boy."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_75dqd"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("3_1jyln")
+line = "Ye?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_o4see"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("2_oywe6")
+line = "Like I said, I'm investigating a crime - a murder! Did you see anything that could help me figure out who did it?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_fqrim"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("3_1jyln")
+line = "Yep yep! [color=yellow]I was here, sir! I was here from the beginning to the end! I saw everything!![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_s7dgp"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("3_1jyln")
+line = "I saw the fly lady leave, I saw her come back, I heard the screams of horror, and even that grating noise that shook the floor!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_m3lbt"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("2_oywe6")
+line = "Grating noise? Like what kind of noise?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_7xsbw"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("3_1jyln")
+line = "Round."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_12rey"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("2_oywe6")
+line = "...a round noise?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_rju74"]
+script = ExtResource("1_f8buk")
+speaker = ExtResource("3_1jyln")
+line = "Ye. Round."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ksjye"]
+script = ExtResource("1_f8buk")
+line = "[i]Yet again, I found myself stumped by the lonesome child. I knew I'd have to find said \"round noise\" if I ever wanted to get more out of him.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_xs3ar")
+lines = Array[ExtResource("1_f8buk")]([SubResource("Resource_f8buk"), SubResource("Resource_oywe6"), SubResource("Resource_1jyln"), SubResource("Resource_xs3ar"), SubResource("Resource_elxun"), SubResource("Resource_f7rx8"), SubResource("Resource_75dqd"), SubResource("Resource_o4see"), SubResource("Resource_fqrim"), SubResource("Resource_s7dgp"), SubResource("Resource_m3lbt"), SubResource("Resource_7xsbw"), SubResource("Resource_12rey"), SubResource("Resource_rju74"), SubResource("Resource_ksjye")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

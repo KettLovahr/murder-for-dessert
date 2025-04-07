@@ -1,16 +1,86 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://ccrsn1ijqe8j8"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=18 format=3 uid="uid://ccrsn1ijqe8j8"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_myblu"]
-[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="2_liphy"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_liphy"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_urmlx"]
+[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="3_liphy"]
 
 [sub_resource type="Resource" id="Resource_0x7eh"]
 script = ExtResource("1_myblu")
 speaker = ExtResource("2_liphy")
-line = "Hey!"
+line = "Hello there little man! What is your name?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_x7beb"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("3_liphy")
+line = "William Madison! But my friends call me Billy!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_liphy"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("2_liphy")
+line = "Cool! Nice to meet you Billy!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_2ygjy"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("3_liphy")
+line = "You're not my friend!! You're a cop!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_qhwop"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("2_liphy")
+line = "I- uh... Technically not a cop."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_a7ter"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("3_liphy")
+line = "What are you then, a big stinky man?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_i53dx"]
+script = ExtResource("1_myblu")
+line = "[i]Oh brother...[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_3t44d"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("2_liphy")
+line = "Listen here, young man, this is serious business. Did you know that a man died here in this restaurant?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ftykp"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("3_liphy")
+line = "Is that why [color=yellow]the big nose guy was crying at the table?[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_4ksss"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("2_liphy")
+line = "Huh? Big nose guy?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_dn8xc"]
+script = ExtResource("1_myblu")
+speaker = ExtResource("3_liphy")
+line = "Yeah, he was crying all night!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_6lurw"]
+script = ExtResource("1_myblu")
+line = "[i]Now, I didn't quite get what the boy was saying, but I felt like I had to humor him. He clearly saw something.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_37xp5"]
+script = ExtResource("1_myblu")
+line = "[i]Maybe, if I decipher his story and show him that I understand what he's talking about, he'll tell me more.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_urmlx")
-lines = Array[ExtResource("1_myblu")]([SubResource("Resource_0x7eh")])
+lines = Array[ExtResource("1_myblu")]([SubResource("Resource_0x7eh"), SubResource("Resource_x7beb"), SubResource("Resource_liphy"), SubResource("Resource_2ygjy"), SubResource("Resource_qhwop"), SubResource("Resource_a7ter"), SubResource("Resource_i53dx"), SubResource("Resource_3t44d"), SubResource("Resource_ftykp"), SubResource("Resource_4ksss"), SubResource("Resource_dn8xc"), SubResource("Resource_6lurw"), SubResource("Resource_37xp5")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"
