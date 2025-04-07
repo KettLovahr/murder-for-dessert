@@ -66,3 +66,10 @@ func unlock_next(tree: String) -> DialogueScene:
 				trees[tree].set("level_%d_unlocked" % [i], true)
 				return trees[tree].get("level_%d_scene" % [i])
 	return null # This should be unreachable.
+
+func check_pin(tree: String, pin: DialogueLine) -> bool:
+	if tree in trees:
+		for i in range(5, 0, -1):
+			if trees[tree].get("level_%d_unlocked" % [i]):
+				return trees[tree].get("level_%d_pin" % [i]) == pin
+	return false

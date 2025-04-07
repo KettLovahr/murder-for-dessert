@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="DialogueTree" load_steps=6 format=3 uid="uid://207owsn3nayc"]
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=7 format=3 uid="uid://207owsn3nayc"]
 
+[ext_resource type="Resource" uid="uid://15odiy2foag1" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BillyRichardLevel1.tres" id="1_66yi3"]
 [ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_sql8x"]
 [ext_resource type="Resource" uid="uid://qv5eqohsc56t" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel1.tres" id="1_uncmw"]
 [ext_resource type="Resource" uid="uid://dplc4oqy1jg4k" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel2.tres" id="2_w568w"]
@@ -11,6 +12,7 @@ script = ExtResource("1_sql8x")
 culprit = "Richard"
 level_1_scene = ExtResource("1_uncmw")
 level_1_unlocked = true
+level_1_pin = ExtResource("1_66yi3")
 level_2_scene = ExtResource("2_w568w")
 level_2_unlocked = false
 level_3_scene = ExtResource("3_6ya2m")
