@@ -56,7 +56,7 @@ func _show_tree_ui(opt: bool):
 
 func _process(_delta):
 	var vis_char = dialogue_label.visible_characters
-	if vis_char < len(dialogue_label.text) and vis_char != -1:
+	if dialogue_label.visible_ratio != 1 and vis_char != -1:
 		dialogue_label.visible_characters += 1
 	else:
 		if not done_speaking:
@@ -133,6 +133,7 @@ func _on_previous_pressed() -> void:
 	if current_line > 0:
 		current_line -= 1
 		_update_line()
+		$NextPrev.play()
 		dialogue_label.visible_characters = -1
 
 func _on_next_pressed() -> void:
@@ -141,6 +142,7 @@ func _on_next_pressed() -> void:
 	elif current_line < len(dialogue.lines) - 1:
 		current_line += 1
 		_update_line()
+		$NextPrev.play()
 	else:
 		if dialogue.resource_name == "PennyLevel5":
 			GameManager.win.emit()
