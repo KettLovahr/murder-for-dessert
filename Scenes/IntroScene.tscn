@@ -1,10 +1,49 @@
-[gd_scene load_steps=6 format=3 uid="uid://62t5uh3akt5w"]
+[gd_scene load_steps=10 format=3 uid="uid://62t5uh3akt5w"]
 
 [ext_resource type="Script" uid="uid://dhy7fqluoxv4p" path="res://Scenes/IntroScene.gd" id="1_qef2n"]
 [ext_resource type="Texture2D" uid="uid://8tp12cyobp17" path="res://Assets/Textures/office.png" id="2_d4qc4"]
 [ext_resource type="PackedScene" uid="uid://bdqsnds01xtpa" path="res://Scenes/DialogueUi.tscn" id="3_d4qc4"]
 [ext_resource type="PackedScene" uid="uid://1qjypdjpnauw" path="res://Scenes/FilmGrain.tscn" id="4_pseuf"]
 [ext_resource type="AudioStream" uid="uid://ciwvuv38usqwt" path="res://Assets/Audio/bg_introoutro.ogg" id="5_h8frj"]
+[ext_resource type="PackedScene" uid="uid://bfsif4ix563ho" path="res://Scenes/fade.tscn" id="6_2liv2"]
+
+[sub_resource type="Animation" id="Animation_2liv2"]
+resource_name = "fade_out"
+length = 2.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(2, 1),
+"update": 0,
+"values": [0.0, -80.0]
+}
+
+[sub_resource type="Animation" id="Animation_ge4sb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wma8j"]
+_data = {
+&"RESET": SubResource("Animation_ge4sb"),
+&"fade_out": SubResource("Animation_2liv2")
+}
 
 [node name="IntroScene" type="Node2D"]
 script = ExtResource("1_qef2n")
@@ -24,6 +63,13 @@ visible = false
 stream = ExtResource("5_h8frj")
 autoplay = true
 parameters/looping = true
+
+[node name="AudioFader" type="AnimationPlayer" parent="AudioStreamPlayer"]
+libraries = {
+&"": SubResource("AnimationLibrary_wma8j")
+}
+
+[node name="Fade" parent="." instance=ExtResource("6_2liv2")]
 
 [connection signal="scene_completed" from="DialogueUi" to="." method="_on_dialogue_ui_scene_completed"]
 

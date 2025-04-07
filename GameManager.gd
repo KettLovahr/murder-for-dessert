@@ -1,5 +1,10 @@
 extends Node
 
+var film_grain := true:
+	set(v):
+		film_grain_changed.emit(v)
+		film_grain = v
+
 var pins: Array[DialogueLine]
 var lives: int = 15:
 	set(v):
@@ -8,6 +13,7 @@ var lives: int = 15:
 
 signal line_added(line: DialogueLine)
 signal life_count_changed(amount: int)
+signal film_grain_changed(on: bool)
 
 @onready var trees: Dictionary[String, DialogueTree] = {
 	"BETHANY": preload("res://Assets/DialogueScenes/Trees/bethany_tree.tres"),

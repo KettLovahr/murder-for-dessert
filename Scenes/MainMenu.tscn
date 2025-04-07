@@ -1,9 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://b0qi6rdgjwa8v"]
+[gd_scene load_steps=14 format=3 uid="uid://b0qi6rdgjwa8v"]
 
 [ext_resource type="Script" uid="uid://brsv6347fbpbo" path="res://Scenes/MainMenu.gd" id="1_ghw46"]
 [ext_resource type="Texture2D" uid="uid://dmmkfk0vavke1" path="res://Assets/Textures/menu.png" id="1_tt5f1"]
 [ext_resource type="FontVariation" uid="uid://bpdyc6nc57vc0" path="res://Assets/Fonts/StretchGentium.tres" id="2_8saeu"]
 [ext_resource type="PackedScene" uid="uid://1qjypdjpnauw" path="res://Scenes/FilmGrain.tscn" id="2_853f1"]
+[ext_resource type="AudioStream" uid="uid://dg7ulkp0d4rgj" path="res://Assets/Audio/film_projector_on.wav" id="5_df05h"]
+[ext_resource type="AudioStream" uid="uid://d4j7e8ncf26f7" path="res://Assets/Audio/film_projector_loop.wav" id="6_8um5k"]
+[ext_resource type="AudioStream" uid="uid://rpyi8s1y0ajk" path="res://Assets/Audio/film_projector_end.wav" id="7_xim88"]
+[ext_resource type="FontFile" uid="uid://dpv0o70ac2bf3" path="res://Assets/Fonts/GentiumPlus-Regular.ttf" id="8_koqhg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8um5k"]
 
@@ -12,6 +16,8 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_df05h"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghw46"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_koqhg"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_ghw46")
@@ -22,9 +28,10 @@ centered = false
 
 [node name="StartButton" type="Button" parent="."]
 offset_left = 217.0
-offset_top = 354.0
+offset_top = 386.0
 offset_right = 443.0
-offset_bottom = 433.0
+offset_bottom = 465.0
+mouse_default_cursor_shape = 2
 theme_override_fonts/font = ExtResource("2_8saeu")
 theme_override_font_sizes/font_size = 48
 theme_override_styles/focus = SubResource("StyleBoxEmpty_8um5k")
@@ -36,4 +43,32 @@ text = "Start Game"
 [node name="FilmGrain" parent="." instance=ExtResource("2_853f1")]
 metadata/_edit_lock_ = true
 
+[node name="Start" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_df05h")
+volume_db = -6.0
+autoplay = true
+
+[node name="Loop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_8um5k")
+volume_db = -6.0
+autoplay = true
+
+[node name="End" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_xim88")
+volume_db = -6.0
+autoplay = true
+
+[node name="CheckBox" type="CheckButton" parent="."]
+offset_left = 258.0
+offset_top = 460.0
+offset_right = 406.0
+offset_bottom = 502.0
+theme_override_constants/h_separation = 12
+theme_override_fonts/font = ExtResource("8_koqhg")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_koqhg")
+text = "Film grain"
+
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="finished" from="Start" to="Loop" method="play"]
+[connection signal="toggled" from="CheckBox" to="." method="_on_check_box_toggled"]

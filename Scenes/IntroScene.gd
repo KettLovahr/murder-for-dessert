@@ -1,8 +1,8 @@
 extends Node2D
 
-@onready var main_scene: PackedScene = preload("res://Scenes/MainScene.tscn")
 
 func _ready() -> void:
+	await get_tree().create_timer(3).timeout
 	$DialogueUi.init_scene(
 		load("res://Assets/DialogueScenes/new_test_dialogue.tres"),
 		null
@@ -10,4 +10,8 @@ func _ready() -> void:
 
 
 func _on_dialogue_ui_scene_completed() -> void:
-	get_tree().change_scene_to_packed(main_scene)
+	$DialogueUi.fade_out()
+	$AudioStreamPlayer/AudioFader.play("fade_out")
+	$Fade.fade_out()
+	await get_tree().create_timer(3).timeout
+	get_tree().change_scene_to_file("res://Scenes/MainScene.tscn")

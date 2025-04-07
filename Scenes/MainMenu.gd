@@ -1,7 +1,17 @@
 extends Node2D
 
-@onready var intro_scene: PackedScene = preload("res://Scenes/IntroScene.tscn")
+
+func _ready() -> void:
+	$CheckBox.button_pressed = GameManager.film_grain
 
 
 func _on_start_button_pressed() -> void:
-	get_tree().change_scene_to_packed(intro_scene)
+	$Loop.stop()
+	$End.play()
+	visible = false
+	await get_tree().create_timer(3).timeout
+	get_tree().change_scene_to_file("res://Scenes/IntroScene.tscn")
+
+
+func _on_check_box_toggled(toggled_on: bool) -> void:
+	GameManager.film_grain = toggled_on
