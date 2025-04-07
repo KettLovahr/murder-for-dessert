@@ -7,6 +7,21 @@
 [ext_resource type="AudioStream" uid="uid://ciwvuv38usqwt" path="res://Assets/Audio/bg_introoutro.ogg" id="5_h8frj"]
 [ext_resource type="PackedScene" uid="uid://bfsif4ix563ho" path="res://Scenes/fade.tscn" id="6_2liv2"]
 
+[sub_resource type="Animation" id="Animation_ge4sb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_2liv2"]
 resource_name = "fade_out"
 length = 2.0
@@ -22,21 +37,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(2, 1),
 "update": 0,
 "values": [0.0, -80.0]
-}
-
-[sub_resource type="Animation" id="Animation_ge4sb"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:volume_db")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wma8j"]

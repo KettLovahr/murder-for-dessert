@@ -21,6 +21,7 @@ var done_speaking: bool = false
 
 signal scene_completed()
 signal exit_request()
+signal cut_all_music()
 
 var current_line: int = 0
 
@@ -141,6 +142,10 @@ func _on_next_pressed() -> void:
 		current_line += 1
 		_update_line()
 	else:
+		if dialogue.resource_name == "PennyLevel5":
+			GameManager.win.emit()
+			fade_out()
+			return
 		scene_completed.emit()
 
 func _on_pin_action_button_pressed() -> void:
@@ -150,6 +155,8 @@ func _on_pin_action_button_pressed() -> void:
 func _handle_change_scene(scene: DialogueScene) -> void:
 	dialogue = scene
 	reset()
+	if dialogue.resource_name == "PennyLevel5":
+		cut_all_music.emit()
 
 func get_current_displayed_line() -> DialogueLine:
 	return dialogue.lines[current_line]

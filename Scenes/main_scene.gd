@@ -7,7 +7,8 @@ func _ready() -> void:
 		#load("res://Assets/DialogueScenes/many_characters_test.tres"),
 		#null
 	#)
-	pass
+	GameManager.lose.connect(_on_lose)
+	GameManager.win.connect(_on_win)
 
 func _on_dialogue_ui_scene_completed() -> void:
 	# dialogue_ui.fade_out()
@@ -40,3 +41,20 @@ func _on_inventory_pin_used(pin: DialogueLine) -> void:
 
 func _on_dialogue_ui_exit_request() -> void:
 	dialogue_ui.fade_out()
+
+
+func _on_lose() -> void:
+	$AudioStreamPlayer/AudioFader.play("fade_out")
+	$UILayer/Fade.fade_out()
+	await get_tree().create_timer(2).timeout
+	get_tree().change_scene_to_file("res://Scenes/GameOver.tscn")
+
+
+func _on_win() -> void:
+	$UILayer/Fade.fade_out()
+	await get_tree().create_timer(3).timeout
+	get_tree().change_scene_to_file("res://Scenes/OutroScene.tscn")
+
+
+func _on_dialogue_ui_cut_all_music() -> void:
+	$AudioStreamPlayer/AudioFader.play("fade_out")

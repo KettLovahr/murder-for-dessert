@@ -6,14 +6,18 @@ var film_grain := true:
 		film_grain = v
 
 var pins: Array[DialogueLine]
-var lives: int = 15:
+var lives: int = 5:
 	set(v):
 		life_count_changed.emit(v)
+		if v == 0:
+			lose.emit()
 		lives = v
 
 signal line_added(line: DialogueLine)
 signal life_count_changed(amount: int)
 signal film_grain_changed(on: bool)
+signal win()
+signal lose()
 
 @onready var trees: Dictionary[String, DialogueTree] = {
 	"BETHANY": preload("res://Assets/DialogueScenes/Trees/bethany_tree.tres"),

@@ -141,6 +141,7 @@ line = "Rich people man... Y'all weird me out."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
+resource_name = "PennyLevel5"
 script = ExtResource("4_hb6b3")
 lines = Array[ExtResource("1_i37cq")]([SubResource("Resource_f2h2s"), SubResource("Resource_i37cq"), SubResource("Resource_o30tu"), SubResource("Resource_e088p"), SubResource("Resource_hb6b3"), SubResource("Resource_a5nav"), SubResource("Resource_pjr00"), SubResource("Resource_8r45w"), SubResource("Resource_l7kto"), SubResource("Resource_7cp2r"), SubResource("Resource_gmebn"), SubResource("Resource_j6p23"), SubResource("Resource_0bsiu"), SubResource("Resource_cb2xl"), SubResource("Resource_kpnma"), SubResource("Resource_yjm05"), SubResource("Resource_ceo5l"), SubResource("Resource_onfv8"), SubResource("Resource_6t3dt"), SubResource("Resource_7u3x4"), SubResource("Resource_tfpyi"), SubResource("Resource_5i6tp"), SubResource("Resource_i7mmf")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"
