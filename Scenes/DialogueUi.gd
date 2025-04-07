@@ -1,4 +1,5 @@
 extends Control
+class_name DialogueUi
 
 @export var dialogue: DialogueScene
 @export var tree: DialogueTree
@@ -61,7 +62,14 @@ func _process(_delta):
 			char_sprite.stop_speaking()
 			done_speaking = true
 
-
+func navigation_enabled(opt: bool) -> void:
+	if not opt:
+		for child in get_children():
+			if child.is_in_group("InvestigationOnly"):
+				if child is TextureButton:
+					child.disabled = true
+	else:
+		_update_tree_buttons()
 
 func _update_line():
 	done_speaking = false

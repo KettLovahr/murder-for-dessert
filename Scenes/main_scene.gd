@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var dialogue_ui: DialogueUi = $UILayer/DialogueUi
+
 func _ready() -> void:
 	#init_scene(
 		#load("res://Assets/DialogueScenes/many_characters_test.tres"),
@@ -8,32 +10,33 @@ func _ready() -> void:
 	pass
 
 func _on_dialogue_ui_scene_completed() -> void:
-	# $UILayer/DialogueUi.fade_out()
-	var tree: DialogueTree = $UILayer/DialogueUi.tree
-	if $UILayer/DialogueUi.dialogue != GameManager.default_scenes[tree.culprit.to_upper()]:
-		$UILayer/DialogueUi._handle_change_scene(
+	# dialogue_ui.fade_out()
+	var tree: DialogueTree = dialogue_ui.tree
+	dialogue_ui.navigation_enabled(true)
+	if dialogue_ui.dialogue != GameManager.default_scenes[tree.culprit.to_upper()]:
+		dialogue_ui._handle_change_scene(
 			GameManager.default_scenes[tree.culprit.to_upper()],
 		)
-	pass
 
 func _on_hub_scene_requested(which: String) -> void:
 	if which in GameManager.trees:
 		var tree: DialogueTree = GameManager.trees[which]
-		$UILayer/DialogueUi.init_scene(
+		dialogue_ui.init_scene(
 			GameManager.default_scenes[which],
 			tree
 		)
 
 func _on_inventory_pin_used(pin: DialogueLine) -> void:
-	var shown_line: DialogueLine = $UILayer/DialogueUi.get_current_displayed_line()
-	var tree: DialogueTree = $UILayer/DialogueUi.tree
+	var shown_line: DialogueLine = dialogue_ui.get_current_displayed_line()
+	var tree: DialogueTree = dialogue_ui.tree
 	if shown_line.refutation == pin:
-		$UILayer/DialogueUi._handle_change_scene(GameManager.unlock_next(tree.culprit.to_upper()))
+		dialogue_ui.navigation_enabled(false)
+		dialogue_ui._handle_change_scene(GameManager.unlock_next(tree.culprit.to_upper()))
 	else:
 		var new_scene = GameManager.fail_scenes[tree.culprit.to_upper()]
-		$UILayer/DialogueUi._handle_change_scene(new_scene)
+		dialogue_ui._handle_change_scene(new_scene)
 		GameManager.lives -= 1
 
 
 func _on_dialogue_ui_exit_request() -> void:
-	$UILayer/DialogueUi.fade_out()
+	dialogue_ui.fade_out()
