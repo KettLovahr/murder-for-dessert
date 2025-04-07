@@ -1,0 +1,66 @@
+[gd_scene load_steps=13 format=3 uid="uid://y7e0hu8nlx7n"]
+
+[ext_resource type="Script" uid="uid://yt3o83ai7b7i" path="res://Scenes/Fin.gd" id="1_2s411"]
+[ext_resource type="Texture2D" uid="uid://38h276se44bw" path="res://Assets/Textures/fin.png" id="2_tljy7"]
+[ext_resource type="FontVariation" uid="uid://bpdyc6nc57vc0" path="res://Assets/Fonts/StretchGentium.tres" id="3_l8oaw"]
+[ext_resource type="PackedScene" uid="uid://bfsif4ix563ho" path="res://Scenes/fade.tscn" id="4_2s411"]
+[ext_resource type="PackedScene" uid="uid://1qjypdjpnauw" path="res://Scenes/FilmGrain.tscn" id="4_p3qxd"]
+[ext_resource type="AudioStream" uid="uid://dg7ulkp0d4rgj" path="res://Assets/Audio/film_projector_on.wav" id="5_0kgjq"]
+[ext_resource type="AudioStream" uid="uid://d4j7e8ncf26f7" path="res://Assets/Audio/film_projector_loop.wav" id="6_acdvm"]
+[ext_resource type="AudioStream" uid="uid://rpyi8s1y0ajk" path="res://Assets/Audio/film_projector_end.wav" id="7_xapu4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8um5k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8saeu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_df05h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghw46"]
+
+[node name="Fin" type="Node2D"]
+script = ExtResource("1_2s411")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_tljy7")
+centered = false
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 35.0
+offset_top = 24.0
+offset_right = 212.0
+offset_bottom = 72.0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("3_l8oaw")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8um5k")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8saeu")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_df05h")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ghw46")
+text = "Back to menu"
+
+[node name="FilmGrain" parent="." instance=ExtResource("4_p3qxd")]
+metadata/_edit_lock_ = true
+
+[node name="Start" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_0kgjq")
+volume_db = -6.0
+autoplay = true
+
+[node name="Loop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_acdvm")
+volume_db = -6.0
+autoplay = true
+
+[node name="End" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_xapu4")
+volume_db = -6.0
+autoplay = true
+
+[node name="Fade" parent="." instance=ExtResource("4_2s411")]
+offset_left = -9.0
+offset_top = -8.0
+offset_right = 1288.0
+offset_bottom = 728.0
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="finished" from="Start" to="Loop" method="play"]

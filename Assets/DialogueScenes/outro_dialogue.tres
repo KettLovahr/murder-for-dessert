@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=16 format=3 uid="uid://b7ce3ej62ei2m"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_nq7oc"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_b1288"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_d8tmm"]
+
+[sub_resource type="Resource" id="Resource_wbgai"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]And just like that, my work for the day was done.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_nq7oc"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]The culprit was caught, police arrived at the scene, and I was paid.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_b1288"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]What happened to young Penny Whayne, though? Had justice finally been served in this cold and uncaring concrete jungle?[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_piih2"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]Well, let's just say, fruit aren't exactly first-class citizens in this sad society.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_d8tmm"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]As such, police could not find grounds for a murder charge, and the criminal was allowed to walk free.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_kftvu"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]Still in time to get a couple hours of sleep for tomorrow's shift at The Grand Apricot.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_hktpf"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]I guess some things never change.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_wjxjq"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]The thick fog of the city night, the bitter taste at the end of a pipe, and the absolute incompetence of the world's authority.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_twp1s"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]As for me? Well...[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0g1ft"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]As long as man walks this earth, there will be injustice, there will be corruption, and thus, there will always be more work to do.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_j8jns"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]The world needs a hero, and while he doesn't come, I am more than content to play the part.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_iev67"]
+script = ExtResource("1_nq7oc")
+speaker = ExtResource("2_b1288")
+line = "[i]Truly, I wouldn't have it any other way.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_d8tmm")
+lines = Array[ExtResource("1_nq7oc")]([SubResource("Resource_wbgai"), SubResource("Resource_nq7oc"), SubResource("Resource_b1288"), SubResource("Resource_piih2"), SubResource("Resource_d8tmm"), SubResource("Resource_kftvu"), SubResource("Resource_hktpf"), SubResource("Resource_wjxjq"), SubResource("Resource_twp1s"), SubResource("Resource_0g1ft"), SubResource("Resource_j8jns"), SubResource("Resource_iev67")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"
