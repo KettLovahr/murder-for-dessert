@@ -14,7 +14,7 @@ func _on_hub_scene_requested(which: String) -> void:
 	if which in GameManager.trees:
 		var tree: DialogueTree = GameManager.trees[which]
 		$UILayer/DialogueUi.init_scene(
-			tree.level_1_scene,
+			GameManager.default_scenes[which],
 			tree
 		)
 

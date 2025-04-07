@@ -20,34 +20,6 @@ layer = 2
 
 [node name="Inventory" parent="UILayer" instance=ExtResource("3_nhkr4")]
 
-[node name="Zamora" type="Button" parent="."]
-offset_left = 172.0
-offset_top = 259.0
-offset_right = 362.0
-offset_bottom = 343.0
-text = "Zamora"
-
-[node name="Richard" type="Button" parent="."]
-offset_left = 172.0
-offset_top = 356.0
-offset_right = 362.0
-offset_bottom = 440.0
-text = "Richard"
-
-[node name="Billy" type="Button" parent="."]
-offset_left = 374.0
-offset_top = 259.0
-offset_right = 564.0
-offset_bottom = 343.0
-text = "Billy"
-
-[node name="Penny" type="Button" parent="."]
-offset_left = 374.0
-offset_top = 356.0
-offset_right = 564.0
-offset_bottom = 440.0
-text = "Penny"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_7rqgy")
 autoplay = true

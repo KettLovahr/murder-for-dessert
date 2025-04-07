@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://dx65vh6wlpw15"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_yq2iq"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_f68xb"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="2_uh8wj"]
+
+[sub_resource type="Resource" id="Resource_7qgpt"]
+script = ExtResource("1_yq2iq")
+speaker = ExtResource("2_uh8wj")
+line = "Hello young'un!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_f68xb")
+lines = Array[ExtResource("1_yq2iq")]([SubResource("Resource_7qgpt")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"
