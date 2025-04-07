@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=26 format=3 uid="uid://cuyef0l4h8tju"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=27 format=3 uid="uid://cuyef0l4h8tju"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_i0q44"]
 [ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="2_0xspl"]
@@ -68,7 +68,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_y1f4x"]
 script = ExtResource("1_i0q44")
 speaker = ExtResource("2_0xspl")
-line = "My husband arrived at about 8:30PM... I met him at the front door, we kissed… [i]She sniffles.[/i]"
+line = "My husband arrived at about 8:30PM... I met him at the front door, we kissed… [i]She sniffles again.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_cs8mo"]
@@ -127,10 +127,15 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_x425r"]
 script = ExtResource("1_i0q44")
-line = "[i]I should probably figure out who else was in the room at the time of the murder. Zamora may be able to give me more details if I refresh her memory.[/i]"
+line = "[i]As soon as I got my first lead, I knew what had to be done. I would figure out who else was in the room at the time of the murder so I could refresh Ms. Bezerra's memory.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_cmrc6"]
+script = ExtResource("1_i0q44")
+line = "[i]Perhaps, then, she'd be able to tell me more and help unravel this sick mystery.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_i4i1v")
-lines = Array[ExtResource("1_i0q44")]([SubResource("Resource_v85d3"), SubResource("Resource_1jonq"), SubResource("Resource_0xspl"), SubResource("Resource_h873l"), SubResource("Resource_bvs0j"), SubResource("Resource_wejaq"), SubResource("Resource_gch4a"), SubResource("Resource_glepv"), SubResource("Resource_ngqfx"), SubResource("Resource_7liyj"), SubResource("Resource_y1f4x"), SubResource("Resource_cs8mo"), SubResource("Resource_4d3hm"), SubResource("Resource_qedom"), SubResource("Resource_fsuqu"), SubResource("Resource_ugrv6"), SubResource("Resource_tdmib"), SubResource("Resource_53ykk"), SubResource("Resource_vojnd"), SubResource("Resource_3x1c0"), SubResource("Resource_x425r")])
+lines = Array[ExtResource("1_i0q44")]([SubResource("Resource_v85d3"), SubResource("Resource_1jonq"), SubResource("Resource_0xspl"), SubResource("Resource_h873l"), SubResource("Resource_bvs0j"), SubResource("Resource_wejaq"), SubResource("Resource_gch4a"), SubResource("Resource_glepv"), SubResource("Resource_ngqfx"), SubResource("Resource_7liyj"), SubResource("Resource_y1f4x"), SubResource("Resource_cs8mo"), SubResource("Resource_4d3hm"), SubResource("Resource_qedom"), SubResource("Resource_fsuqu"), SubResource("Resource_ugrv6"), SubResource("Resource_tdmib"), SubResource("Resource_53ykk"), SubResource("Resource_vojnd"), SubResource("Resource_3x1c0"), SubResource("Resource_x425r"), SubResource("Resource_cmrc6")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"
