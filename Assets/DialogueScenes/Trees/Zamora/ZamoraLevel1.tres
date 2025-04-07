@@ -1,16 +1,136 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://cuyef0l4h8tju"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=26 format=3 uid="uid://cuyef0l4h8tju"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_i0q44"]
 [ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="2_0xspl"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_i4i1v"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_v85d3"]
 
 [sub_resource type="Resource" id="Resource_v85d3"]
 script = ExtResource("1_i0q44")
+speaker = ExtResource("2_v85d3")
+line = "My deepest condolences, my fair lady. I hope you're holding on okay after this horrific incident."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1jonq"]
+script = ExtResource("1_i0q44")
 speaker = ExtResource("2_0xspl")
-line = "Yes, Mr. Detective?"
+line = "[i]She sniffles.[/i] I'm... doing as well as i could... but it's so hard without my sweet Phillip..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0xspl"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_v85d3")
+line = "I understand, darling. Don't worry, I'm working as hard as I can to bring the culprit to justice!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_h873l"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_v85d3")
+line = "Now, if it’s not too much of a bother, I would like you to tell me, in detail, what happened earlier tonight, okay? From the beginning."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_bvs0j"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "Well… I came to the restaurant at about 7:45PM... Phillip was fashionably late, spending late hours at the office again…"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_wejaq"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_v85d3")
+line = "Oh? What did your husband do for a living?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_gch4a"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "He was a realtor… I get it, it’s a real cut-throat market, but we had this arranged in advance! Maybe..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_glepv"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "Maybe, if I hadn’t made plans, he would still be here…"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ngqfx"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_v85d3")
+line = "Hey, hey.. Ms. Bezerra, it’s not your fault. We’re trying to catch whoever did this, remember? Focus..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_7liyj"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_v85d3")
+line = "So, when did Phillip arrive?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_y1f4x"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "My husband arrived at about 8:30PM... I met him at the front door, we kissed… [i]She sniffles.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_cs8mo"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "Then we made our way to the table to order an entrée... Eggplant parmesan."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_4d3hm"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_v85d3")
+line = "I see… I remember you mentioned going to the restroom at some point. Remember when that was?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_qedom"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "Oh, that was late in the night, most people had gone home already so it was pretty much just me and Phillip..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_fsuqu"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "I got up to use the restroom before we left, and…"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ugrv6"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "A few minutes later, [color=yellow]I heard an old lady scream.[/color] I looked up at the clock, [color=yellow]it was a quarter past midnight.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_tdmib"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "I rushed back out to see what happened, and that’s when I found him…"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_53ykk"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "Oh, heavens me!! My poor Phillip!! [i]She sobs.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_vojnd"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_v85d3")
+line = "Hey, you're doing great honey, stay with me. Was there anyone else in the room?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_3x1c0"]
+script = ExtResource("1_i0q44")
+speaker = ExtResource("2_0xspl")
+line = "Besides me and the nice old lady… A tall gentleman was watching us from a distance… I think there was someone else but I don’t remember who…"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_x425r"]
+script = ExtResource("1_i0q44")
+line = "[i]I should probably figure out who else was in the room at the time of the murder. Zamora may be able to give me more details if I refresh her memory.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_i4i1v")
-lines = Array[ExtResource("1_i0q44")]([SubResource("Resource_v85d3")])
+lines = Array[ExtResource("1_i0q44")]([SubResource("Resource_v85d3"), SubResource("Resource_1jonq"), SubResource("Resource_0xspl"), SubResource("Resource_h873l"), SubResource("Resource_bvs0j"), SubResource("Resource_wejaq"), SubResource("Resource_gch4a"), SubResource("Resource_glepv"), SubResource("Resource_ngqfx"), SubResource("Resource_7liyj"), SubResource("Resource_y1f4x"), SubResource("Resource_cs8mo"), SubResource("Resource_4d3hm"), SubResource("Resource_qedom"), SubResource("Resource_fsuqu"), SubResource("Resource_ugrv6"), SubResource("Resource_tdmib"), SubResource("Resource_53ykk"), SubResource("Resource_vojnd"), SubResource("Resource_3x1c0"), SubResource("Resource_x425r")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

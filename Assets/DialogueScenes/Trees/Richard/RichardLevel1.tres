@@ -1,15 +1,9 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=17 format=3 uid="uid://qv5eqohsc56t"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=16 format=3 uid="uid://qv5eqohsc56t"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_yijuq"]
 [ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="2_8veiu"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_up21c"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="3_8veiu"]
-
-[sub_resource type="Resource" id="Resource_e1sno"]
-script = ExtResource("1_yijuq")
-speaker = ExtResource("2_8veiu")
-line = "Good evening."
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_3srqw"]
 script = ExtResource("1_yijuq")
@@ -79,5 +73,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_up21c")
-lines = Array[ExtResource("1_yijuq")]([SubResource("Resource_e1sno"), SubResource("Resource_3srqw"), SubResource("Resource_8veiu"), SubResource("Resource_eif25"), SubResource("Resource_ulb67"), SubResource("Resource_fvibw"), SubResource("Resource_2xqkk"), SubResource("Resource_ya2kq"), SubResource("Resource_yrdeb"), SubResource("Resource_jdejy"), SubResource("Resource_1253d"), SubResource("Resource_akts4")])
+lines = Array[ExtResource("1_yijuq")]([SubResource("Resource_3srqw"), SubResource("Resource_8veiu"), SubResource("Resource_eif25"), SubResource("Resource_ulb67"), SubResource("Resource_fvibw"), SubResource("Resource_2xqkk"), SubResource("Resource_ya2kq"), SubResource("Resource_yrdeb"), SubResource("Resource_jdejy"), SubResource("Resource_1253d"), SubResource("Resource_akts4")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"
