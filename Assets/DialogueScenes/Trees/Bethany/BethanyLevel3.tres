@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=19 format=3 uid="uid://bticgo7q330oq"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_tlnrt"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_80b3x"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_vag36"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="3_voc2w"]
+
+[sub_resource type="Resource" id="Resource_wspx7"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("2_vag36")
+line = "Hello again, Ms. Flowers."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_e2vrf"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "Hello, [color=yellow]Benjamin![/color] Any new discoveries?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ubhjp"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("2_vag36")
+line = "Yes, well, I think so. I should've asked you earlier, does the name Philip Andre Bezerra ring any bells?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_cywfn"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ahe8t"]
+script = ExtResource("1_tlnrt")
+line = "[i]Bingo.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_uy5fl"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "Oh, that was so, so long ago! I would come here with him [color=yellow]every other week or so![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_35puk"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "When the [color=yellow]old legs[/color] gave out, he was the one who threw the crowdfunding campaign to get me these skates!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_vag36"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "That's also where I met his wife... What was her name?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_voc2w"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "Yes! Zamora! Of course. Not to toot my own horn, but I'm pretty good with names!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_dlth8"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "And these skates... I love them so much! An old fart like me can really get around with these on! Though [color=yellow]they do make a lot of noise when I'm rolling around.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_3wj7f"]
+script = ExtResource("1_tlnrt")
+line = "[i]Seems like he was a good man.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_nd2l8"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "How's Phil holding up these days, anyways?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ddvno"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("2_vag36")
+line = "..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_fblxq"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("2_vag36")
+line = "Oh, it can wait. I've got to go!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_80b3x")
+lines = Array[ExtResource("1_tlnrt")]([SubResource("Resource_wspx7"), SubResource("Resource_e2vrf"), SubResource("Resource_ubhjp"), SubResource("Resource_cywfn"), SubResource("Resource_ahe8t"), SubResource("Resource_uy5fl"), SubResource("Resource_35puk"), SubResource("Resource_vag36"), SubResource("Resource_voc2w"), SubResource("Resource_dlth8"), SubResource("Resource_3wj7f"), SubResource("Resource_nd2l8"), SubResource("Resource_ddvno"), SubResource("Resource_fblxq")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

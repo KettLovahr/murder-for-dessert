@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=25 format=3 uid="uid://bd0cvbpgc7427"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_i53yg"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_4njxv"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="2_ovtxn"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="3_ffyfa"]
+
+[sub_resource type="Resource" id="Resource_u4cca"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "[color=yellow]Benny![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_mksg3"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("3_ffyfa")
+line = "Hi! It's me again."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ytpip"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("3_ffyfa")
+line = "I've talked to Zamorra, and she told me you were the one who took the picture of Phillips' body she showed me."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_qk3dh"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "Huuuuh? [i]That[/i] was Phillip? Clearly [color=yellow]age didn't treat him as well as it did me![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_2iyt8"]
+script = ExtResource("1_i53yg")
+line = "[i]It took great strength to hold my tongue at this moment.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_8kjhc"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("3_ffyfa")
+line = "This means you got a close look at the murder weapon too. This is a long shot, but what can you tell me about it?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_lmisd"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "It's..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1crr5"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "...A [color=yellow]knife[/color]..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_wo7q7"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("3_ffyfa")
+line = "You're pretty sharp."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ghlym"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "And so was it! [color=yellow]A really sharp knife![/color] A fancy one, from a fancy restaurant. I know because the name was engraved on it! At the blade, near the hilt!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_twgo4"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "That knife glints so evilly! It's like it's [color=yellow]made for a murder case![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ttw0q"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "I can tell you this: they don't sell these anywhere! [color=yellow]They're custom made,[/color] VERY artisanal, so there's only one place you can get them!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_4smpo"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "[color=yellow]Here![/color] Those knives [color=yellow]usually don't leave the kitchen[/color], unless for very special occasions!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ydl06"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "Like a [color=red]murder[/color]!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0tc3a"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "I think..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ilqrg"]
+script = ExtResource("1_i53yg")
+line = "[i]...[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_jpmtn"]
+script = ExtResource("1_i53yg")
+line = "[i]Maybe I didn't give her as much credit as she deserves.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_5aw3l"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "Oh dear, you look astonished, [color=yellow]Bain![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_mmi2j"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("3_ffyfa")
+line = "Oh.. Nope! I'm alright, thank you!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_nuuqa"]
+script = ExtResource("1_i53yg")
+line = "[i]Well, that's a massive breakthrough.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_4njxv")
+lines = Array[ExtResource("1_i53yg")]([SubResource("Resource_u4cca"), SubResource("Resource_mksg3"), SubResource("Resource_ytpip"), SubResource("Resource_qk3dh"), SubResource("Resource_2iyt8"), SubResource("Resource_8kjhc"), SubResource("Resource_lmisd"), SubResource("Resource_1crr5"), SubResource("Resource_wo7q7"), SubResource("Resource_ghlym"), SubResource("Resource_twgo4"), SubResource("Resource_ttw0q"), SubResource("Resource_4smpo"), SubResource("Resource_ydl06"), SubResource("Resource_0tc3a"), SubResource("Resource_ilqrg"), SubResource("Resource_jpmtn"), SubResource("Resource_5aw3l"), SubResource("Resource_mmi2j"), SubResource("Resource_nuuqa")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

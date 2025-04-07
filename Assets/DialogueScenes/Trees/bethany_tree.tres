@@ -1,15 +1,21 @@
-[gd_resource type="Resource" script_class="DialogueTree" load_steps=3 format=3 uid="uid://d1l87by2rn1uh"]
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=6 format=3 uid="uid://d1l87by2rn1uh"]
 
 [ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_0c4j5"]
 [ext_resource type="Resource" uid="uid://dpldvn85rs2vy" path="res://Assets/DialogueScenes/Trees/Bethany/BethanyLevel1.tres" id="1_cmy8y"]
+[ext_resource type="Resource" uid="uid://qwrv0hyuymq5" path="res://Assets/DialogueScenes/Trees/Bethany/BethanyLevel2.tres" id="2_7e48h"]
+[ext_resource type="Resource" uid="uid://bticgo7q330oq" path="res://Assets/DialogueScenes/Trees/Bethany/BethanyLevel3.tres" id="3_15ob3"]
+[ext_resource type="Resource" uid="uid://bd0cvbpgc7427" path="res://Assets/DialogueScenes/Trees/Bethany/BethanyLevel4.tres" id="4_ftwri"]
 
 [resource]
 script = ExtResource("1_0c4j5")
 culprit = "Bethany"
 level_1_scene = ExtResource("1_cmy8y")
 level_1_unlocked = true
+level_2_scene = ExtResource("2_7e48h")
 level_2_unlocked = false
+level_3_scene = ExtResource("3_15ob3")
 level_3_unlocked = false
+level_4_scene = ExtResource("4_ftwri")
 level_4_unlocked = false
 level_5_unlocked = false
 metadata/_custom_type_script = "uid://c11gn3w1niotu"

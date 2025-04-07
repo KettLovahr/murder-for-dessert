@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=21 format=3 uid="uid://qwrv0hyuymq5"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_d3j76"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_fb3vv"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_onblg"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="3_mfwjj"]
+
+[sub_resource type="Resource" id="Resource_dyf6n"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("2_fb3vv")
+line = "Ms. Flowers, I would like to ask..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ywl25"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("3_mfwjj")
+line = "Ah, [color=yellow]Bannon![/color] Back again so soon?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_kqak3"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("2_fb3vv")
+line = "..What? Wait, no. Never mind that. I talked to the the newly widowed fruit-fly lady over there, and she told me she had heard an old lady scream."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ka8e3"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("2_fb3vv")
+line = "I don't mean disrespect, but you do seem to have the most years behind your back out of everyone here. Do you really not remember anything?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0vp86"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("3_mfwjj")
+line = "I can't say that I do... Oh! Wait a second..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_boww6"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("3_mfwjj")
+line = "Did I see anything...? Yeah! Indeed I did! Ohh I was having such a nice dinner too. [color=yellow]Rats![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_3ew3r"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("2_fb3vv")
+line = "What?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_c37fe"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("3_mfwjj")
+line = "I was [color=yellow]eating rats![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_gi5jt"]
+script = ExtResource("1_d3j76")
+line = "[i]At this fancy a restaurant? There's no way they were serving her rats... Is there?[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_gwtch"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("2_fb3vv")
+line = "Well I'm sure it was a nice meal. What can you tell me about the murder, though?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_8hekq"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("3_mfwjj")
+line = "Yes, dear. It's all coming back to me now! I was all done with my meal, and then... [color=yellow]AAAAAHH!![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_gcaji"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("3_mfwjj")
+line = "[color=yellow]A dead man! A dead man![/color] On top of the table! All sliced up! It was terrible! Scary!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_khjak"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("2_fb3vv")
+line = "Hey, hey, it's okay Ms. Flowers, you're safe now, we'll find out who did this, okay?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1jjei"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("3_mfwjj")
+line = "What's that about my safe? [color=yellow]Nobody's gonna lay their hands on that[/color] if I can say anything about it!!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_aamao"]
+script = ExtResource("1_d3j76")
+speaker = ExtResource("2_fb3vv")
+line = "Yes, that's right, nobody."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_uac7e"]
+script = ExtResource("1_d3j76")
+line = "[i]She's a little difficult, but I'm making progress. Now I know for sure that she knows about the murder[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_onblg")
+lines = Array[ExtResource("1_d3j76")]([SubResource("Resource_dyf6n"), SubResource("Resource_ywl25"), SubResource("Resource_kqak3"), SubResource("Resource_ka8e3"), SubResource("Resource_0vp86"), SubResource("Resource_boww6"), SubResource("Resource_3ew3r"), SubResource("Resource_c37fe"), SubResource("Resource_gi5jt"), SubResource("Resource_gwtch"), SubResource("Resource_8hekq"), SubResource("Resource_gcaji"), SubResource("Resource_khjak"), SubResource("Resource_1jjei"), SubResource("Resource_aamao"), SubResource("Resource_uac7e")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"
