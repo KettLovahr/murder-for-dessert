@@ -25,7 +25,10 @@ signal cut_all_music()
 
 var current_line: int = 0
 
+@onready var sfx_nextprev: AudioStreamPlayer = $NextPrev
 @onready var sfx_typing: AudioStreamPlayer = $Typing
+@onready var sfx_scenestart: AudioStreamPlayer = $SceneStart
+@onready var sfx_click: AudioStreamPlayer = $Click
 
 func _ready():
 	reset()
@@ -137,7 +140,7 @@ func _on_previous_pressed() -> void:
 	if current_line > 0:
 		current_line -= 1
 		_update_line()
-		$NextPrev.play()
+		sfx_nextprev.play()
 		dialogue_label.visible_characters = -1
 
 func _on_next_pressed() -> void:
@@ -146,7 +149,7 @@ func _on_next_pressed() -> void:
 	elif current_line < len(dialogue.lines) - 1:
 		current_line += 1
 		_update_line()
-		$NextPrev.play()
+		sfx_nextprev.play()
 	else:
 		if dialogue.resource_name == "PennyLevel5":
 			GameManager.win.emit()
@@ -161,6 +164,7 @@ func _on_pin_action_button_pressed() -> void:
 func _handle_change_scene(scene: DialogueScene) -> void:
 	dialogue = scene
 	reset()
+	sfx_scenestart.play()
 	if dialogue.resource_name == "PennyLevel5":
 		cut_all_music.emit()
 
@@ -168,4 +172,5 @@ func get_current_displayed_line() -> DialogueLine:
 	return dialogue.lines[current_line]
 
 func _on_back_button_pressed() -> void:
+	sfx_click.play()
 	exit_request.emit()

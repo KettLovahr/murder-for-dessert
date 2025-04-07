@@ -6,5 +6,5 @@
 [resource]
 script = ExtResource("1_np582")
 speaker = ExtResource("2_yr8xo")
-line = "The [color=yellow]big-nose rhino-guy[/color]. He was here all along! I'm pretty sure he saw the murder unfold, or, you know."
+line = "The [color=yellow]big-nose rhino-guy[/color]. He was here all along! [color=yellow]I'm pretty sure he saw the murder unfold before even I noticed,[/color] or, you know."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"

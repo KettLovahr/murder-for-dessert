@@ -22,7 +22,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_ytpip"]
 script = ExtResource("1_i53yg")
 speaker = ExtResource("3_ffyfa")
-line = "I've talked to Zamorra, and she told me you were the one who took the picture of Phillips' body she showed me."
+line = "I've talked to Zamora, and she told me you were the one who took the picture of Phillips' body she showed me."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_qk3dh"]

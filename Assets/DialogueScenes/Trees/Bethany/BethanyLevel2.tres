@@ -96,7 +96,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_uac7e"]
 script = ExtResource("1_d3j76")
-line = "[i]She's a little difficult, but I'm making progress. Now I know for sure that she knows about the murder[/i]"
+line = "[i]She's a little difficult, but I'm making progress. Now I know for sure that she knows about the murder.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]

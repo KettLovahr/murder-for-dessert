@@ -22,7 +22,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_ubhjp"]
 script = ExtResource("1_tlnrt")
 speaker = ExtResource("2_vag36")
-line = "Yes, well, I think so. I should've asked you earlier, does the name Philip Andre Bezerra ring any bells?"
+line = "Yes, well, I think so. I should've asked you earlier, does the name Philip Bezerra ring any bells?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_cywfn"]
@@ -48,16 +48,16 @@ speaker = ExtResource("3_voc2w")
 line = "When the [color=yellow]old legs[/color] gave out, he was the one who threw the crowdfunding campaign to get me these skates!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
-[sub_resource type="Resource" id="Resource_vag36"]
-script = ExtResource("1_tlnrt")
-speaker = ExtResource("3_voc2w")
-line = "That's also where I met his wife... [color=yellow]What was her name?[/color]"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
 [sub_resource type="Resource" id="Resource_voc2w"]
 script = ExtResource("1_tlnrt")
 speaker = ExtResource("3_voc2w")
 line = "Yes! Zamora! Of course. Not to toot my own horn, but [color=yellow]I'm pretty good with names![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_vag36"]
+script = ExtResource("1_tlnrt")
+speaker = ExtResource("3_voc2w")
+line = "Yes, yes. [color=yellow]I was great friends with Phillip[/color] and his wife was always such a sweetheart!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_3wj7f"]
@@ -85,5 +85,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_80b3x")
-lines = Array[ExtResource("1_tlnrt")]([SubResource("Resource_wspx7"), SubResource("Resource_e2vrf"), SubResource("Resource_ubhjp"), SubResource("Resource_cywfn"), SubResource("Resource_ahe8t"), SubResource("Resource_uy5fl"), SubResource("Resource_35puk"), SubResource("Resource_vag36"), SubResource("Resource_voc2w"), ExtResource("4_wspx7"), ExtResource("4_voc2w"), SubResource("Resource_3wj7f"), SubResource("Resource_nd2l8"), SubResource("Resource_ddvno"), SubResource("Resource_fblxq")])
+lines = Array[ExtResource("1_tlnrt")]([SubResource("Resource_wspx7"), SubResource("Resource_e2vrf"), SubResource("Resource_ubhjp"), SubResource("Resource_cywfn"), SubResource("Resource_ahe8t"), SubResource("Resource_uy5fl"), SubResource("Resource_35puk"), ExtResource("4_wspx7"), SubResource("Resource_voc2w"), SubResource("Resource_vag36"), ExtResource("4_voc2w"), SubResource("Resource_3wj7f"), SubResource("Resource_nd2l8"), SubResource("Resource_ddvno"), SubResource("Resource_fblxq")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"
