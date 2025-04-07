@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=28 format=3 uid="uid://ci3a6mtv1j34d"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_i37cq"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_o30tu"]
+[ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="3_e088p"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_hb6b3"]
+
+[sub_resource type="Resource" id="Resource_f2h2s"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("2_o30tu")
+line = "Ohhhhhhh, my dearest Penny. Mrs. Whayne. I got you this time!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_i37cq"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "Uhm... W-what do you mean?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_o30tu"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("2_o30tu")
+line = "That little kid over there, Billy, yeah, he saw everything."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_e088p"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("2_o30tu")
+line = "Look at this drawing he made, he witnessed you do it! It's all here!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_hb6b3"]
+script = ExtResource("1_i37cq")
+line = "[i]To be quite honest, I didn't yet know if I could trust the kid to give an accurate account, but if there's any skill I learned 8 years in the business, it's bravado.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_a5nav"]
+script = ExtResource("1_i37cq")
+line = "[i]And as I saw Mrs. Whayne's face get madder and redder, the more confident I got.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_pjr00"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "Godddddddd, this is SO STUPIDDDD!!!! I don't even LOOK like that!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_8r45w"]
+script = ExtResource("1_i37cq")
+line = "[i]Ladies and gentlemen, we got'er.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_l7kto"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "Come ONNNNN, I am NOT going to jail over a sodding [i]PINEAPPLE!![/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_7cp2r"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "Okay, listen here Mr. Detective. I know you're just doing your job, so let me make this reallll easy for you."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_gmebn"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "Like I said, I was alone. I usually work in the kitchen but I was given the closing shift tonight, so [color=yellow]I had to go around the house and clean the tables.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_j6p23"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "That's when I saw it, the bloody pineapple. [color=yellow]It was sitting on the table, completely abandoned.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0bsiu"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "Obviously it's a bit of dessert the patron didn't eat, right? Of course, it was whole, but we serve tons of dishes with whole fruit, don't blame me!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_cb2xl"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "So I thought, \"Hmmm!! I'm doing [i]mise en place[/i] anyway, might as well freeze this for juicing tomorrow, save me a bit of time!\""
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_kpnma"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "I mean, it was completely untouched, so what's the harm?!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_yjm05"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "Well, as it looks like, [color=yellow]a lot.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ceo5l"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "[color=yellow]I sliced it up with my knife right there;[/color] yes I know, I'm sloppy. Sue me. And I went back in the kitchen for just a second to get a container."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_onfv8"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "When I came back, all hell had broken loose."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_6t3dt"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "The cool turtle lady and the fruit-fly lady, [color=yellow]they were both crying and screaming.[/color] Calling the cops. [color=yellow]The little kid was laughing like a maniac...[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_7u3x4"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "And the rhino was... [color=yellow]hiding behind a pillar,[/color] pretending not to be there."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_tfpyi"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "[color=yellow]I'm very sorry Ms. Bezerra,[/color] I actually, genuinely did not know that pineapple was your husband."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_5i6tp"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "But to be frank, how the [color=yellow]HELL[/color] was I supposed to know that??"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_i7mmf"]
+script = ExtResource("1_i37cq")
+speaker = ExtResource("3_e088p")
+line = "Rich people man... Y'all weird me out."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_hb6b3")
+lines = Array[ExtResource("1_i37cq")]([SubResource("Resource_f2h2s"), SubResource("Resource_i37cq"), SubResource("Resource_o30tu"), SubResource("Resource_e088p"), SubResource("Resource_hb6b3"), SubResource("Resource_a5nav"), SubResource("Resource_pjr00"), SubResource("Resource_8r45w"), SubResource("Resource_l7kto"), SubResource("Resource_7cp2r"), SubResource("Resource_gmebn"), SubResource("Resource_j6p23"), SubResource("Resource_0bsiu"), SubResource("Resource_cb2xl"), SubResource("Resource_kpnma"), SubResource("Resource_yjm05"), SubResource("Resource_ceo5l"), SubResource("Resource_onfv8"), SubResource("Resource_6t3dt"), SubResource("Resource_7u3x4"), SubResource("Resource_tfpyi"), SubResource("Resource_5i6tp"), SubResource("Resource_i7mmf")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

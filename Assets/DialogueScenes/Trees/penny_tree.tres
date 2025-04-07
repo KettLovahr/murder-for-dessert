@@ -1,9 +1,11 @@
-[gd_resource type="Resource" script_class="DialogueTree" load_steps=5 format=3 uid="uid://baoybn5l606vx"]
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=7 format=3 uid="uid://baoybn5l606vx"]
 
 [ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_1n83j"]
 [ext_resource type="Resource" uid="uid://ccaji5lqges54" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel1.tres" id="1_2wavy"]
 [ext_resource type="Resource" uid="uid://dhu071bo47epx" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel2.tres" id="2_qotmy"]
 [ext_resource type="Resource" uid="uid://dcpnjgwdrq7b8" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel3.tres" id="3_s5j6b"]
+[ext_resource type="Resource" uid="uid://c25pamo1e11pm" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel4.tres" id="4_af8db"]
+[ext_resource type="Resource" uid="uid://ci3a6mtv1j34d" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel5.tres" id="5_yjuur"]
 
 [resource]
 script = ExtResource("1_1n83j")
@@ -14,6 +16,8 @@ level_2_scene = ExtResource("2_qotmy")
 level_2_unlocked = false
 level_3_scene = ExtResource("3_s5j6b")
 level_3_unlocked = false
+level_4_scene = ExtResource("4_af8db")
 level_4_unlocked = false
+level_5_scene = ExtResource("5_yjuur")
 level_5_unlocked = false
 metadata/_custom_type_script = "uid://c11gn3w1niotu"
