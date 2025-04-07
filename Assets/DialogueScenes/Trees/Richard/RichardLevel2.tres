@@ -32,7 +32,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_depju"]
 script = ExtResource("1_gljiv")
 speaker = ExtResource("2_x4gn7")
-line = "Perhaps, yes, I did show a smidgen of emotion earlier in the night. Why? How is that relevant, pray tell?"
+line = "[color=yellow]Perhaps, yes, I did show a smidgen of emotion earlier in the night.[/color] Why? How is that relevant, pray tell?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_i30ks"]
