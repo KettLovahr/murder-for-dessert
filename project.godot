@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="LD57"
-run/main_scene="uid://c6lmcdqjg8w4j"
+config/name="Murder for Dessert"
+run/main_scene="uid://b0qi6rdgjwa8v"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
