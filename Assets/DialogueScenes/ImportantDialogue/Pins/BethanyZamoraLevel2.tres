@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://st5m1f55ridh"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_olp6h"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="2_gp4hx"]
+
+[resource]
+script = ExtResource("1_olp6h")
+speaker = ExtResource("2_gp4hx")
+line = "Yes, yes. [color=yellow]I was great friends with Phillip[/color] and [color=yellow]his wife was always such a sweetheart![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

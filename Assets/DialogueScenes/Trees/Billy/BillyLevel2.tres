@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_f8buk"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_oywe6"]
 [ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="3_1jyln"]
+[ext_resource type="Resource" uid="uid://dtexq7pdpsbi4" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BillyZamoraLevel1.tres" id="4_oywe6"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_xs3ar"]
 
 [sub_resource type="Resource" id="Resource_f8buk"]
@@ -52,12 +53,6 @@ speaker = ExtResource("2_oywe6")
 line = "Like I said, I'm investigating a crime - a murder! Did you see anything that could help me figure out who did it?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
-[sub_resource type="Resource" id="Resource_fqrim"]
-script = ExtResource("1_f8buk")
-speaker = ExtResource("3_1jyln")
-line = "Yep yep! [color=yellow]I was here, sir! I was here from the beginning to the end! I saw everything!![/color]"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
 [sub_resource type="Resource" id="Resource_s7dgp"]
 script = ExtResource("1_f8buk")
 speaker = ExtResource("3_1jyln")
@@ -95,5 +90,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("4_xs3ar")
-lines = Array[ExtResource("1_f8buk")]([SubResource("Resource_f8buk"), SubResource("Resource_oywe6"), SubResource("Resource_1jyln"), SubResource("Resource_xs3ar"), SubResource("Resource_elxun"), SubResource("Resource_f7rx8"), SubResource("Resource_75dqd"), SubResource("Resource_o4see"), SubResource("Resource_fqrim"), SubResource("Resource_s7dgp"), SubResource("Resource_m3lbt"), SubResource("Resource_7xsbw"), SubResource("Resource_12rey"), SubResource("Resource_rju74"), SubResource("Resource_ksjye")])
+lines = Array[ExtResource("1_f8buk")]([SubResource("Resource_f8buk"), SubResource("Resource_oywe6"), SubResource("Resource_1jyln"), SubResource("Resource_xs3ar"), SubResource("Resource_elxun"), SubResource("Resource_f7rx8"), SubResource("Resource_75dqd"), SubResource("Resource_o4see"), ExtResource("4_oywe6"), SubResource("Resource_s7dgp"), SubResource("Resource_m3lbt"), SubResource("Resource_7xsbw"), SubResource("Resource_12rey"), SubResource("Resource_rju74"), SubResource("Resource_ksjye")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

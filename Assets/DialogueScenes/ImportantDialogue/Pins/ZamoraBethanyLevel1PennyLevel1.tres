@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://cmis6h2ppoue6"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_cem2y"]
+[ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="2_kpcv6"]
+
+[resource]
+script = ExtResource("1_cem2y")
+speaker = ExtResource("2_kpcv6")
+line = "A few minutes later, [color=yellow]I heard an old lady scream.[/color] I looked up at the clock, [color=yellow]it was a quarter past midnight.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

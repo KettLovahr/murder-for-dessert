@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_o3cwv"]
 [ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="3_w0qdd"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_f7vs5"]
+[ext_resource type="Resource" uid="uid://bdk6ur8uhesdt" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BillyPennyLevel4.tres" id="4_o3cwv"]
 
 [sub_resource type="Resource" id="Resource_3xrol"]
 script = ExtResource("1_qltyk")
@@ -39,12 +40,6 @@ script = ExtResource("1_qltyk")
 line = "[i]As the kid showed me his newest work of art, it was clear to see, with a little bit of child-like imagination, that this was a pivotal testimony.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
-[sub_resource type="Resource" id="Resource_machi"]
-script = ExtResource("1_qltyk")
-speaker = ExtResource("3_w0qdd")
-line = "See? [color=yellow]The monster, the knife, the pineapple!! It's all there! I saw it!![/color]"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
 [sub_resource type="Resource" id="Resource_u3mdo"]
 script = ExtResource("1_qltyk")
 speaker = ExtResource("2_o3cwv")
@@ -77,5 +72,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("4_f7vs5")
-lines = Array[ExtResource("1_qltyk")]([SubResource("Resource_3xrol"), SubResource("Resource_qltyk"), SubResource("Resource_o3cwv"), SubResource("Resource_w0qdd"), SubResource("Resource_f7vs5"), SubResource("Resource_j748c"), SubResource("Resource_machi"), SubResource("Resource_u3mdo"), SubResource("Resource_elgqb"), SubResource("Resource_37wcc"), SubResource("Resource_hng87"), SubResource("Resource_pchyb")])
+lines = Array[ExtResource("1_qltyk")]([SubResource("Resource_3xrol"), SubResource("Resource_qltyk"), SubResource("Resource_o3cwv"), SubResource("Resource_w0qdd"), SubResource("Resource_f7vs5"), SubResource("Resource_j748c"), ExtResource("4_o3cwv"), SubResource("Resource_u3mdo"), SubResource("Resource_elgqb"), SubResource("Resource_37wcc"), SubResource("Resource_hng87"), SubResource("Resource_pchyb")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

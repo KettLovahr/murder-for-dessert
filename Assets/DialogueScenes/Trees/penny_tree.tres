@@ -1,23 +1,31 @@
-[gd_resource type="Resource" script_class="DialogueTree" load_steps=7 format=3 uid="uid://baoybn5l606vx"]
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=11 format=3 uid="uid://baoybn5l606vx"]
 
 [ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_1n83j"]
 [ext_resource type="Resource" uid="uid://ccaji5lqges54" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel1.tres" id="1_2wavy"]
+[ext_resource type="Resource" uid="uid://cmis6h2ppoue6" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/ZamoraBethanyLevel1PennyLevel1.tres" id="1_yjuur"]
 [ext_resource type="Resource" uid="uid://dhu071bo47epx" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel2.tres" id="2_qotmy"]
 [ext_resource type="Resource" uid="uid://dcpnjgwdrq7b8" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel3.tres" id="3_s5j6b"]
+[ext_resource type="Resource" uid="uid://b07o8grprivb0" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/RichardPennyLevel2.tres" id="3_xdxks"]
 [ext_resource type="Resource" uid="uid://c25pamo1e11pm" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel4.tres" id="4_af8db"]
+[ext_resource type="Resource" uid="uid://c4d3g7gau3715" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BethanyPennyLevel3.tres" id="5_5077v"]
 [ext_resource type="Resource" uid="uid://ci3a6mtv1j34d" path="res://Assets/DialogueScenes/Trees/Penny/PennyLevel5.tres" id="5_yjuur"]
+[ext_resource type="Resource" uid="uid://bdk6ur8uhesdt" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BillyPennyLevel4.tres" id="7_28t5o"]
 
 [resource]
 script = ExtResource("1_1n83j")
 culprit = "Penny"
 level_1_scene = ExtResource("1_2wavy")
 level_1_unlocked = true
+level_1_pin = ExtResource("1_yjuur")
 level_2_scene = ExtResource("2_qotmy")
 level_2_unlocked = false
+level_2_pin = ExtResource("3_xdxks")
 level_3_scene = ExtResource("3_s5j6b")
 level_3_unlocked = false
+level_3_pin = ExtResource("5_5077v")
 level_4_scene = ExtResource("4_af8db")
 level_4_unlocked = false
+level_4_pin = ExtResource("7_28t5o")
 level_5_scene = ExtResource("5_yjuur")
 level_5_unlocked = false
 metadata/_custom_type_script = "uid://c11gn3w1niotu"

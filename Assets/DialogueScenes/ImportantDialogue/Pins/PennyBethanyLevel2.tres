@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://bpelfa7ann26g"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_sa1ie"]
+[ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="2_jsrtv"]
+
+[resource]
+script = ExtResource("1_sa1ie")
+speaker = ExtResource("2_jsrtv")
+line = "You know that cool old lady over there? [color=yellow]I think she and the victim knew one other.[/color] We have a bunch of photos of her and the pineapple dining together back at the entrance gallery."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

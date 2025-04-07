@@ -1,9 +1,11 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=19 format=3 uid="uid://bticgo7q330oq"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=20 format=3 uid="uid://bticgo7q330oq"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_tlnrt"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_80b3x"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_vag36"]
 [ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="3_voc2w"]
+[ext_resource type="Resource" uid="uid://cbtks4htds45r" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BethanyBillyLevel2.tres" id="4_voc2w"]
+[ext_resource type="Resource" uid="uid://st5m1f55ridh" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BethanyZamoraLevel2.tres" id="4_wspx7"]
 
 [sub_resource type="Resource" id="Resource_wspx7"]
 script = ExtResource("1_tlnrt")
@@ -49,19 +51,13 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_vag36"]
 script = ExtResource("1_tlnrt")
 speaker = ExtResource("3_voc2w")
-line = "That's also where I met his wife... What was her name?"
+line = "That's also where I met his wife... [color=yellow]What was her name?[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_voc2w"]
 script = ExtResource("1_tlnrt")
 speaker = ExtResource("3_voc2w")
-line = "Yes! Zamora! Of course. Not to toot my own horn, but I'm pretty good with names!"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
-[sub_resource type="Resource" id="Resource_dlth8"]
-script = ExtResource("1_tlnrt")
-speaker = ExtResource("3_voc2w")
-line = "And these skates... I love them so much! An old fart like me can really get around with these on! Though [color=yellow]they do make a lot of noise when I'm rolling around.[/color]"
+line = "Yes! Zamora! Of course. Not to toot my own horn, but [color=yellow]I'm pretty good with names![/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_3wj7f"]
@@ -89,5 +85,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_80b3x")
-lines = Array[ExtResource("1_tlnrt")]([SubResource("Resource_wspx7"), SubResource("Resource_e2vrf"), SubResource("Resource_ubhjp"), SubResource("Resource_cywfn"), SubResource("Resource_ahe8t"), SubResource("Resource_uy5fl"), SubResource("Resource_35puk"), SubResource("Resource_vag36"), SubResource("Resource_voc2w"), SubResource("Resource_dlth8"), SubResource("Resource_3wj7f"), SubResource("Resource_nd2l8"), SubResource("Resource_ddvno"), SubResource("Resource_fblxq")])
+lines = Array[ExtResource("1_tlnrt")]([SubResource("Resource_wspx7"), SubResource("Resource_e2vrf"), SubResource("Resource_ubhjp"), SubResource("Resource_cywfn"), SubResource("Resource_ahe8t"), SubResource("Resource_uy5fl"), SubResource("Resource_35puk"), SubResource("Resource_vag36"), SubResource("Resource_voc2w"), ExtResource("4_wspx7"), ExtResource("4_voc2w"), SubResource("Resource_3wj7f"), SubResource("Resource_nd2l8"), SubResource("Resource_ddvno"), SubResource("Resource_fblxq")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

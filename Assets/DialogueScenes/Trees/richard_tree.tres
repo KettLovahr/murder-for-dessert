@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="DialogueTree" load_steps=7 format=3 uid="uid://207owsn3nayc"]
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=9 format=3 uid="uid://207owsn3nayc"]
 
 [ext_resource type="Resource" uid="uid://15odiy2foag1" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BillyRichardLevel1.tres" id="1_66yi3"]
 [ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_sql8x"]
 [ext_resource type="Resource" uid="uid://qv5eqohsc56t" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel1.tres" id="1_uncmw"]
 [ext_resource type="Resource" uid="uid://dplc4oqy1jg4k" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel2.tres" id="2_w568w"]
 [ext_resource type="Resource" uid="uid://b3h46pf6a80uw" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel3.tres" id="3_6ya2m"]
+[ext_resource type="Resource" uid="uid://c74equtshn5lp" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BethanyRichardLevel2.tres" id="3_gp65v"]
 [ext_resource type="Resource" uid="uid://b6t84scijebbb" path="res://Assets/DialogueScenes/Trees/Richard/RichardLevel4.tres" id="4_yyvqf"]
+[ext_resource type="Resource" uid="uid://dhgj5ab5pomsp" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/RichardRichardLevel3.tres" id="5_r2n8i"]
 
 [resource]
 script = ExtResource("1_sql8x")
@@ -15,8 +17,10 @@ level_1_unlocked = true
 level_1_pin = ExtResource("1_66yi3")
 level_2_scene = ExtResource("2_w568w")
 level_2_unlocked = false
+level_2_pin = ExtResource("3_gp65v")
 level_3_scene = ExtResource("3_6ya2m")
 level_3_unlocked = false
+level_3_pin = ExtResource("5_r2n8i")
 level_4_scene = ExtResource("4_yyvqf")
 level_4_unlocked = false
 level_5_unlocked = false

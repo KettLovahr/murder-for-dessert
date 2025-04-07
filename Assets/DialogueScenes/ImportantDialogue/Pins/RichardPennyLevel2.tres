@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://b07o8grprivb0"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_juj1l"]
+[ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="2_aghvc"]
+
+[resource]
+script = ExtResource("1_juj1l")
+speaker = ExtResource("2_aghvc")
+line = "My dad called me, he said [color=yellow]I was removed from the will unless I go out there and get a real job.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

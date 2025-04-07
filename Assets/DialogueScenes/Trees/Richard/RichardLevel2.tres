@@ -3,7 +3,9 @@
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_gljiv"]
 [ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="2_x4gn7"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="3_co82a"]
+[ext_resource type="Resource" uid="uid://deeoqd1kmxnuy" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/RichardBillyLevel1.tres" id="4_co82a"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_depju"]
+[ext_resource type="Resource" uid="uid://b07o8grprivb0" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/RichardPennyLevel2.tres" id="4_x4gn7"]
 
 [sub_resource type="Resource" id="Resource_5csfp"]
 script = ExtResource("1_gljiv")
@@ -27,12 +29,6 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 script = ExtResource("1_gljiv")
 speaker = ExtResource("2_x4gn7")
 line = "Is that so?"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
-[sub_resource type="Resource" id="Resource_depju"]
-script = ExtResource("1_gljiv")
-speaker = ExtResource("2_x4gn7")
-line = "[color=yellow]Perhaps, yes, I did show a smidgen of emotion earlier in the night.[/color] Why? How is that relevant, pray tell?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_i30ks"]
@@ -62,12 +58,6 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 script = ExtResource("1_gljiv")
 speaker = ExtResource("2_x4gn7")
 line = "Fine, then. If it is so important to you. I'll say it."
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
-[sub_resource type="Resource" id="Resource_50je1"]
-script = ExtResource("1_gljiv")
-speaker = ExtResource("2_x4gn7")
-line = "My dad called me, he said [color=yellow]I was removed from the will unless I go out there and get a real job.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ee40v"]
@@ -123,5 +113,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("4_depju")
-lines = Array[ExtResource("1_gljiv")]([SubResource("Resource_5csfp"), SubResource("Resource_gljiv"), SubResource("Resource_x4gn7"), SubResource("Resource_co82a"), SubResource("Resource_depju"), SubResource("Resource_i30ks"), SubResource("Resource_djwyr"), SubResource("Resource_oqx6c"), SubResource("Resource_x82xw"), SubResource("Resource_41scb"), SubResource("Resource_50je1"), SubResource("Resource_ee40v"), SubResource("Resource_6dgep"), SubResource("Resource_7pq8o"), SubResource("Resource_iufd5"), SubResource("Resource_uts05"), SubResource("Resource_uufqe"), SubResource("Resource_5majl"), SubResource("Resource_vbvlf"), SubResource("Resource_madyg")])
+lines = Array[ExtResource("1_gljiv")]([SubResource("Resource_5csfp"), SubResource("Resource_gljiv"), SubResource("Resource_x4gn7"), SubResource("Resource_co82a"), ExtResource("4_co82a"), SubResource("Resource_i30ks"), SubResource("Resource_djwyr"), SubResource("Resource_oqx6c"), SubResource("Resource_x82xw"), SubResource("Resource_41scb"), ExtResource("4_x4gn7"), SubResource("Resource_ee40v"), SubResource("Resource_6dgep"), SubResource("Resource_7pq8o"), SubResource("Resource_iufd5"), SubResource("Resource_uts05"), SubResource("Resource_uufqe"), SubResource("Resource_5majl"), SubResource("Resource_vbvlf"), SubResource("Resource_madyg")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

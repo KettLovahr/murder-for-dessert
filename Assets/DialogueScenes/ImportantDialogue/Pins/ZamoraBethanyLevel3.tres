@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://646a68ink5qc"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_fsk6s"]
+[ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="2_h2u1s"]
+
+[resource]
+script = ExtResource("1_fsk6s")
+speaker = ExtResource("2_h2u1s")
+line = "While I was crying in a corner... [color=yellow]she was actually the one who took the picture[/color] for me, to give to you."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

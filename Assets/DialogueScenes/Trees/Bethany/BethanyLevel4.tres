@@ -1,9 +1,11 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=25 format=3 uid="uid://bd0cvbpgc7427"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=31 format=3 uid="uid://bd0cvbpgc7427"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_i53yg"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_4njxv"]
 [ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="2_ovtxn"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="3_ffyfa"]
+[ext_resource type="Resource" uid="uid://c4d3g7gau3715" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BethanyPennyLevel3.tres" id="4_u4cca"]
+[ext_resource type="Resource" uid="uid://c74equtshn5lp" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BethanyRichardLevel2.tres" id="5_mksg3"]
 
 [sub_resource type="Resource" id="Resource_u4cca"]
 script = ExtResource("1_i53yg")
@@ -64,6 +66,12 @@ speaker = ExtResource("2_ovtxn")
 line = "And so was it! [color=yellow]A really sharp knife![/color] A fancy one, from a fancy restaurant. I know because the name was engraved on it! At the blade, near the hilt!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
+[sub_resource type="Resource" id="Resource_ovtxn"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "[color=yellow]\"The Grand Apricot\"[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
 [sub_resource type="Resource" id="Resource_twgo4"]
 script = ExtResource("1_i53yg")
 speaker = ExtResource("2_ovtxn")
@@ -74,12 +82,6 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 script = ExtResource("1_i53yg")
 speaker = ExtResource("2_ovtxn")
 line = "I can tell you this: they don't sell these anywhere! [color=yellow]They're custom made,[/color] VERY artisanal, so there's only one place you can get them!"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
-[sub_resource type="Resource" id="Resource_4smpo"]
-script = ExtResource("1_i53yg")
-speaker = ExtResource("2_ovtxn")
-line = "[color=yellow]Here![/color] Those knives [color=yellow]usually don't leave the kitchen[/color], unless for very special occasions!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ydl06"]
@@ -121,7 +123,30 @@ script = ExtResource("1_i53yg")
 line = "[i]Well, that's a massive breakthrough.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
+[sub_resource type="Resource" id="Resource_ffyfa"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "Oh, another thing!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_84jq4"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "[color=yellow]Did the deed.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_p4vw2"]
+script = ExtResource("1_i53yg")
+speaker = ExtResource("2_ovtxn")
+line = "Can't be too sure though, [color=yellow]honey[/color]. Good luck with your sleuthing!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_os12m"]
+script = ExtResource("1_i53yg")
+line = "[i]I think I got everything I want out of her. What a nice old lady.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
 [resource]
 script = ExtResource("2_4njxv")
-lines = Array[ExtResource("1_i53yg")]([SubResource("Resource_u4cca"), SubResource("Resource_mksg3"), SubResource("Resource_ytpip"), SubResource("Resource_qk3dh"), SubResource("Resource_2iyt8"), SubResource("Resource_8kjhc"), SubResource("Resource_lmisd"), SubResource("Resource_1crr5"), SubResource("Resource_wo7q7"), SubResource("Resource_ghlym"), SubResource("Resource_twgo4"), SubResource("Resource_ttw0q"), SubResource("Resource_4smpo"), SubResource("Resource_ydl06"), SubResource("Resource_0tc3a"), SubResource("Resource_ilqrg"), SubResource("Resource_jpmtn"), SubResource("Resource_5aw3l"), SubResource("Resource_mmi2j"), SubResource("Resource_nuuqa")])
+lines = Array[ExtResource("1_i53yg")]([SubResource("Resource_u4cca"), SubResource("Resource_mksg3"), SubResource("Resource_ytpip"), SubResource("Resource_qk3dh"), SubResource("Resource_2iyt8"), SubResource("Resource_8kjhc"), SubResource("Resource_lmisd"), SubResource("Resource_1crr5"), SubResource("Resource_wo7q7"), SubResource("Resource_ghlym"), SubResource("Resource_ovtxn"), SubResource("Resource_twgo4"), SubResource("Resource_ttw0q"), ExtResource("4_u4cca"), SubResource("Resource_ydl06"), SubResource("Resource_0tc3a"), SubResource("Resource_ilqrg"), SubResource("Resource_jpmtn"), SubResource("Resource_5aw3l"), SubResource("Resource_mmi2j"), SubResource("Resource_nuuqa"), SubResource("Resource_ffyfa"), ExtResource("5_mksg3"), SubResource("Resource_84jq4"), SubResource("Resource_p4vw2"), SubResource("Resource_os12m")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

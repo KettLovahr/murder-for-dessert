@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://cbtks4htds45r"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_qaiml"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="2_babdc"]
+
+[resource]
+script = ExtResource("1_qaiml")
+speaker = ExtResource("2_babdc")
+line = "And these skates... I love them so much! An old fart like me can really get around with these on! Though [color=yellow]they do make a lot of noise when I'm rolling around.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

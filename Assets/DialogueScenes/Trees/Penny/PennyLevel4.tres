@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_rq51q"]
 [ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="3_ywrtf"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_ph552"]
+[ext_resource type="Resource" uid="uid://c5rnwoajoppg0" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/PennyBillyLevel3.tres" id="4_rq51q"]
 
 [sub_resource type="Resource" id="Resource_tebp8"]
 script = ExtResource("1_ukc0c")
@@ -65,12 +66,6 @@ speaker = ExtResource("2_rq51q")
 line = "Have you used a knife like this during your shift tonight Mrs. Whayne?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
-[sub_resource type="Resource" id="Resource_60d8l"]
-script = ExtResource("1_ukc0c")
-speaker = ExtResource("3_ywrtf")
-line = "I guess it's possible... We only have a couple of these knives, [color=yellow]I may have even touched the one used in the crime, but...[/color]"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
 [sub_resource type="Resource" id="Resource_45aoh"]
 script = ExtResource("1_ukc0c")
 speaker = ExtResource("3_ywrtf")
@@ -97,5 +92,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("4_ph552")
-lines = Array[ExtResource("1_ukc0c")]([SubResource("Resource_tebp8"), SubResource("Resource_ukc0c"), SubResource("Resource_rq51q"), SubResource("Resource_ywrtf"), SubResource("Resource_ph552"), SubResource("Resource_5lbgs"), SubResource("Resource_loqap"), SubResource("Resource_aycwd"), SubResource("Resource_4qth4"), SubResource("Resource_4v82e"), SubResource("Resource_60d8l"), SubResource("Resource_45aoh"), SubResource("Resource_ev52g"), SubResource("Resource_quu1i"), SubResource("Resource_xukgq")])
+lines = Array[ExtResource("1_ukc0c")]([SubResource("Resource_tebp8"), SubResource("Resource_ukc0c"), SubResource("Resource_rq51q"), SubResource("Resource_ywrtf"), SubResource("Resource_ph552"), SubResource("Resource_5lbgs"), SubResource("Resource_loqap"), SubResource("Resource_aycwd"), SubResource("Resource_4qth4"), SubResource("Resource_4v82e"), ExtResource("4_rq51q"), SubResource("Resource_45aoh"), SubResource("Resource_ev52g"), SubResource("Resource_quu1i"), SubResource("Resource_xukgq")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

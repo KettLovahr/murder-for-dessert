@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="2_8veiu"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_up21c"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="3_8veiu"]
+[ext_resource type="Resource" uid="uid://dhgj5ab5pomsp" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/RichardRichardLevel3.tres" id="4_e1sno"]
 
 [sub_resource type="Resource" id="Resource_3srqw"]
 script = ExtResource("1_yijuq")
@@ -33,12 +34,6 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 script = ExtResource("1_yijuq")
 speaker = ExtResource("2_8veiu")
 line = "Of course, [color=yellow]Pineapples may be a little too... exotic, and acid,[/color] but in no way does it justify a murder so horrific."
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
-[sub_resource type="Resource" id="Resource_2xqkk"]
-script = ExtResource("1_yijuq")
-speaker = ExtResource("2_8veiu")
-line = "In fact, [color=yellow]I was sat right beside Ms. Bezerra[/color] and had to regrettably watch her scream and sob for her beloved."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ya2kq"]
@@ -73,5 +68,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_up21c")
-lines = Array[ExtResource("1_yijuq")]([SubResource("Resource_3srqw"), SubResource("Resource_8veiu"), SubResource("Resource_eif25"), SubResource("Resource_ulb67"), SubResource("Resource_fvibw"), SubResource("Resource_2xqkk"), SubResource("Resource_ya2kq"), SubResource("Resource_yrdeb"), SubResource("Resource_jdejy"), SubResource("Resource_1253d"), SubResource("Resource_akts4")])
+lines = Array[ExtResource("1_yijuq")]([SubResource("Resource_3srqw"), SubResource("Resource_8veiu"), SubResource("Resource_eif25"), SubResource("Resource_ulb67"), SubResource("Resource_fvibw"), ExtResource("4_e1sno"), SubResource("Resource_ya2kq"), SubResource("Resource_yrdeb"), SubResource("Resource_jdejy"), SubResource("Resource_1253d"), SubResource("Resource_akts4")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

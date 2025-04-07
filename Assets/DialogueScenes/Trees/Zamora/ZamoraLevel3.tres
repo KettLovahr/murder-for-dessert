@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_jjk68"]
 [ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="3_de5ju"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_55awn"]
+[ext_resource type="Resource" uid="uid://646a68ink5qc" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/ZamoraBethanyLevel3.tres" id="4_jjk68"]
 
 [sub_resource type="Resource" id="Resource_7epm0"]
 script = ExtResource("1_de5ju")
@@ -39,12 +40,6 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 script = ExtResource("1_de5ju")
 speaker = ExtResource("3_de5ju")
 line = "Look at her now, she's so joyous with her new skates... [color=yellow]She was so kind to me during my darkest time...[/color]"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
-[sub_resource type="Resource" id="Resource_5rmvd"]
-script = ExtResource("1_de5ju")
-speaker = ExtResource("3_de5ju")
-line = "While I was crying in a corner... [color=yellow]she was actually the one who took the picture[/color] for me, to give to you."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_7qd55"]
@@ -85,5 +80,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("4_55awn")
-lines = Array[ExtResource("1_de5ju")]([SubResource("Resource_7epm0"), SubResource("Resource_jjk68"), SubResource("Resource_de5ju"), SubResource("Resource_ctigh"), SubResource("Resource_55awn"), SubResource("Resource_1jd7j"), SubResource("Resource_5rmvd"), SubResource("Resource_7qd55"), SubResource("Resource_f55hk"), SubResource("Resource_0dppj"), SubResource("Resource_2ynay"), SubResource("Resource_qopy6"), SubResource("Resource_i37ov")])
+lines = Array[ExtResource("1_de5ju")]([SubResource("Resource_7epm0"), SubResource("Resource_jjk68"), SubResource("Resource_de5ju"), SubResource("Resource_ctigh"), SubResource("Resource_55awn"), SubResource("Resource_1jd7j"), ExtResource("4_jjk68"), SubResource("Resource_7qd55"), SubResource("Resource_f55hk"), SubResource("Resource_0dppj"), SubResource("Resource_2ynay"), SubResource("Resource_qopy6"), SubResource("Resource_i37ov")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

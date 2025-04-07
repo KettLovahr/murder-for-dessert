@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://dtexq7pdpsbi4"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_uishi"]
+[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="2_ta1q8"]
+
+[resource]
+script = ExtResource("1_uishi")
+speaker = ExtResource("2_ta1q8")
+line = "Yep yep! [color=yellow]I was here, sir! I was here from the beginning to the end! I saw everything!![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

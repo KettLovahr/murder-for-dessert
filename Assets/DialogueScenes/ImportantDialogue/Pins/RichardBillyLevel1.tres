@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://deeoqd1kmxnuy"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_rrrfv"]
+[ext_resource type="Resource" uid="uid://1mkrxxaulhtu" path="res://Assets/Speakers/SpeakerRichard.tres" id="2_rpn0f"]
+
+[resource]
+script = ExtResource("1_rrrfv")
+speaker = ExtResource("2_rpn0f")
+line = "[color=yellow]Perhaps, yes, I did show a smidgen of emotion earlier in the night.[/color] Why? How is that relevant, pray tell?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

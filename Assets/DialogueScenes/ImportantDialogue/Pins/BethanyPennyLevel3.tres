@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://c4d3g7gau3715"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_fiui8"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="2_f41il"]
+
+[resource]
+script = ExtResource("1_fiui8")
+speaker = ExtResource("2_f41il")
+line = "[color=yellow]Here![/color] Those knives [color=yellow]usually don't leave the kitchen[/color], unless for very special occasions!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"

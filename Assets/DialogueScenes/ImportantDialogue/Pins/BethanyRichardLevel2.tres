@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://c74equtshn5lp"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_np582"]
+[ext_resource type="Resource" uid="uid://6o8k7msmm58o" path="res://Assets/Speakers/SpeakerBethany.tres" id="2_yr8xo"]
+
+[resource]
+script = ExtResource("1_np582")
+speaker = ExtResource("2_yr8xo")
+line = "The [color=yellow]big-nose rhino-guy[/color]. He was here all along! I'm pretty sure he saw the murder unfold, or, you know."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
