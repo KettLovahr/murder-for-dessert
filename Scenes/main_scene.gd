@@ -57,4 +57,6 @@ func _on_win() -> void:
 
 
 func _on_dialogue_ui_cut_all_music() -> void:
+	GameManager.pins = []
+	$UILayer/Inventory._update_buttons()
 	$AudioStreamPlayer/AudioFader.play("fade_out")

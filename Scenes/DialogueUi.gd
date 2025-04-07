@@ -181,6 +181,7 @@ func _handle_change_scene(scene: DialogueScene) -> void:
 			button.texture_normal = load("res://Assets/Textures/Conversation/conversation_dialogue_hover.png")
 	if dialogue.resource_name == "PennyLevel5":
 		cut_all_music.emit()
+		$DialogueBox/PinActionButton.position.y = 4000 # lol
 
 func get_current_displayed_line() -> DialogueLine:
 	return dialogue.lines[current_line]

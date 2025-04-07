@@ -27,5 +27,5 @@ level_4_scene = ExtResource("4_af8db")
 level_4_unlocked = false
 level_4_pin = ExtResource("7_28t5o")
 level_5_scene = ExtResource("5_yjuur")
-level_5_unlocked = false
+level_5_unlocked = true
 metadata/_custom_type_script = "uid://c11gn3w1niotu"

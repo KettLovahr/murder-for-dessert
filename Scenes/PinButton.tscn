@@ -17,7 +17,7 @@ script = ExtResource("2_s6jnu")
 
 [node name="Tooltip" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(198, 170)
+position = Vector2(224, 170)
 texture = ExtResource("3_p3vwy")
 
 [node name="DeleteButton" type="TextureButton" parent="Tooltip"]
