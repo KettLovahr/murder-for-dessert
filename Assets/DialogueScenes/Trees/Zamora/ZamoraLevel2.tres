@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=14 format=3 uid="uid://d3swos0tnyup"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_5osem"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_awvrv"]
+[ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="3_q5jue"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_1a566"]
+
+[sub_resource type="Resource" id="Resource_b53by"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("2_awvrv")
+line = "Ms. Bezerra, I talked to little Billy over there, and he said he was in the room too and saw everything. Do you concur?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_5osem"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("3_q5jue")
+line = "Oh... yes, I suppose that makes sense."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_awvrv"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("3_q5jue")
+line = "I think I saw that little devil kneeling behind a table and snickering while we all freaked out..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_q5jue"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("3_q5jue")
+line = "What's wrong with the youths nowadays, where are his parents?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1a566"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("2_awvrv")
+line = "Well, you know how kids are... In any case, I don't think he has anything important for me, he's just messing about."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_fv5pr"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("2_awvrv")
+line = "Tell me, Ms. Bezerra, do you perhaps know any of these people?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_fbygo"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("3_q5jue")
+line = "Please, honey, just call me Zamora."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_5fc0v"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("3_q5jue")
+line = "I... have a vague memory of seeing the sweet old lady before, but I can't remember where."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_e3wwm"]
+script = ExtResource("1_5osem")
+speaker = ExtResource("3_q5jue")
+line = "I wonder if we've met."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_1a566")
+lines = Array[ExtResource("1_5osem")]([SubResource("Resource_b53by"), SubResource("Resource_5osem"), SubResource("Resource_awvrv"), SubResource("Resource_q5jue"), SubResource("Resource_1a566"), SubResource("Resource_fv5pr"), SubResource("Resource_fbygo"), SubResource("Resource_5fc0v"), SubResource("Resource_e3wwm")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

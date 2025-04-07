@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=16 format=3 uid="uid://dwkllr4ks13t2"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_de5ju"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_jjk68"]
+[ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="3_de5ju"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_55awn"]
+
+[sub_resource type="Resource" id="Resource_7epm0"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("2_jjk68")
+line = "Hello Zamora! I talked to the old lady, she told me your husband and her were actually great friends!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_jjk68"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "A friend of Phillip's? Really?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_de5ju"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("2_jjk68")
+line = "Yes! They even have a few pictures together!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_ctigh"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("2_jjk68")
+line = "She told me Phillip organized a crowdfund to buy her the roller skates she needed, and that's where you first met."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_55awn"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "Oh yes... Yes of course! That's why she looked so familiar!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1jd7j"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "Look at her now, she's so joyous with her new skates... She was so kind to me during my darkest time..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_f55hk"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "You know, Mr. Detective... Besides all that's happened... "
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0dppj"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "It's nice to know that I've always had a friend by my side, even if I didn't realize."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_2ynay"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "Maybe we should catch up, share some memories... Lest we forget what a truly great husband and friend my dear Phillip was."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_qopy6"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "For now... I'm afraid that's all I have for you, honey. I hope you can still figure out who murdered the love of my life."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_i37ov"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "Make them suffer. They deserve to rot."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_55awn")
+lines = Array[ExtResource("1_de5ju")]([SubResource("Resource_7epm0"), SubResource("Resource_jjk68"), SubResource("Resource_de5ju"), SubResource("Resource_ctigh"), SubResource("Resource_55awn"), SubResource("Resource_1jd7j"), SubResource("Resource_f55hk"), SubResource("Resource_0dppj"), SubResource("Resource_2ynay"), SubResource("Resource_qopy6"), SubResource("Resource_i37ov")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"
