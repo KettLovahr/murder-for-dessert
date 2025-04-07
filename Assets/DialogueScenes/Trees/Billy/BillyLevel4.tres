@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=17 format=3 uid="uid://db33neye4cp2v"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_qltyk"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_o3cwv"]
+[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="3_w0qdd"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_f7vs5"]
+
+[sub_resource type="Resource" id="Resource_3xrol"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("2_o3cwv")
+line = "Boy, are you sure the \"monster\" you saw wasn't just one of the restaurant staff?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_qltyk"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("3_w0qdd")
+line = "No... yes!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_o3cwv"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("3_w0qdd")
+line = "Ughhh, you don't get it!!!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_w0qdd"]
+script = ExtResource("1_qltyk")
+line = "[i]Billy takes a crayon from his table and starts drawing on a napkin.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_f7vs5"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("3_w0qdd")
+line = "Here!!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_j748c"]
+script = ExtResource("1_qltyk")
+line = "[i]As the kid showed me his newest work of art, it was clear to see, with a little bit of child-like imagination, that this was a pivotal testimony.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_machi"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("3_w0qdd")
+line = "See? [color=yellow]The monster, the knife, the pineapple!! It's all there! I saw it!![/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_u3mdo"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("2_o3cwv")
+line = "Kid, this is really important information! Why didn't you tell me sooner?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_elgqb"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("3_w0qdd")
+line = "But I diddddddddd-uh!!!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_37wcc"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("2_o3cwv")
+line = "No, no you did not."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_hng87"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("3_w0qdd")
+line = "At this pace [color=yellow]I will never let you call me Billy,[/color] Mr. Not-a-cop!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_pchyb"]
+script = ExtResource("1_qltyk")
+speaker = ExtResource("2_o3cwv")
+line = "Oh well, baby steps."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_f7vs5")
+lines = Array[ExtResource("1_qltyk")]([SubResource("Resource_3xrol"), SubResource("Resource_qltyk"), SubResource("Resource_o3cwv"), SubResource("Resource_w0qdd"), SubResource("Resource_f7vs5"), SubResource("Resource_j748c"), SubResource("Resource_machi"), SubResource("Resource_u3mdo"), SubResource("Resource_elgqb"), SubResource("Resource_37wcc"), SubResource("Resource_hng87"), SubResource("Resource_pchyb")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"
