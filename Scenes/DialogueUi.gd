@@ -29,6 +29,7 @@ var current_line: int = 0
 @onready var sfx_typing: AudioStreamPlayer = $Typing
 @onready var sfx_scenestart: AudioStreamPlayer = $SceneStart
 @onready var sfx_click: AudioStreamPlayer = $Click
+@onready var sfx_pin: AudioStreamPlayer = $Pin
 
 func _ready():
 	hide()
@@ -110,8 +111,12 @@ func _update_line():
 	_update_buttons()
 
 func _update_buttons():
-	$DialogueBox/NavButtonContainer/Previous.disabled = current_line == 0
-	# $DialogueBox/NavButtonContainer/Next.disabled = current_line == len(dialogue.lines) - 1
+	var disable_left = current_line == 0
+	$DialogueBox/NavButtonContainer/Previous.disabled = disable_left
+	$DialogueBox/NavButtonContainer/Previous.modulate = Color(1.0, 1.0, 1.0, 0.3) if disable_left else Color.WHITE
+	var disable_right = len(dialogue.lines) == 1
+	$DialogueBox/NavButtonContainer/Next.disabled = disable_right
+	$DialogueBox/NavButtonContainer/Next.modulate = Color(1.0, 1.0, 1.0, 0.3) if disable_right else Color.WHITE
 
 func _update_tree_buttons():
 	if tree:
@@ -170,6 +175,8 @@ func _on_next_pressed() -> void:
 func _on_pin_action_button_pressed() -> void:
 	var line = dialogue.lines[current_line]
 	GameManager.add_pin(line)
+	sfx_click.play()
+	sfx_pin.play()
 
 func _handle_change_scene(scene: DialogueScene) -> void:
 	dialogue = scene
@@ -180,6 +187,7 @@ func _handle_change_scene(scene: DialogueScene) -> void:
 		if scene == button.associated_scene:
 			button.texture_normal = load("res://Assets/Textures/Conversation/conversation_dialogue_hover.png")
 	if dialogue.resource_name == "PennyLevel5":
+		navigation_enabled(false)
 		cut_all_music.emit()
 		$DialogueBox/PinActionButton.position.y = 4000 # lol
 

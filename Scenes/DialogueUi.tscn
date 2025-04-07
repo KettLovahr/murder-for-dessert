@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://bdqsnds01xtpa"]
+[gd_scene load_steps=30 format=3 uid="uid://bdqsnds01xtpa"]
 
 [ext_resource type="Script" uid="uid://d0krvq2qslisc" path="res://Scenes/DialogueUi.gd" id="1_qtu1s"]
 [ext_resource type="Texture2D" uid="uid://bo27j8t0po0d7" path="res://Assets/Textures/bg_interrog.png" id="2_g62iv"]
@@ -21,6 +21,7 @@
 [ext_resource type="AudioStream" uid="uid://dth0bl1q2l4le" path="res://Assets/Audio/typing.wav" id="19_gnsvr"]
 [ext_resource type="AudioStream" uid="uid://dtnf2ojjjybwr" path="res://Assets/Audio/button-hover.wav" id="20_4up1v"]
 [ext_resource type="AudioStream" uid="uid://dygkq7e4hskv7" path="res://Assets/Audio/button-click.wav" id="21_ejh2r"]
+[ext_resource type="AudioStream" uid="uid://140j4sih3ynu" path="res://Assets/Audio/pin.wav" id="22_m6ms0"]
 
 [sub_resource type="Animation" id="Animation_g62iv"]
 length = 0.001
@@ -240,11 +241,13 @@ grow_vertical = 0
 [node name="Previous" type="TextureButton" parent="DialogueBox/NavButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("6_ayvv4")
 
 [node name="Next" type="TextureButton" parent="DialogueBox/NavButtonContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("7_fsg10")
 
 [node name="SpeakerLabel" type="Label" parent="DialogueBox"]
@@ -272,6 +275,7 @@ offset_top = 26.0
 offset_right = -15.0
 offset_bottom = 106.0
 grow_horizontal = 0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("9_bpahb")
 texture_pressed = ExtResource("10_vxeye")
 texture_hover = ExtResource("11_vxeye")
@@ -343,6 +347,7 @@ layout_mode = 0
 offset_top = 117.0
 offset_right = 54.0
 offset_bottom = 354.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("15_g62iv")
 texture_pressed = ExtResource("16_nxj7p")
 texture_hover = ExtResource("17_gnsvr")
@@ -368,6 +373,10 @@ stream = ExtResource("20_4up1v")
 [node name="Click" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("21_ejh2r")
 volume_db = 5.0
+
+[node name="Pin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_m6ms0")
+pitch_scale = 1.25
 
 [connection signal="pressed" from="DialogueBox/NavButtonContainer/Previous" to="." method="_on_previous_pressed"]
 [connection signal="pressed" from="DialogueBox/NavButtonContainer/Next" to="." method="_on_next_pressed"]

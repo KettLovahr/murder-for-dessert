@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dyak78v8h5ysj"]
+[gd_scene load_steps=12 format=3 uid="uid://dyak78v8h5ysj"]
 
 [ext_resource type="Texture2D" uid="uid://danxf1spi7y0c" path="res://Assets/Textures/Characters/pin_zamora.png" id="1_kelam"]
 [ext_resource type="Script" uid="uid://bxiyenjtdltqw" path="res://Scenes/PinButton.gd" id="2_s6jnu"]
@@ -10,8 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dm1jgm17t4110" path="res://Assets/Textures/Conversation/pin_normal_click.png" id="8_t21u5"]
 [ext_resource type="Texture2D" uid="uid://tfegc6tbcpxk" path="res://Assets/Textures/Conversation/pin_normal_hover.png" id="9_rqp3m"]
 [ext_resource type="FontFile" uid="uid://bpoqa1mw116n5" path="res://Assets/Fonts/AtkinsonHyperlegible-Regular.ttf" id="10_kelam"]
+[ext_resource type="AudioStream" uid="uid://dygkq7e4hskv7" path="res://Assets/Audio/button-click.wav" id="11_o0yst"]
 
 [node name="PinButton" type="TextureButton"]
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("1_kelam")
 script = ExtResource("2_s6jnu")
 
@@ -33,6 +35,7 @@ offset_bottom = 28.5
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(30.5, 30.5)
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("4_kelam")
 texture_pressed = ExtResource("5_o0yst")
 texture_hover = ExtResource("6_au407")
@@ -50,6 +53,7 @@ offset_bottom = 28.5
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(30.5, 30.5)
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("7_7ykk6")
 texture_pressed = ExtResource("8_t21u5")
 texture_hover = ExtResource("9_rqp3m")
@@ -66,6 +70,10 @@ theme_override_font_sizes/mono_font_size = 24
 theme_override_font_sizes/normal_font_size = 24
 theme_override_font_sizes/bold_font_size = 24
 text = "blabla"
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_o0yst")
+volume_db = 5.0
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
 [connection signal="pressed" from="Tooltip/DeleteButton" to="." method="_on_delete_button_pressed"]

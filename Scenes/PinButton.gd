@@ -21,6 +21,7 @@ func _on_delete_button_pressed() -> void:
 	delete_line.emit(associated_line)
 
 func _on_pressed() -> void:
+	$Click.play()
 	if not $Tooltip.visible:
 		requested_visibility.emit(self)
 	else:

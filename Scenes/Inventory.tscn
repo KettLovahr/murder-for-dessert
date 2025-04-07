@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bp8vtq718f8ls"]
+[gd_scene load_steps=5 format=3 uid="uid://bp8vtq718f8ls"]
 
 [ext_resource type="Texture2D" uid="uid://bhly0hb4647l7" path="res://Assets/Textures/Conversation/inventory.png" id="1_ersrd"]
 [ext_resource type="Script" uid="uid://0i8ox7tx3785" path="res://Scenes/inventory.gd" id="2_jbd0o"]
 [ext_resource type="FontFile" uid="uid://bpoqa1mw116n5" path="res://Assets/Fonts/AtkinsonHyperlegible-Regular.ttf" id="3_4v8qb"]
+[ext_resource type="AudioStream" uid="uid://140j4sih3ynu" path="res://Assets/Audio/pin.wav" id="4_1pi3o"]
 
 [node name="Inventory" type="Sprite2D"]
 texture = ExtResource("1_ersrd")
@@ -34,3 +35,7 @@ theme_override_font_sizes/font_size = 48
 text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Unpin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1pi3o")
+pitch_scale = 0.8

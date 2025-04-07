@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c6lmcdqjg8w4j"]
+[gd_scene load_steps=11 format=3 uid="uid://c6lmcdqjg8w4j"]
 
 [ext_resource type="PackedScene" uid="uid://bdqsnds01xtpa" path="res://Scenes/DialogueUi.tscn" id="1_hpc76"]
 [ext_resource type="Script" uid="uid://dlajrxxnh1p0b" path="res://Scenes/main_scene.gd" id="1_tr2i4"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bp8vtq718f8ls" path="res://Scenes/Inventory.tscn" id="3_nhkr4"]
 [ext_resource type="AudioStream" uid="uid://cvir5vb3fggde" path="res://Assets/Audio/bg_music.ogg" id="5_qxria"]
 [ext_resource type="PackedScene" uid="uid://bfsif4ix563ho" path="res://Scenes/fade.tscn" id="6_y4jh7"]
+[ext_resource type="AudioStream" uid="uid://gb7vt31f7ns" path="res://Assets/Audio/pointing_and_laughing.wav" id="7_q68mp"]
 
 [sub_resource type="Animation" id="Animation_ge4sb"]
 length = 0.001
@@ -72,6 +73,10 @@ parameters/looping = true
 libraries = {
 &"": SubResource("AnimationLibrary_wma8j")
 }
+
+[node name="Fail" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_q68mp")
+volume_db = -10.0
 
 [connection signal="scene_requested" from="GameLayer/Hub" to="." method="_on_hub_scene_requested"]
 [connection signal="cut_all_music" from="UILayer/DialogueUi" to="." method="_on_dialogue_ui_cut_all_music"]
