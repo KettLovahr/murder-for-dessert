@@ -68,7 +68,10 @@ func navigation_enabled(opt: bool) -> void:
 			if child.is_in_group("InvestigationOnly"):
 				if child is TextureButton:
 					child.disabled = true
+					if child.is_in_group("ConversationButton"):
+						child.texture_disabled = load("res://Assets/Textures/Conversation/conversation_unknown.png")
 	else:
+		$BackButton.disabled = false
 		_update_tree_buttons()
 
 func _update_line():

@@ -295,35 +295,35 @@ text = "Culprit"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ConversationButton1" parent="." groups=["InvestigationOnly"] instance=ExtResource("13_rxobw")]
+[node name="ConversationButton1" parent="." groups=["ConversationButton", "InvestigationOnly"] instance=ExtResource("13_rxobw")]
 layout_mode = 0
 offset_left = 1048.0
 offset_top = 180.0
 offset_right = 1230.0
 offset_bottom = 270.0
 
-[node name="ConversationButton2" parent="." groups=["InvestigationOnly"] instance=ExtResource("13_rxobw")]
+[node name="ConversationButton2" parent="." groups=["ConversationButton", "InvestigationOnly"] instance=ExtResource("13_rxobw")]
 layout_mode = 0
 offset_left = 1048.0
 offset_top = 266.0
 offset_right = 1230.0
 offset_bottom = 356.0
 
-[node name="ConversationButton3" parent="." groups=["InvestigationOnly"] instance=ExtResource("13_rxobw")]
+[node name="ConversationButton3" parent="." groups=["ConversationButton", "InvestigationOnly"] instance=ExtResource("13_rxobw")]
 layout_mode = 0
 offset_left = 1048.0
 offset_top = 352.0
 offset_right = 1230.0
 offset_bottom = 442.0
 
-[node name="ConversationButton4" parent="." groups=["InvestigationOnly"] instance=ExtResource("13_rxobw")]
+[node name="ConversationButton4" parent="." groups=["ConversationButton", "InvestigationOnly"] instance=ExtResource("13_rxobw")]
 layout_mode = 0
 offset_left = 1048.0
 offset_top = 438.0
 offset_right = 1230.0
 offset_bottom = 528.0
 
-[node name="ConversationButton5" parent="." groups=["InvestigationOnly"] instance=ExtResource("13_rxobw")]
+[node name="ConversationButton5" parent="." groups=["ConversationButton", "InvestigationOnly"] instance=ExtResource("13_rxobw")]
 layout_mode = 0
 offset_left = 1048.0
 offset_top = 524.0

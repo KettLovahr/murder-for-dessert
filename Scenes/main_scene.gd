@@ -29,9 +29,9 @@ func _on_hub_scene_requested(which: String) -> void:
 func _on_inventory_pin_used(pin: DialogueLine) -> void:
 	var shown_line: DialogueLine = dialogue_ui.get_current_displayed_line()
 	var tree: DialogueTree = dialogue_ui.tree
-	if shown_line.refutation == pin:
-		dialogue_ui.navigation_enabled(false)
+	if GameManager.check_pin(tree.culprit.to_upper(), pin):
 		dialogue_ui._handle_change_scene(GameManager.unlock_next(tree.culprit.to_upper()))
+		dialogue_ui.navigation_enabled(false)
 	else:
 		var new_scene = GameManager.fail_scenes[tree.culprit.to_upper()]
 		dialogue_ui._handle_change_scene(new_scene)

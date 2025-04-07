@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_liphy"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_urmlx"]
 [ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="3_liphy"]
+[ext_resource type="Resource" uid="uid://15odiy2foag1" path="res://Assets/DialogueScenes/ImportantDialogue/Pins/BillyRichardLevel1.tres" id="4_0x7eh"]
 
 [sub_resource type="Resource" id="Resource_0x7eh"]
 script = ExtResource("1_myblu")
@@ -52,12 +53,6 @@ speaker = ExtResource("2_liphy")
 line = "Listen here, young man, this is serious business. Did you know that a man died here in this restaurant?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
-[sub_resource type="Resource" id="Resource_ftykp"]
-script = ExtResource("1_myblu")
-speaker = ExtResource("3_liphy")
-line = "Is that why [color=yellow]the big nose guy was crying at the table?[/color]"
-metadata/_custom_type_script = "uid://bpqxvagkkj531"
-
 [sub_resource type="Resource" id="Resource_4ksss"]
 script = ExtResource("1_myblu")
 speaker = ExtResource("2_liphy")
@@ -82,5 +77,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_urmlx")
-lines = Array[ExtResource("1_myblu")]([SubResource("Resource_0x7eh"), SubResource("Resource_x7beb"), SubResource("Resource_liphy"), SubResource("Resource_2ygjy"), SubResource("Resource_qhwop"), SubResource("Resource_a7ter"), SubResource("Resource_i53dx"), SubResource("Resource_3t44d"), SubResource("Resource_ftykp"), SubResource("Resource_4ksss"), SubResource("Resource_dn8xc"), SubResource("Resource_6lurw"), SubResource("Resource_37xp5")])
+lines = Array[ExtResource("1_myblu")]([SubResource("Resource_0x7eh"), SubResource("Resource_x7beb"), SubResource("Resource_liphy"), SubResource("Resource_2ygjy"), SubResource("Resource_qhwop"), SubResource("Resource_a7ter"), SubResource("Resource_i53dx"), SubResource("Resource_3t44d"), ExtResource("4_0x7eh"), SubResource("Resource_4ksss"), SubResource("Resource_dn8xc"), SubResource("Resource_6lurw"), SubResource("Resource_37xp5")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"
