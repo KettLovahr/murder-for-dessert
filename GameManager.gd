@@ -49,7 +49,7 @@ func _ready() -> void:
 	pass
 
 func add_pin(line: DialogueLine) -> void:
-	if line not in pins:
+	if line not in pins and len(pins) < 9:
 		pins.append(line)
 		line_added.emit(line)
 
