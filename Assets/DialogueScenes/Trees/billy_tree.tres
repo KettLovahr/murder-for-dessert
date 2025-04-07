@@ -1,9 +1,10 @@
-[gd_resource type="Resource" script_class="DialogueTree" load_steps=5 format=3 uid="uid://f7ywo2xwrkjf"]
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=6 format=3 uid="uid://f7ywo2xwrkjf"]
 
 [ext_resource type="Resource" uid="uid://ccrsn1ijqe8j8" path="res://Assets/DialogueScenes/Trees/Billy/BillyLevel1.tres" id="1_quwrr"]
 [ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_rbw0p"]
 [ext_resource type="Resource" uid="uid://dmhudlw1btp6h" path="res://Assets/DialogueScenes/Trees/Billy/BillyLevel2.tres" id="2_o8hod"]
 [ext_resource type="Resource" uid="uid://ci0nv7rhqeqhy" path="res://Assets/DialogueScenes/Trees/Billy/BillyLevel3.tres" id="3_u10eg"]
+[ext_resource type="Resource" uid="uid://db33neye4cp2v" path="res://Assets/DialogueScenes/Trees/Billy/BillyLevel4.tres" id="4_u10eg"]
 
 [resource]
 script = ExtResource("1_rbw0p")
@@ -14,6 +15,7 @@ level_2_scene = ExtResource("2_o8hod")
 level_2_unlocked = false
 level_3_scene = ExtResource("3_u10eg")
 level_3_unlocked = false
+level_4_scene = ExtResource("4_u10eg")
 level_4_unlocked = false
 level_5_unlocked = false
 metadata/_custom_type_script = "uid://c11gn3w1niotu"
