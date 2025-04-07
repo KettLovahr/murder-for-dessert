@@ -25,6 +25,8 @@ signal cut_all_music()
 
 var current_line: int = 0
 
+@onready var sfx_typing: AudioStreamPlayer = $Typing
+
 func _ready():
 	reset()
 
@@ -60,6 +62,7 @@ func _process(_delta):
 		dialogue_label.visible_characters += 1
 	else:
 		if not done_speaking:
+			sfx_typing.stop()
 			char_sprite.stop_speaking()
 			done_speaking = true
 
@@ -76,6 +79,7 @@ func navigation_enabled(opt: bool) -> void:
 		_update_tree_buttons()
 
 func _update_line():
+	sfx_typing.play(randf_range(0.0, 5.0))
 	done_speaking = false
 	var dia = dialogue.lines[current_line]
 	dialogue_label.text = dia.line

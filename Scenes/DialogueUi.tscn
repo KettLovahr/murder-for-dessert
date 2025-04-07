@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://bdqsnds01xtpa"]
+[gd_scene load_steps=27 format=3 uid="uid://bdqsnds01xtpa"]
 
 [ext_resource type="Script" uid="uid://d0krvq2qslisc" path="res://Scenes/DialogueUi.gd" id="1_qtu1s"]
 [ext_resource type="Texture2D" uid="uid://bo27j8t0po0d7" path="res://Assets/Textures/bg_interrog.png" id="2_g62iv"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://bushwh74msypa" path="res://Assets/Textures/Conversation/back_click.png" id="16_nxj7p"]
 [ext_resource type="Texture2D" uid="uid://d028am615nwx6" path="res://Assets/Textures/Conversation/back_hover.png" id="17_gnsvr"]
 [ext_resource type="AudioStream" uid="uid://c7flbl0gc1c02" path="res://Assets/Audio/typewriter.wav" id="18_nxj7p"]
+[ext_resource type="AudioStream" uid="uid://dth0bl1q2l4le" path="res://Assets/Audio/typing.wav" id="19_gnsvr"]
 
 [sub_resource type="Animation" id="Animation_g62iv"]
 length = 0.001
@@ -349,6 +350,11 @@ libraries = {
 [node name="NextPrev" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("18_nxj7p")
 volume_db = -12.0
+
+[node name="Typing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_gnsvr")
+volume_db = -10.0
+pitch_scale = 1.5
 
 [connection signal="pressed" from="DialogueBox/NavButtonContainer/Previous" to="." method="_on_previous_pressed"]
 [connection signal="pressed" from="DialogueBox/NavButtonContainer/Next" to="." method="_on_next_pressed"]
