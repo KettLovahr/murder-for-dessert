@@ -6,6 +6,7 @@ func _ready() -> void:
 
 
 func _on_start_button_pressed() -> void:
+	$Start.stop()
 	$Loop.stop()
 	$End.play()
 	visible = false

@@ -10,10 +10,11 @@ centered = false
 script = ExtResource("2_jbd0o")
 
 [node name="InventoryContainer" type="HBoxContainer" parent="."]
-offset_left = 46.0
-offset_top = 17.0
-offset_right = 922.0
-offset_bottom = 79.0
+offset_left = 14.0
+offset_top = 3.0
+offset_right = 954.0
+offset_bottom = 95.0
+theme_override_constants/separation = 14
 
 [node name="LivesLabel" type="Label" parent="."]
 anchors_preset = -1

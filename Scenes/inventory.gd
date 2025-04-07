@@ -31,7 +31,7 @@ func _handle_visibility(who: PinButton) -> void:
 func _handle_delete(line: DialogueLine) -> void:
 	GameManager.delete_pin(line)
 	_update_buttons()
-	
+
 func _handle_use(line: DialogueLine):
 	pin_used.emit(line)
 
