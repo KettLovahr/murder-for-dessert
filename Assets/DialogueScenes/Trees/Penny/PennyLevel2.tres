@@ -1,9 +1,77 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=3 format=3 uid="uid://dhu071bo47epx"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=16 format=3 uid="uid://dhu071bo47epx"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_b0nul"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_f0p6y"]
+[ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="3_52nfa"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_61n36"]
+
+[sub_resource type="Resource" id="Resource_isyvf"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("2_f0p6y")
+line = "I got it Mrs. Whayne! According to the widow, the murder probably happened around 0:15AM!!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_b0nul"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("3_52nfa")
+line = "Woah, good job detective."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_f0p6y"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("2_f0p6y")
+line = "Thank you-"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_52nfa"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("2_f0p6y")
+line = "I mean... will you answer my question now? Where were you during this time?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_61n36"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("3_52nfa")
+line = "Yeah, I was around. I'm the only employee in the house right now so I was pretty busy back at the kitchen, getting some [i]mise en place[/i] ready for tomorrow."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_pkp6x"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("3_52nfa")
+line = "So I didn't really see anything... Sorry."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_shy62"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("3_52nfa")
+line = "Wait, actually..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_wpstp"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("3_52nfa")
+line = "This may be a shot in the dark but... I remember seeing the tall rhino over there looking very agitated."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0286w"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("3_52nfa")
+line = "He was pacing back and forth, to and from either ends of the buildings, honestly kinda freaky."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_sffma"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("3_52nfa")
+line = "I wonder what his deal is."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_clqdp"]
+script = ExtResource("1_b0nul")
+speaker = ExtResource("3_52nfa")
+line = "Maybe he has something to hide? I don't know, even if it turns out to be nothing, I'm still curious."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("4_61n36")
-lines = Array[ExtResource("1_b0nul")]([])
+lines = Array[ExtResource("1_b0nul")]([SubResource("Resource_isyvf"), SubResource("Resource_b0nul"), SubResource("Resource_f0p6y"), SubResource("Resource_52nfa"), SubResource("Resource_61n36"), SubResource("Resource_pkp6x"), SubResource("Resource_shy62"), SubResource("Resource_wpstp"), SubResource("Resource_0286w"), SubResource("Resource_sffma"), SubResource("Resource_clqdp")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"
