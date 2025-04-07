@@ -1,14 +1,16 @@
-[gd_resource type="Resource" script_class="DialogueTree" load_steps=3 format=3 uid="uid://rdaykxv2xbu8"]
+[gd_resource type="Resource" script_class="DialogueTree" load_steps=4 format=3 uid="uid://rdaykxv2xbu8"]
 
 [ext_resource type="Resource" uid="uid://cuyef0l4h8tju" path="res://Assets/DialogueScenes/Trees/Zamora/ZamoraLevel1.tres" id="1_aee5t"]
 [ext_resource type="Script" uid="uid://c11gn3w1niotu" path="res://Util/DialogueTree.gd" id="1_c2aur"]
+[ext_resource type="Resource" uid="uid://d3swos0tnyup" path="res://Assets/DialogueScenes/Trees/Zamora/ZamoraLevel2.tres" id="2_eupqh"]
 
 [resource]
 script = ExtResource("1_c2aur")
 culprit = "Zamora"
 level_1_scene = ExtResource("1_aee5t")
 level_1_unlocked = true
-level_2_unlocked = false
+level_2_scene = ExtResource("2_eupqh")
+level_2_unlocked = true
 level_3_unlocked = false
 level_4_unlocked = false
 level_5_unlocked = false

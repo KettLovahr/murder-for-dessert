@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://dwkllr4ks13t2"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_de5ju"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_jjk68"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_55awn"]
+
+[sub_resource type="Resource" id="Resource_7epm0"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("2_jjk68")
+line = ""
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_55awn")
+lines = Array[ExtResource("1_de5ju")]([SubResource("Resource_7epm0")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"
