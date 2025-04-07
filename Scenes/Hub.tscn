@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cb47hiwc5ubtn"]
+[gd_scene load_steps=19 format=3 uid="uid://cb47hiwc5ubtn"]
 
 [ext_resource type="Script" uid="uid://cmkqp1ry80rmc" path="res://Scenes/Hub.gd" id="1_cjtts"]
 [ext_resource type="Texture2D" uid="uid://b2oyuvv7vr80d" path="res://Assets/Textures/Hub/hub_bg.png" id="1_r7avt"]
@@ -6,13 +6,18 @@
 [ext_resource type="Texture2D" uid="uid://caai5r6rr3jmt" path="res://Assets/Textures/Hub/hub_bethany_hover.png" id="3_5byxb"]
 [ext_resource type="Texture2D" uid="uid://dttqqi2jjqmdf" path="res://Assets/Textures/Hub/hub_billy.png" id="4_q3t1c"]
 [ext_resource type="Texture2D" uid="uid://cv70h0dlb7agr" path="res://Assets/Textures/Hub/hub_billy_hover.png" id="5_ftct6"]
+[ext_resource type="BitMap" uid="uid://decj00lau546p" path="res://Assets/Textures/Hub/hub_billy_clickmask.png" id="5_shji0"]
 [ext_resource type="Texture2D" uid="uid://d1dmadq0yv48y" path="res://Assets/Textures/Hub/hub_penny.png" id="6_yk07a"]
+[ext_resource type="BitMap" uid="uid://cg061lthkcp47" path="res://Assets/Textures/Hub/hub_penny_clickmask.png" id="7_shji0"]
 [ext_resource type="Texture2D" uid="uid://clhg7iqq21kh5" path="res://Assets/Textures/Hub/hub_penny_hover.png" id="7_ugn1x"]
 [ext_resource type="Texture2D" uid="uid://bl7sfpu5oa2cl" path="res://Assets/Textures/Hub/hub_richard.png" id="8_shji0"]
 [ext_resource type="Texture2D" uid="uid://bfu0y5pq06x7k" path="res://Assets/Textures/Hub/hub_richard_hover.png" id="9_hrdjd"]
+[ext_resource type="BitMap" uid="uid://wspwip5a2xeh" path="res://Assets/Textures/Hub/hub_richard_clickmask.png" id="9_q3t1c"]
 [ext_resource type="Texture2D" uid="uid://vovge0el0g6q" path="res://Assets/Textures/Hub/hub_zamora.png" id="10_yam5d"]
 [ext_resource type="Texture2D" uid="uid://dcu2h1i0as8i5" path="res://Assets/Textures/Hub/hub_zamora_hover.png" id="11_patib"]
+[ext_resource type="BitMap" uid="uid://dytgddsacgkd8" path="res://Assets/Textures/Hub/hub_zamora_clickmask.png" id="12_ftct6"]
 [ext_resource type="PackedScene" uid="uid://1qjypdjpnauw" path="res://Scenes/FilmGrain.tscn" id="13_5byxb"]
+[ext_resource type="BitMap" uid="uid://mfydvilsnw5s" path="res://Assets/Textures/Hub/hub_bethany_clickmask.png" id="15_yk07a"]
 
 [node name="Hub" type="Node2D"]
 script = ExtResource("1_cjtts")
@@ -26,40 +31,50 @@ offset_left = 276.0
 offset_top = 169.0
 offset_right = 479.0
 offset_bottom = 384.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("4_q3t1c")
 texture_hover = ExtResource("5_ftct6")
+texture_click_mask = ExtResource("5_shji0")
 
 [node name="PennyButton" type="TextureButton" parent="."]
 offset_left = 851.0
 offset_top = 102.0
 offset_right = 1084.0
 offset_bottom = 481.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("6_yk07a")
 texture_hover = ExtResource("7_ugn1x")
+texture_click_mask = ExtResource("7_shji0")
 
 [node name="RichardButton" type="TextureButton" parent="."]
 offset_left = 35.0
 offset_top = 183.0
 offset_right = 322.0
 offset_bottom = 786.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("8_shji0")
 texture_hover = ExtResource("9_hrdjd")
+texture_click_mask = ExtResource("9_q3t1c")
 
 [node name="ZamoraButton" type="TextureButton" parent="."]
 offset_left = 511.0
 offset_top = 280.0
 offset_right = 798.0
 offset_bottom = 723.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("10_yam5d")
 texture_hover = ExtResource("11_patib")
+texture_click_mask = ExtResource("12_ftct6")
 
 [node name="BethanyButton" type="TextureButton" parent="."]
 offset_left = 894.0
 offset_top = 414.0
 offset_right = 1230.0
 offset_bottom = 688.0
+mouse_default_cursor_shape = 2
 texture_normal = ExtResource("2_cjtts")
 texture_hover = ExtResource("3_5byxb")
+texture_click_mask = ExtResource("15_yk07a")
 
 [node name="FilmGrain" parent="." instance=ExtResource("13_5byxb")]
 

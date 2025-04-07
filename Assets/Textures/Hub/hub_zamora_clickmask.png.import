@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dytgddsacgkd8"
+path="res://.godot/imported/hub_zamora_clickmask.png-008590cd56a92bf991239b027d093b79.res"
+
+[deps]
+
+source_file="res://Assets/Textures/Hub/hub_zamora_clickmask.png"
+dest_files=["res://.godot/imported/hub_zamora_clickmask.png-008590cd56a92bf991239b027d093b79.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

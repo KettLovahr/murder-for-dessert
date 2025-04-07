@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://cg061lthkcp47"
+path="res://.godot/imported/hub_penny_clickmask.png-95ce02730cbb3e5b9a54b02ee25a2eea.res"
+
+[deps]
+
+source_file="res://Assets/Textures/Hub/hub_penny_clickmask.png"
+dest_files=["res://.godot/imported/hub_penny_clickmask.png-95ce02730cbb3e5b9a54b02ee25a2eea.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

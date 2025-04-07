@@ -6,7 +6,7 @@ var film_grain := true:
 		film_grain = v
 
 var pins: Array[DialogueLine]
-var lives: int = 5:
+var lives: int = 10:
 	set(v):
 		life_count_changed.emit(v)
 		if v == 0:
@@ -64,10 +64,11 @@ func delete_pin(line: DialogueLine) -> void:
 			break
 
 func reset():
+	pins = []
 	trees.clear()
 	for key in default_trees:
 		trees[key] = default_trees[key].duplicate()
-	lives = 15
+	lives = 10
 
 func unlock_next(tree: String) -> DialogueScene:
 	if tree in trees:

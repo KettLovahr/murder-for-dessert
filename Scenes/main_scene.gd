@@ -7,6 +7,7 @@ func _ready() -> void:
 		#load("res://Assets/DialogueScenes/many_characters_test.tres"),
 		#null
 	#)
+	GameManager.reset()
 	GameManager.lose.connect(_on_lose)
 	GameManager.win.connect(_on_win)
 
