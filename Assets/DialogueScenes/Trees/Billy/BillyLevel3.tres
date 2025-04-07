@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=14 format=3 uid="uid://ci0nv7rhqeqhy"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_x1hfc"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_uwqhi"]
+[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="3_3tsv2"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_qx7gv"]
+
+[sub_resource type="Resource" id="Resource_ik7x1"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("2_uwqhi")
+line = "Hey little guy! I found your round noise, it was the rollerskates of that turtle lady right over there."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_x1hfc"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("3_3tsv2")
+line = "Awesome."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_uwqhi"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("3_3tsv2")
+line = "Now Mr. Cop is ready to hear about the monster."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_3tsv2"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("2_uwqhi")
+line = "Not a cop- wait, monster?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_qx7gv"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("3_3tsv2")
+line = "Yes. [color=yellow]A big, mean, purple monster, with two black eyes. It was holding a knife.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_mwby2"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("2_uwqhi")
+line = "A knife? Like the one used in the murder?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_eyocr"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("3_3tsv2")
+line = "Very sharp."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_21mgt"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("2_uwqhi")
+line = "[i]At this point I was getting kind of sick of this kid toying with my investigation, but I knew there had to be something he still hadn't told me.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_dbdir"]
+script = ExtResource("1_x1hfc")
+speaker = ExtResource("2_uwqhi")
+line = "[i]For the while, I was out hunting monsters.[/i]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_qx7gv")
+lines = Array[ExtResource("1_x1hfc")]([SubResource("Resource_ik7x1"), SubResource("Resource_x1hfc"), SubResource("Resource_uwqhi"), SubResource("Resource_3tsv2"), SubResource("Resource_qx7gv"), SubResource("Resource_mwby2"), SubResource("Resource_eyocr"), SubResource("Resource_21mgt"), SubResource("Resource_dbdir")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"
