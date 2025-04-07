@@ -330,7 +330,7 @@ offset_top = 524.0
 offset_right = 1230.0
 offset_bottom = 614.0
 
-[node name="TextureButton" type="TextureButton" parent="." groups=["InvestigationOnly"]]
+[node name="BackButton" type="TextureButton" parent="." groups=["InvestigationOnly"]]
 layout_mode = 0
 offset_top = 117.0
 offset_right = 54.0
@@ -353,4 +353,4 @@ libraries = {
 [connection signal="change_scene" from="ConversationButton3" to="." method="_handle_change_scene"]
 [connection signal="change_scene" from="ConversationButton4" to="." method="_handle_change_scene"]
 [connection signal="change_scene" from="ConversationButton5" to="." method="_handle_change_scene"]
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

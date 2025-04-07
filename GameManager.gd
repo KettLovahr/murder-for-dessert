@@ -17,6 +17,14 @@ signal life_count_changed(amount: int)
 	"ZAMORA": preload("res://Assets/DialogueScenes/Trees/zamora_tree.tres"),
 }
 
+@onready var default_scenes: Dictionary[String, DialogueScene] = {
+	"BETHANY": preload("res://Assets/DialogueScenes/DefaultDialogue/BethanyDefault.tres"),
+	"BILLY": preload("res://Assets/DialogueScenes/DefaultDialogue/BillyDefault.tres"),
+	"PENNY": preload("res://Assets/DialogueScenes/DefaultDialogue/PennyDefault.tres"),
+	"RICHARD": preload("res://Assets/DialogueScenes/DefaultDialogue/RichardDefault.tres"),
+	"ZAMORA": preload("res://Assets/DialogueScenes/DefaultDialogue/ZamoraDefault.tres"),
+}
+
 @onready var fail_scenes: Dictionary[String, DialogueScene] = {
 	"BETHANY": preload("res://Assets/DialogueScenes/FailDialogue/BethanyFail.tres"),
 	"BILLY": preload("res://Assets/DialogueScenes/FailDialogue/BillyFail.tres"),

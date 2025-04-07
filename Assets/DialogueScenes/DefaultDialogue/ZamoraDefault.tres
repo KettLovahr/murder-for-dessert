@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://bw6h5ph4xck3o"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_1t1uc"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_g25al"]
+[ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="2_gi1rw"]
+
+[sub_resource type="Resource" id="Resource_b0i3d"]
+script = ExtResource("1_1t1uc")
+speaker = ExtResource("2_gi1rw")
+line = "Yes, Mr. Detective?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_g25al")
+lines = Array[ExtResource("1_1t1uc")]([SubResource("Resource_b0i3d")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

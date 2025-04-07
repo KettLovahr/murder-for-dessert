@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=5 format=3 uid="uid://bt2boqbfm2h2t"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_wtdnl"]
+[ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="2_qjhgg"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_ra7q8"]
+
+[sub_resource type="Resource" id="Resource_i8ko1"]
+script = ExtResource("1_wtdnl")
+speaker = ExtResource("2_qjhgg")
+line = "Hey mister!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("2_ra7q8")
+lines = Array[ExtResource("1_wtdnl")]([SubResource("Resource_i8ko1")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

@@ -20,39 +20,12 @@ layer = 2
 
 [node name="Inventory" parent="UILayer" instance=ExtResource("3_nhkr4")]
 
-[node name="Zamora" type="Button" parent="."]
-offset_left = 172.0
-offset_top = 259.0
-offset_right = 362.0
-offset_bottom = 343.0
-text = "Zamora"
-
-[node name="Richard" type="Button" parent="."]
-offset_left = 172.0
-offset_top = 356.0
-offset_right = 362.0
-offset_bottom = 440.0
-text = "Richard"
-
-[node name="Billy" type="Button" parent="."]
-offset_left = 374.0
-offset_top = 259.0
-offset_right = 564.0
-offset_bottom = 343.0
-text = "Billy"
-
-[node name="Penny" type="Button" parent="."]
-offset_left = 374.0
-offset_top = 356.0
-offset_right = 564.0
-offset_bottom = 440.0
-text = "Penny"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_7rqgy")
 autoplay = true
 parameters/looping = true
 
 [connection signal="scene_requested" from="GameLayer/Hub" to="." method="_on_hub_scene_requested"]
+[connection signal="exit_request" from="UILayer/DialogueUi" to="." method="_on_dialogue_ui_exit_request"]
 [connection signal="scene_completed" from="UILayer/DialogueUi" to="." method="_on_dialogue_ui_scene_completed"]
 [connection signal="pin_used" from="UILayer/Inventory" to="." method="_on_inventory_pin_used"]

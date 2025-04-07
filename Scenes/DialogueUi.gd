@@ -19,6 +19,7 @@ extends Control
 var done_speaking: bool = false
 
 signal scene_completed()
+signal exit_request()
 
 var current_line: int = 0
 
@@ -95,8 +96,6 @@ func _update_tree_buttons():
 		for i in range(1, 6):
 			var button: ConversationButton = get_node("ConversationButton%d" % [i])
 			button.disabled = true
-			if brick_wall:
-				button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_brick_wall.png")
 
 			var scene: DialogueScene = tree.get("level_%s_scene" % [i])
 			var unlocked: bool = tree.get("level_%s_unlocked" % [i])
@@ -106,12 +105,13 @@ func _update_tree_buttons():
 					button.associated_scene = scene
 					button.disabled = false
 					previous_unlocked = true
-				else:
-					brick_wall = true
 			else:
 				if previous_unlocked:
-					button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_next.png")
-					previous_unlocked = false
+					if scene:
+						button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_next.png")
+						previous_unlocked = false
+					else:
+						brick_wall = true
 				else:
 					button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_unknown.png")
 			if brick_wall:
@@ -143,5 +143,5 @@ func _handle_change_scene(scene: DialogueScene) -> void:
 func get_current_displayed_line() -> DialogueLine:
 	return dialogue.lines[current_line]
 
-func _on_texture_button_pressed() -> void:
-	scene_completed.emit()
+func _on_back_button_pressed() -> void:
+	exit_request.emit()
