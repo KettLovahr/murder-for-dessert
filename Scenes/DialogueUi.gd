@@ -31,6 +31,7 @@ var current_line: int = 0
 @onready var sfx_click: AudioStreamPlayer = $Click
 
 func _ready():
+	hide()
 	reset()
 
 func reset():
@@ -71,14 +72,18 @@ func _process(_delta):
 
 func navigation_enabled(opt: bool) -> void:
 	if not opt:
+		$BackButton.hide()
 		for child in get_children():
 			if child.is_in_group("InvestigationOnly"):
 				if child is TextureButton:
 					child.disabled = true
 					if child.is_in_group("ConversationButton"):
-						child.texture_disabled = load("res://Assets/Textures/Conversation/conversation_unknown.png")
+						child.modulate = Color(1.0, 1.0, 1.0, 0.5)
+						#child.texture_disabled = load("res://Assets/Textures/Conversation/conversation_unknown.png")
+						child.mouse_default_cursor_shape = Control.CURSOR_ARROW
 	else:
 		$BackButton.disabled = false
+		$BackButton.show()
 		_update_tree_buttons()
 
 func _update_line():
@@ -115,6 +120,8 @@ func _update_tree_buttons():
 		for i in range(1, 6):
 			var button: ConversationButton = get_node("ConversationButton%d" % [i])
 			button.disabled = true
+			button.mouse_default_cursor_shape = Control.CURSOR_ARROW
+			button.modulate = Color.WHITE
 
 			var scene: DialogueScene = tree.get("level_%s_scene" % [i])
 			var unlocked: bool = tree.get("level_%s_unlocked" % [i])
@@ -123,7 +130,10 @@ func _update_tree_buttons():
 				if scene:
 					button.associated_scene = scene
 					button.disabled = false
+					button.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 					previous_unlocked = true
+					button.texture_normal = load("res://Assets/Textures/Conversation/conversation_dialogue_normal.png")
+					button.texture_disabled = load("res://Assets/Textures/Conversation/conversation_dialogue_normal.png")
 			else:
 				if previous_unlocked:
 					if scene:
@@ -165,6 +175,10 @@ func _handle_change_scene(scene: DialogueScene) -> void:
 	dialogue = scene
 	reset()
 	sfx_scenestart.play()
+	for i in range(1, 6):
+		var button: ConversationButton = get_node("ConversationButton%d" % [i])
+		if scene == button.associated_scene:
+			button.texture_normal = load("res://Assets/Textures/Conversation/conversation_dialogue_hover.png")
 	if dialogue.resource_name == "PennyLevel5":
 		cut_all_music.emit()
 
