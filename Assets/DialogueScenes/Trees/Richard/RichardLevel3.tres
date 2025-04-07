@@ -26,7 +26,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_iedgh"]
 script = ExtResource("1_jofa1")
 speaker = ExtResource("3_iedgh")
-line = "Yes, if you'd remember, I told you I was away, answering an important phonecall."
+line = "Yes, if you'd remember, I told you I was away, [color=yellow]answering an important phonecall.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_iydlh"]
@@ -50,13 +50,13 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_1m83o"]
 script = ExtResource("1_jofa1")
 speaker = ExtResource("3_iedgh")
-line = "I was... sat behind a pillar."
+line = "I was... [color=yellow]sat behind a pillar.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_m8a6t"]
 script = ExtResource("1_jofa1")
 speaker = ExtResource("3_iedgh")
-line = "Yeah, I was behind a pillar, couldn't see Ms. Bezerra's table at all!"
+line = "Yeah, I was behind a pillar, [color=yellow]couldn't see Ms. Bezerra's table at all![/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_j17tf"]

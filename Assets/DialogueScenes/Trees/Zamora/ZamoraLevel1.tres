@@ -32,7 +32,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_bvs0j"]
 script = ExtResource("1_i0q44")
 speaker = ExtResource("2_0xspl")
-line = "Well… I came to the restaurant at about 7:45PM... Phillip was fashionably late, spending late hours at the office again…"
+line = "Well… [color=yellow]I came to the restaurant at about 7:45PM...[/color] Phillip was fashionably late, [color=yellow]spending late hours at the office again…[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_wejaq"]
@@ -44,7 +44,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_gch4a"]
 script = ExtResource("1_i0q44")
 speaker = ExtResource("2_0xspl")
-line = "He was a realtor… I get it, it’s a real cut-throat market, but we had this arranged in advance! Maybe..."
+line = "[color=yellow]He was a realtor…[/color] I get it, it’s a real cut-throat market, but [color=yellow]we had this arranged in advance![/color] Maybe..."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_glepv"]
@@ -68,13 +68,13 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_y1f4x"]
 script = ExtResource("1_i0q44")
 speaker = ExtResource("2_0xspl")
-line = "My husband arrived at about 8:30PM... I met him at the front door, we kissed… [i]She sniffles again.[/i]"
+line = "[color=yellow]My husband arrived at about 8:30PM...[/color] I met him at the front door, we kissed… [i]She sniffles again.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_cs8mo"]
 script = ExtResource("1_i0q44")
 speaker = ExtResource("2_0xspl")
-line = "Then we made our way to the table to order an entrée... Eggplant parmesan."
+line = "Then we made our way to the table to order an entrée... [color=yellow]Eggplant parmesan.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_4d3hm"]
@@ -86,7 +86,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_qedom"]
 script = ExtResource("1_i0q44")
 speaker = ExtResource("2_0xspl")
-line = "Oh, that was late in the night, most people had gone home already so it was pretty much just me and Phillip..."
+line = "Oh, that was late in the night, [color=yellow]most people had gone home already[/color] so it was pretty much just me and Phillip..."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_fsuqu"]
@@ -122,7 +122,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_3x1c0"]
 script = ExtResource("1_i0q44")
 speaker = ExtResource("2_0xspl")
-line = "Besides me and the nice old lady… A tall gentleman was watching us from a distance… I think there was someone else but I don’t remember who…"
+line = "Besides me and the nice old lady… A tall gentleman was watching us from a distance… [color=yellow]I think there was someone else but I don’t remember who…[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_x425r"]

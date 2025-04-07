@@ -44,13 +44,13 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_jc3fq"]
 script = ExtResource("1_rybeu")
 speaker = ExtResource("3_p0urr")
-line = "What, you want me to write down every time I see someone cut a pineapple, in case it ends up being someone's granddaughter or something?!"
+line = "What, you want me to [color=yellow]write down every time I see someone cut a pineapple,[/color] just in case it ends up being someone's granddaughter or something?!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_64sks"]
 script = ExtResource("1_rybeu")
 speaker = ExtResource("3_p0urr")
-line = "I'm not that sort of freak!"
+line = "I'm not that kind of freak!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_jh4l3"]
@@ -62,7 +62,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_3b7ut"]
 script = ExtResource("1_rybeu")
 speaker = ExtResource("3_p0urr")
-line = "I am not speaking to ANY police without my family lawyer present!"
+line = "[color=yellow]I am not speaking to ANY police without my family lawyer present![/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_uwdwb"]

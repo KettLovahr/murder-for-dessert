@@ -32,7 +32,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_61n36"]
 script = ExtResource("1_b0nul")
 speaker = ExtResource("3_52nfa")
-line = "Yeah, I was around. I'm the only employee in the house right now so I was pretty busy back at the kitchen, getting some [i]mise en place[/i] ready for tomorrow."
+line = "Yeah, I was around. [color=yellow]I'm the only employee in the house right now[/color] so I was pretty busy back at the kitchen, getting some [i]mise en place[/i] ready for tomorrow."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_pkp6x"]
@@ -62,13 +62,13 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_sffma"]
 script = ExtResource("1_b0nul")
 speaker = ExtResource("3_52nfa")
-line = "I wonder what his deal is."
+line = "I wonder what his deal is. [color=yellow]He looks like a tough egg to crack.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_clqdp"]
 script = ExtResource("1_b0nul")
 speaker = ExtResource("3_52nfa")
-line = "Maybe he has something to hide? I don't know, even if it turns out to be nothing, I'm still curious."
+line = "[color=yellow]Maybe he has something to hide?[/color] I don't know, even if it turns out to be nothing, I'm still curious."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]

@@ -20,7 +20,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_uwqhi"]
 script = ExtResource("1_x1hfc")
 speaker = ExtResource("3_3tsv2")
-line = "Now Mr. Cop is ready to hear about the monster."
+line = "Now Mr. Cop is ready to hear about the [color=yellow]monster.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_3tsv2"]

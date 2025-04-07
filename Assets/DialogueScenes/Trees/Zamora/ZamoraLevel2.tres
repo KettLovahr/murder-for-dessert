@@ -20,13 +20,13 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_awvrv"]
 script = ExtResource("1_5osem")
 speaker = ExtResource("3_q5jue")
-line = "I think I saw that little devil kneeling behind a table and snickering while we all freaked out..."
+line = "I think I saw that little devil [color=yellow]kneeling behind a table and snickering[/color] while we all freaked out..."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_q5jue"]
 script = ExtResource("1_5osem")
 speaker = ExtResource("3_q5jue")
-line = "What's wrong with the youths nowadays, where are his parents?"
+line = "What's wrong with the youths nowadays, [color=yellow]where are his parents?[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_1a566"]
@@ -50,7 +50,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_5fc0v"]
 script = ExtResource("1_5osem")
 speaker = ExtResource("3_q5jue")
-line = "I... have a vague memory of seeing the sweet old lady before, but I can't remember where."
+line = "[color=yellow]I... have a vague memory of seeing the sweet old lady before,[/color] but I can't remember where."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_e3wwm"]

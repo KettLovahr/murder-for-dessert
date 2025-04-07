@@ -14,7 +14,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_8veiu"]
 script = ExtResource("1_yijuq")
 speaker = ExtResource("2_8veiu")
-line = "Of course. My name is Richard Richardson Jr. III, heir of the Richardson family."
+line = "Of course. My name is Richard Richardson Jr. III, [color=yellow]heir of the Richardson family.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_eif25"]
@@ -32,7 +32,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_fvibw"]
 script = ExtResource("1_yijuq")
 speaker = ExtResource("2_8veiu")
-line = "Of course, Pineapples may be a little too... exotic, and acid, but in no way does it justify a murder so horrific."
+line = "Of course, [color=yellow]Pineapples may be a little too... exotic, and acid,[/color] but in no way does it justify a murder so horrific."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_2xqkk"]
@@ -56,7 +56,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_jdejy"]
 script = ExtResource("1_yijuq")
 speaker = ExtResource("2_8veiu")
-line = "I'm afraid not, as I was dealing with some personal business at the time. Answering an important phonecall."
+line = "I'm afraid not, as I was dealing with some personal business at the time. [color=yellow]Answering an important phonecall.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_1253d"]

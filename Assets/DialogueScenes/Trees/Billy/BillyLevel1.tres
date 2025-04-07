@@ -15,7 +15,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_x7beb"]
 script = ExtResource("1_myblu")
 speaker = ExtResource("3_liphy")
-line = "William Madison! But my friends call me Billy!"
+line = "William Madison! But [color=yellow]my friends call me Billy![/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_liphy"]
@@ -39,7 +39,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_a7ter"]
 script = ExtResource("1_myblu")
 speaker = ExtResource("3_liphy")
-line = "What are you then, a big stinky man?"
+line = "What are you then, [color=yellow]a big stinky man?[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_i53dx"]

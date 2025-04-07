@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=16 format=3 uid="uid://dwkllr4ks13t2"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=18 format=3 uid="uid://dwkllr4ks13t2"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_de5ju"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_jjk68"]
@@ -38,7 +38,19 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_1jd7j"]
 script = ExtResource("1_de5ju")
 speaker = ExtResource("3_de5ju")
-line = "Look at her now, she's so joyous with her new skates... She was so kind to me during my darkest time..."
+line = "Look at her now, she's so joyous with her new skates... [color=yellow]She was so kind to me during my darkest time...[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_5rmvd"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "While I was crying in a corner... [color=yellow]she was actually the one who took the picture[/color] for me, to give to you."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_7qd55"]
+script = ExtResource("1_de5ju")
+speaker = ExtResource("3_de5ju")
+line = "I couldn't even stomach the thought of it getting that close."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_f55hk"]
@@ -50,7 +62,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_0dppj"]
 script = ExtResource("1_de5ju")
 speaker = ExtResource("3_de5ju")
-line = "It's nice to know that I've always had a friend by my side, even if I didn't realize."
+line = "It's nice to know that [color=yellow]I've always had a friend by my side,[/color] even if I didn't realize."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_2ynay"]
@@ -62,16 +74,16 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_qopy6"]
 script = ExtResource("1_de5ju")
 speaker = ExtResource("3_de5ju")
-line = "For now... I'm afraid that's all I have for you, honey. I hope you can still figure out who murdered the love of my life."
+line = "For now... [color=yellow]I'm afraid that's all I have for you, honey.[/color] I hope you can still figure out who murdered the love of my life."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_i37ov"]
 script = ExtResource("1_de5ju")
 speaker = ExtResource("3_de5ju")
-line = "Make them suffer. They deserve to rot."
+line = "[color=red]Make them suffer. They deserve to rot.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("4_55awn")
-lines = Array[ExtResource("1_de5ju")]([SubResource("Resource_7epm0"), SubResource("Resource_jjk68"), SubResource("Resource_de5ju"), SubResource("Resource_ctigh"), SubResource("Resource_55awn"), SubResource("Resource_1jd7j"), SubResource("Resource_f55hk"), SubResource("Resource_0dppj"), SubResource("Resource_2ynay"), SubResource("Resource_qopy6"), SubResource("Resource_i37ov")])
+lines = Array[ExtResource("1_de5ju")]([SubResource("Resource_7epm0"), SubResource("Resource_jjk68"), SubResource("Resource_de5ju"), SubResource("Resource_ctigh"), SubResource("Resource_55awn"), SubResource("Resource_1jd7j"), SubResource("Resource_5rmvd"), SubResource("Resource_7qd55"), SubResource("Resource_f55hk"), SubResource("Resource_0dppj"), SubResource("Resource_2ynay"), SubResource("Resource_qopy6"), SubResource("Resource_i37ov")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

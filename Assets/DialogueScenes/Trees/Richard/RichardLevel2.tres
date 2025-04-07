@@ -79,7 +79,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_6dgep"]
 script = ExtResource("1_gljiv")
 speaker = ExtResource("2_x4gn7")
-line = "They're not just fancy parties, dad! We'll get our own business going any day now I swear!"
+line = "They're not just fancy parties, dad! [color=yellow]We'll get our own business going any day now I swear![/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_7pq8o"]
@@ -102,7 +102,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_uufqe"]
 script = ExtResource("1_gljiv")
 speaker = ExtResource("2_x4gn7")
-line = "I need to you promise me you'll never tell this to anyone. My reputation as heir of the world renowned Richardson family is key to my success."
+line = "I need to you promise me you'll never tell this to anyone. [color=yellow]My reputation as heir of the world renowned Richardson family is key to my success.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_5majl"]

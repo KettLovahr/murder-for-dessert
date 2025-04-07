@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=11 format=3 uid="uid://dcpnjgwdrq7b8"]
+
+[ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_0utjq"]
+[ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_wk4fy"]
+[ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="3_weaqj"]
+[ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="4_1md81"]
+
+[sub_resource type="Resource" id="Resource_yjtiu"]
+script = ExtResource("1_0utjq")
+speaker = ExtResource("2_wk4fy")
+line = "So I spoke to the rhino, apparently it's just some family drama. Honestly not super interesting."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_0utjq"]
+script = ExtResource("1_0utjq")
+speaker = ExtResource("3_weaqj")
+line = "Bummer."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_wk4fy"]
+script = ExtResource("1_0utjq")
+speaker = ExtResource("3_weaqj")
+line = "I'm trying to think what other info I might have... Uhm..."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_weaqj"]
+script = ExtResource("1_0utjq")
+speaker = ExtResource("3_weaqj")
+line = "You know that cool old lady over there? [color=yellow]I think she and the victim knew one other.[/color] We have a bunch of photos of her and the pineapple dining together back at the entrance gallery."
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_1md81"]
+script = ExtResource("1_0utjq")
+speaker = ExtResource("2_wk4fy")
+line = "That is... actually very nice insight! Thank you!"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_hba4w"]
+script = ExtResource("1_0utjq")
+speaker = ExtResource("3_weaqj")
+line = "Just doing my job hah... [color=yellow]I know this place inside and out.[/color]"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[resource]
+script = ExtResource("4_1md81")
+lines = Array[ExtResource("1_0utjq")]([SubResource("Resource_yjtiu"), SubResource("Resource_0utjq"), SubResource("Resource_wk4fy"), SubResource("Resource_weaqj"), SubResource("Resource_1md81"), SubResource("Resource_hba4w")])
+metadata/_custom_type_script = "uid://cbv2lkkta35mj"

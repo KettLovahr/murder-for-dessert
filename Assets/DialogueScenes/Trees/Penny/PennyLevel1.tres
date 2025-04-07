@@ -1,26 +1,32 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=17 format=3 uid="uid://ccaji5lqges54"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=18 format=3 uid="uid://ccaji5lqges54"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_krfbu"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="2_p63ox"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_y86m3"]
 [ext_resource type="Resource" uid="uid://dsofx6suvp8el" path="res://Assets/Speakers/SpeakerPenny.tres" id="3_y86m3"]
 
-[sub_resource type="Resource" id="Resource_g5xus"]
+[sub_resource type="Resource" id="Resource_4hk43"]
 script = ExtResource("1_krfbu")
 speaker = ExtResource("2_y86m3")
-line = "I'm afraid not, Mrs. Whayne, everyone in this room is a potential suspect. We all need to figure out who murdered Ms. Bezerra's husband."
+line = "Good evening ma'am, what's your name?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_kf5gh"]
 script = ExtResource("1_krfbu")
 speaker = ExtResource("3_y86m3")
-line = "I'm Penny Whayne, I work the kitchen here at the Grand Apricot."
+line = "I'm Penny Whayne, [color=yellow]I work the kitchen here at the Grand Apricot.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_y86m3"]
 script = ExtResource("1_krfbu")
 speaker = ExtResource("3_y86m3")
-line = "Look... It's way past closing time, I just work here... Can I go home?"
+line = "Look... [color=yellow]It's way past closing time,[/color] I just work here... Can I go home?"
+metadata/_custom_type_script = "uid://bpqxvagkkj531"
+
+[sub_resource type="Resource" id="Resource_g5xus"]
+script = ExtResource("1_krfbu")
+speaker = ExtResource("2_y86m3")
+line = "I'm afraid not, Mrs. Whayne, everyone in this room is a potential suspect. We all need to figure out who murdered Ms. Bezerra's husband."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_83flk"]
@@ -44,7 +50,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_dkj4k"]
 script = ExtResource("1_krfbu")
 speaker = ExtResource("3_y86m3")
-line = "Well, what time was the murder?"
+line = "Well, [color=yellow]what time was the murder?[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_7130e"]
@@ -62,7 +68,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_4ndb3"]
 script = ExtResource("1_krfbu")
 speaker = ExtResource("3_y86m3")
-line = "This isn't my usual shift, I'm filling in for a friend so I wasn't here the whole night."
+line = "This isn't my usual shift, [color=yellow]I'm filling in for a friend[/color] so I wasn't here the whole night."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ehgb1"]
@@ -79,5 +85,5 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [resource]
 script = ExtResource("2_p63ox")
-lines = Array[ExtResource("1_krfbu")]([SubResource("Resource_g5xus"), SubResource("Resource_kf5gh"), SubResource("Resource_y86m3"), SubResource("Resource_g5xus"), SubResource("Resource_83flk"), SubResource("Resource_180ht"), SubResource("Resource_7mxex"), SubResource("Resource_dkj4k"), SubResource("Resource_7130e"), SubResource("Resource_8b6jn"), SubResource("Resource_4ndb3"), SubResource("Resource_ehgb1"), SubResource("Resource_2qmx3")])
+lines = Array[ExtResource("1_krfbu")]([SubResource("Resource_4hk43"), SubResource("Resource_kf5gh"), SubResource("Resource_y86m3"), SubResource("Resource_g5xus"), SubResource("Resource_83flk"), SubResource("Resource_180ht"), SubResource("Resource_7mxex"), SubResource("Resource_dkj4k"), SubResource("Resource_7130e"), SubResource("Resource_8b6jn"), SubResource("Resource_4ndb3"), SubResource("Resource_ehgb1"), SubResource("Resource_2qmx3")])
 metadata/_custom_type_script = "uid://cbv2lkkta35mj"

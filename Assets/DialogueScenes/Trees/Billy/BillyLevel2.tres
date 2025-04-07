@@ -14,7 +14,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_oywe6"]
 script = ExtResource("1_f8buk")
 speaker = ExtResource("3_1jyln")
-line = "Why, did you doubt me? You think I'd lie to a cop? Also don't call me Billy!"
+line = "Why, did you doubt me? [color=yellow]You think I'd lie to a cop?[/color] Also don't call me Billy!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_1jyln"]
@@ -61,7 +61,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_s7dgp"]
 script = ExtResource("1_f8buk")
 speaker = ExtResource("3_1jyln")
-line = "I saw the fly lady leave, I saw her come back, I heard the screams of horror, and even that grating noise that shook the floor!"
+line = "I saw the fly lady leave, I saw her come back, I heard the screams of horror, [color=yellow]and even that grating noise that shook the floor![/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_m3lbt"]
@@ -73,7 +73,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_7xsbw"]
 script = ExtResource("1_f8buk")
 speaker = ExtResource("3_1jyln")
-line = "Round."
+line = "[color=yellow]Round.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_12rey"]
