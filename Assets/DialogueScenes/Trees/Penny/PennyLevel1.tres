@@ -14,7 +14,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_kf5gh"]
 script = ExtResource("1_krfbu")
 speaker = ExtResource("3_y86m3")
-line = "I'm Penny Whayne, [color=yellow]I work the kitchen here at the Grand Apricot.[/color]"
+line = "I'm Penny Whayne, [color=yellow]I work the kitchen here at The Grand Apricot.[/color]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_y86m3"]

@@ -1,9 +1,11 @@
-[gd_resource type="Resource" script_class="DialogueScene" load_steps=28 format=3 uid="uid://48h8dbm4wdo"]
+[gd_resource type="Resource" script_class="DialogueScene" load_steps=30 format=3 uid="uid://48h8dbm4wdo"]
 
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_ge1ou"]
 [ext_resource type="Resource" uid="uid://0lyyamy2wpem" path="res://Assets/Speakers/SpeakerBrennan.tres" id="2_vxphf"]
 [ext_resource type="Script" uid="uid://cbv2lkkta35mj" path="res://Util/DialogueScene.gd" id="3_b8fj3"]
 [ext_resource type="Resource" uid="uid://dmkdowsawsdk3" path="res://Assets/Speakers/SpeakerZamora.tres" id="3_vxphf"]
+[ext_resource type="Texture2D" uid="uid://c08uuk4yuktxy" path="res://Assets/Textures/phillip_alive.png" id="4_lxhoy"]
+[ext_resource type="Texture2D" uid="uid://d8q3gv2yjk3r" path="res://Assets/Textures/phillip_dead.png" id="5_lqeuv"]
 
 [sub_resource type="Resource" id="Resource_lxhoy"]
 script = ExtResource("1_ge1ou")
@@ -74,17 +76,20 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_jmblw"]
 script = ExtResource("1_ge1ou")
 line = "[i]Teary-eyed, she pulls from her purse a picture of a pineapple, a wistful smile beneath her sorrows as she remembers her loved one.[/i]"
+image_override = ExtResource("4_lxhoy")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ykxs5"]
 script = ExtResource("1_ge1ou")
 speaker = ExtResource("2_vxphf")
 line = "My God... He was truly a handsome young man."
+image_override = ExtResource("4_lxhoy")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_opsrx"]
 script = ExtResource("1_ge1ou")
 line = "[i]The widowed fruit-fly reaches for her purse once more, turning away in fear and disgust, sliding a picture of the crime scene onto my desk.[/i]"
+image_override = ExtResource("4_lxhoy")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_623pc"]
@@ -96,28 +101,33 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_grr2m"]
 script = ExtResource("1_ge1ou")
 line = "[i]It was a shocking sight. Cut into pieces as his juices spilt out.[/i]"
+image_override = ExtResource("5_lqeuv")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_4vsym"]
 script = ExtResource("1_ge1ou")
 speaker = ExtResource("2_vxphf")
 line = "Dear God. Such a cruel and unusual act."
+image_override = ExtResource("5_lqeuv")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_q3a0c"]
 script = ExtResource("1_ge1ou")
 line = "[i]You struggled to maintain your composure looking at the picture she's shown you. It's clear...[/i]"
+image_override = ExtResource("5_lqeuv")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_1vgrw"]
 script = ExtResource("1_ge1ou")
 speaker = ExtResource("2_vxphf")
 line = "[i]We have to get to the bottom of this.[/i]"
+image_override = ExtResource("5_lqeuv")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_l8nt2"]
 script = ExtResource("1_ge1ou")
 line = "[i]The fly looks at you with her hopeful compound eyes.[/i]"
+image_override = ExtResource("5_lqeuv")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_tki3s"]

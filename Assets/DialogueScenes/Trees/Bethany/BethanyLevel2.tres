@@ -20,7 +20,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_kqak3"]
 script = ExtResource("1_d3j76")
 speaker = ExtResource("2_fb3vv")
-line = "..What? Wait, no. Never mind that. I talked to the the newly widowed fruit-fly lady over there, and she told me she had heard an old lady scream."
+line = "...What? Wait, no. Never mind that. I talked to the the newly widowed fruit-fly lady over there, and she told me she had heard an old lady scream."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ka8e3"]

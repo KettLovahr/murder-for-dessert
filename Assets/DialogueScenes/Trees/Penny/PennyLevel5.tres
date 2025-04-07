@@ -31,7 +31,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_hb6b3"]
 script = ExtResource("1_i37cq")
-line = "[i]To be quite honest, I didn't yet know if I could trust the kid to give an accurate account, but if there's any skill I learned 8 years in the business, it's bravado.[/i]"
+line = "[i]To be quite honest, I didn't yet know if I could trust the kid to give an accurate recount, but if there's any skill I learned 8 years in the business, it's bravado.[/i]"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_a5nav"]

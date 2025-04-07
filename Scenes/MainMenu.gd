@@ -16,3 +16,11 @@ func _on_start_button_pressed() -> void:
 
 func _on_check_box_toggled(toggled_on: bool) -> void:
 	GameManager.film_grain = toggled_on
+
+
+func _on_instructions_pressed() -> void:
+	$CloseInstructions.show()
+
+
+func _on_close_instructions_pressed() -> void:
+	$CloseInstructions.hide()

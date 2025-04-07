@@ -103,6 +103,8 @@ func _update_line():
 		$DialogueBox/PinActionButton.visible = dia.speaker.pinnable and (tree != null)
 		$DialogueBox.texture = dialogue_box
 	else:
+		if (dia.image_override):
+			char_sprite.switch_to_any_sprite(dia.image_override)
 		speaker_label.text = ""
 		$DialogueBox/DialogueLabel.modulate = Color.from_rgba8(255, 255, 255, 128)
 		$DialogueBox/PinActionButton.visible = false

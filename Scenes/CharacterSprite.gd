@@ -13,7 +13,7 @@ func switch_to_charsprite(new_speaker: DialogueSpeaker, speaking_sprite: bool):
 			create_tween().tween_property(self, "position", Vector2(0, 0), 0.1)
 		else:
 			create_tween().tween_property(self, "position", Vector2(0, 16), 0.1)
-		
+
 func switch_to_any_sprite(sprite: Texture2D):
 	if sprite:
 		texture = sprite

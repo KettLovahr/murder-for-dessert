@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="DialogueLine" load_steps=3 format=3 uid="uid://bdk6ur8uhesdt"]
+[gd_resource type="Resource" script_class="DialogueLine" load_steps=4 format=3 uid="uid://bdk6ur8uhesdt"]
 
+[ext_resource type="Texture2D" uid="uid://bxp32uw4ac2k5" path="res://Assets/Textures/billy_drawing.png" id="1_86vkc"]
 [ext_resource type="Script" uid="uid://bpqxvagkkj531" path="res://Util/DialogueLine.gd" id="1_qwho7"]
 [ext_resource type="Resource" uid="uid://ce8jddxao0kbu" path="res://Assets/Speakers/SpeakerBilly.tres" id="2_ul1fy"]
 
@@ -7,4 +8,5 @@
 script = ExtResource("1_qwho7")
 speaker = ExtResource("2_ul1fy")
 line = "See? [color=yellow]The monster, the knife, the pineapple!! It's all there! I saw it!![/color]"
+image_override = ExtResource("1_86vkc")
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
