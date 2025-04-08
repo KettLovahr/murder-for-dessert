@@ -26,7 +26,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_g5xus"]
 script = ExtResource("1_krfbu")
 speaker = ExtResource("2_y86m3")
-line = "I'm afraid not, Mrs. Whayne, everyone in this room is a potential suspect. We all need to figure out who murdered Ms. Bezerra's husband."
+line = "I'm afraid not, Ms. Whayne, everyone in this room is a potential suspect. We all need to figure out who murdered Ms. Bezerra's husband."
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_83flk"]

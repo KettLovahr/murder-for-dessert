@@ -8,6 +8,8 @@ var can_use_pins := true
 func _ready() -> void:
 	GameManager.line_added.connect(_on_line_added)
 	GameManager.life_count_changed.connect(_on_life_count_changed)
+	if GameManager.easy_mode:
+		$LivesLabel.text = "∞"
 
 func _update_buttons() -> void:
 	for child in $InventoryContainer.get_children():
@@ -39,6 +41,9 @@ func _handle_use(line: DialogueLine):
 	pin_used.emit(line)
 
 func _on_life_count_changed(lives: int):
+	if GameManager.easy_mode:
+		$LivesLabel.text = "∞"
+		return
 	$LivesLabel.text = "%d" % [lives]
 
 func pins_enabled(opt: bool):

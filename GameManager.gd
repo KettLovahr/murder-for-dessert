@@ -5,6 +5,8 @@ var film_grain := true:
 		film_grain_changed.emit(v)
 		film_grain = v
 
+var easy_mode := false
+
 var pins: Array[DialogueLine]
 var lives: int = 10:
 	set(v):

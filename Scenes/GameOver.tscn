@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dixwvmett7ni4"]
+[gd_scene load_steps=15 format=3 uid="uid://dixwvmett7ni4"]
 
 [ext_resource type="Script" uid="uid://tpxrl5unndar" path="res://Scenes/GameOver.gd" id="1_8710x"]
 [ext_resource type="Texture2D" uid="uid://c5ql4uhyu55ks" path="res://Assets/Textures/gameover.png" id="2_8710x"]
@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://d4j7e8ncf26f7" path="res://Assets/Audio/film_projector_loop.wav" id="6_aa261"]
 [ext_resource type="AudioStream" uid="uid://rpyi8s1y0ajk" path="res://Assets/Audio/film_projector_end.wav" id="7_bdvmp"]
 [ext_resource type="PackedScene" uid="uid://bfsif4ix563ho" path="res://Scenes/fade.tscn" id="8_5ywbh"]
+[ext_resource type="FontFile" uid="uid://dpv0o70ac2bf3" path="res://Assets/Fonts/GentiumPlus-Regular.ttf" id="9_a14ly"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8um5k"]
 
@@ -16,6 +17,8 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_df05h"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghw46"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tr7xh"]
 
 [node name="GameOver" type="Node2D"]
 script = ExtResource("1_8710x")
@@ -61,5 +64,17 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_8saeu")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_df05h")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ghw46")
 
+[node name="EasyMode" type="CheckButton" parent="."]
+offset_left = 551.0
+offset_top = 553.0
+offset_right = 720.0
+offset_bottom = 595.0
+theme_override_constants/h_separation = 12
+theme_override_fonts/font = ExtResource("9_a14ly")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tr7xh")
+text = "Infinite lives"
+
 [connection signal="finished" from="Start" to="Loop" method="play"]
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="toggled" from="EasyMode" to="." method="_on_easy_mode_toggled"]

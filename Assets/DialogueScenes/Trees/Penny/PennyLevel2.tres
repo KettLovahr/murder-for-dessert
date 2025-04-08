@@ -8,7 +8,7 @@
 [sub_resource type="Resource" id="Resource_isyvf"]
 script = ExtResource("1_b0nul")
 speaker = ExtResource("2_f0p6y")
-line = "I got it Mrs. Whayne! According to the widow, the murder probably happened around 0:15AM!!"
+line = "I got it Ms. Whayne! According to the widow, the murder probably happened around 0:15AM!!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_b0nul"]

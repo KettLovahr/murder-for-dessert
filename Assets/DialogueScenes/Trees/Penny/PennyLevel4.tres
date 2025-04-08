@@ -9,7 +9,7 @@
 [sub_resource type="Resource" id="Resource_tebp8"]
 script = ExtResource("1_ukc0c")
 speaker = ExtResource("2_rq51q")
-line = "Mrs. Whayne... could you answer me something real quick?"
+line = "Ms. Whayne... could you answer me something real quick?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_ukc0c"]
@@ -63,7 +63,7 @@ metadata/_custom_type_script = "uid://bpqxvagkkj531"
 [sub_resource type="Resource" id="Resource_4v82e"]
 script = ExtResource("1_ukc0c")
 speaker = ExtResource("2_rq51q")
-line = "Have you used a knife like this during your shift tonight Mrs. Whayne?"
+line = "Have you used a knife like this during your shift tonight Ms. Whayne?"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_45aoh"]

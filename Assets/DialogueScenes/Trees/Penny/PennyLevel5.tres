@@ -8,7 +8,7 @@
 [sub_resource type="Resource" id="Resource_f2h2s"]
 script = ExtResource("1_i37cq")
 speaker = ExtResource("2_o30tu")
-line = "Ohhhhhhh, my dearest Penny. Mrs. Whayne. I got you this time!"
+line = "Ohhhhhhh, my dearest Penny. Ms. Whayne. I got you this time!"
 metadata/_custom_type_script = "uid://bpqxvagkkj531"
 
 [sub_resource type="Resource" id="Resource_i37cq"]

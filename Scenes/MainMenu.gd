@@ -3,6 +3,7 @@ extends Node2D
 
 func _ready() -> void:
 	$CheckBox.button_pressed = GameManager.film_grain
+	$EasyMode.button_pressed = GameManager.easy_mode
 
 
 func _on_start_button_pressed() -> void:
@@ -24,3 +25,7 @@ func _on_instructions_pressed() -> void:
 
 func _on_close_instructions_pressed() -> void:
 	$CloseInstructions.hide()
+
+
+func _on_easy_mode_toggled(toggled_on: bool) -> void:
+	GameManager.easy_mode = toggled_on

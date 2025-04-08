@@ -40,7 +40,8 @@ func _on_inventory_pin_used(pin: DialogueLine) -> void:
 	else:
 		var new_scene = GameManager.fail_scenes[tree.culprit.to_upper()]
 		dialogue_ui._handle_change_scene(new_scene)
-		GameManager.lives -= 1
+		if not GameManager.easy_mode:
+			GameManager.lives -= 1
 		$Fail.play()
 
 
